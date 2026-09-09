@@ -9,6 +9,8 @@ import pandas as pd
 pd.set_option("mode.string_storage", "python")
 import aiofiles
 from backend.llm.interpreter import generate_tabular_interpretation, generate_image_interpretation
+from backend.assistant.schemas import AssistantQueryRequest
+from backend.assistant.service import run_assistant_query
 import os
 
 # Create uploads directory if it doesn't exist
@@ -333,3 +335,8 @@ async def analyze_images(files: List[UploadFile] = File(...), probability_thresh
             })
             
     return {"results": results}
+
+
+@app.post("/assistant/query")
+async def assistant_query(request: AssistantQueryRequest):
+    return run_assistant_query(request)

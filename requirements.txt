@@ -17,6 +17,14 @@ tf-keras-vis
 tensorflow
 python_dotenv
 google-genai
+langchain
+langchain-core
+langgraph
 pytest
 pytest-asyncio
 watchdog
+transformers
+peft
+datasets
+accelerate
+torch
