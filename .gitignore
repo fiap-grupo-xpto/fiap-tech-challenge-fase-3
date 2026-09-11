@@ -245,3 +245,8 @@ tf_plan
 .terraformrc
 terraform.rc
 **/.history/*
+# Local audit failover contains interaction data
+backend/data/audit_fallback.jsonl
+# Scratch/debug directories from manual model testing (includes HF model cache, ~GB-sized)
+.model-test/
+llm_finetuning/runs/

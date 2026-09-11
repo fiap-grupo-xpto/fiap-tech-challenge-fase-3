@@ -1,0 +1,229 @@
+question,reference_answer,base_answer,finetuned_answer,precision_base,recall_base,f1_base,precision_finetuned,recall_finetuned,f1_finetuned
+"Do Zolmitriptan 5mg tablets manufactured by GLOBAL PHARMACEUTICALS, DIVISION OF IMPAX LABORATORIES INC. contain gluten?","Zolmitriptan tablets are available as 2.5 mg (yellow and functionally-scored) and 5 mg (pink, not scored) film coated tablets for oral administration. The film coated tablets contain anhydrous lactose NF, microcrystalline cellulose NF, sodium starch glycolate NF, magnesium stearate NF, hydroxypropyl methylcellulose USP, titanium dioxide USP, polyethylene glycol 400 NF, yellow iron oxide NF (2.5 mg tablet), red iron oxide NF (5 mg tablet), and polyethylene glycol 8000 NF. Zolmitriptan orally disintegrating tablets are available as 2.5 mg and 5 mg white uncoated tablets. The orally disintegrating tablets contain mannitol USP, microcrystalline cellulose NF, crospovidone NF, aspartame NF [see WARNINGS AND PRECAUTIONS (5.9)], sodium bicarbonate USP, citric acid anhydrous USP, colloidal silicon dioxide NF, magnesium stearate NF and orange flavor SN 027512.","Sure, the Zolmitriptan 5mg tablets manufactured by GLOBAL PHARMACEUTICALS, DIVISION OF IMPAX LABORATORIES INC. Contain gluten. Gluten is a protein found in wheat, barley, and rye. Gluten can cause allergic reactions","Yes, the Zolmitriptan 5mg tablets manufactured by GLOBAL PHARMACEUTICALS, DIVISION OF IMPAX LABORATORIES INC. Contain gluten. Gluten is a protein found in wheat, barley, and rye. People with a gluten intolerance or",0.16666666666666666,0.07142857142857142,0.1,0.16666666666666666,0.07142857142857142,0.1
+What are the treatments and precautions for VDRL positive (syphilis) patients?,"Syphilis If the RPR, VDRL, or TRUST tests are positive, one of the following tests will be needed to confirm the diagnosis: FTA-ABS (fluorescent treponemal antibody test); MHA-TP; TP-EIA; TP-PA. Syphilis can be treated with antibiotics, such as: Doxycycline (type of tetracycline given to people who are allergic to penicillin); Penicillin G benzathine. Length of treatment depends on how severe the syphilis is, and factors such as the person's overall health. Several hours after getting treatment for the early stages of syphilis, people may experience the Jarisch-Herxheimer reaction. This process is caused by an immune reaction to the breakdown products of the infection. Follow-up blood tests must be done at 3, 6, 12, and 24 months to ensure that the infection is gone. Avoid sexual contact when the chancre is present. Use condoms until two follow-up tests have shown that the infection has been cured, to reduce the chance of transmitting the infection. All sexual partners of the person with syphilis should also be treated. Syphilis can spread very easily in the primary and secondary stages.","Sure, I'd be happy to provide you with information on the treatments and precautions for VDRL positive (syphilis) patients.
+
+Treatment:
+
+If you have VDRL positive (syphilis) and are at high risk for complications, your healthcare provider may recommend treatment with antibiotics. The recommended","Syphilis is a sexually transmitted infection caused by the bacterium Treponema pallidum. It is transmitted through sexual contact with an infected partner. The incubation period for syphilis is 10-15 days.
+
+Treatment for syphilis is with antibiotics. The recommended treatment is a",0.37142857142857144,0.104,0.1625,0.42857142857142855,0.096,0.1568627450980392
+Could anesthesia cause brain damage in FXTAS patients?,"Likewise, we don't know whether other developmental processes, or environmental factors, affect the expression of FXTAS. For example, although it hasn't been rigorously studied, investigators at UC Davis are interested in the possibility that surgery under a general anesthetic may affect the progression of FXTAS.","Sure, anesthesia can cause brain damage in FXTAS patients. FXTAS is a rare disorder characterized by the sudden onset of tremors, ataxia, and cognitive impairment. The exact mechanism of brain damage is not fully understood, but it is believed to be related to the disruption of the brain's electrical signals.","Yes, anesthesia can cause brain damage in FXTAS patients. Anesthesia can cause a decrease in blood flow to the brain, which can lead to a decrease in oxygen and nutrient supply to the brain. This can cause damage to the brain tissue, leading to cognitive impairment and other neurological symptoms.
+
+In some cases",0.1282051282051282,0.125,0.12658227848101264,0.12121212121212122,0.1,0.10958904109589042
+Could anesthesia cause brain damage in FXTAS patients?,"Typically patients with FXTAS do not tolerate surgery with general anesthesia well and further deterioration in both motor and cognitive abilities is typically seen (Jacquemont et al 2004). Therefore, surgery should be avoided if at all possible.","Sure, anesthesia can cause brain damage in FXTAS patients. FXTAS is a rare disorder characterized by the sudden onset of tremors, ataxia, and cognitive impairment. The exact mechanism of brain damage is not fully understood, but it is believed to be related to the disruption of the brain's electrical signals.","Yes, anesthesia can cause brain damage in FXTAS patients. Anesthesia can cause a decrease in blood flow to the brain, which can lead to a decrease in oxygen and nutrient supply to the brain. This can cause damage to the brain tissue, leading to cognitive impairment and other neurological symptoms.
+
+In some cases",0.20512820512820512,0.24242424242424243,0.2222222222222222,0.15151515151515152,0.15151515151515152,0.15151515151515152
+How do I find out if my fibromyalgia is genetic?,"Is fibromyalgia hereditary? Answers from Kevin C. Fleming, M.D. Fibromyalgia isn't passed directly from parents to children, but the disorder does appear to cluster within families. The odds of developing fibromyalgia are several times higher in the immediate families of people with fibromyalgia than in families in which no one has fibromyalgia. In fact, studies of DNA from family members of people with fibromyalgia and other chronic pain syndromes have turned up a number of genes that could help explain why these disorders seem to run in families. Each of these genes plays a role in your nervous system's response to pain. Some of the same genes are also associated with depression and anxiety, which may be the reason why certain antidepressant medications help reduce fibromyalgia symptoms.","Para encontrar se sua fibromialgia é genética, você deve consultar um médico especialista em fibromialgia ou um especialista em genética.
+
+Acredita-se que a maioria dos casos de fibromialgia seja genética, mas isso não é verdadeira em todos os casos. A genética pode influenciar","Fibromyalgia is a complex disorder that is not always genetic. However, some studies suggest that fibromyalgia may be associated with genetic factors. A genetic test can help determine if your fibromyalgia is genetic. A genetic test is a test that looks for specific genetic changes in your DNA. A genetic test can help determine if your fib",0.029411764705882353,0.011363636363636364,0.01639344262295082,0.4375,0.1590909090909091,0.23333333333333334
+How do I find out if my fibromyalgia is genetic?,"Although the etiology of FM remains unknown, it is thought to involve some combination of genetic susceptibility and environmental exposure that triggers further alterations in gene expression. Because FM shows marked familial aggregation, most previous research has focused on genetic predisposition to FM and has revealed associations between genetic factors and the development of FM, including specific gene polymorphisms involved in the serotonergic, dopaminergic, and catecholaminergic pathways. The aim of this review was to discuss the current evidence regarding genetic factors that may play a role in the development and symptom severity of FM.","Para encontrar se sua fibromialgia é genética, você deve consultar um médico especialista em fibromialgia ou um especialista em genética.
+
+Acredita-se que a maioria dos casos de fibromialgia seja genética, mas isso não é verdadeira em todos os casos. A genética pode influenciar","Fibromyalgia is a complex disorder that is not always genetic. However, some studies suggest that fibromyalgia may be associated with genetic factors. A genetic test can help determine if your fibromyalgia is genetic. A genetic test is a test that looks for specific genetic changes in your DNA. A genetic test can help determine if your fib",0.029411764705882353,0.014925373134328358,0.019801980198019802,0.25,0.11940298507462686,0.1616161616161616
+How do I find out if my fibromyalgia is genetic?,"That's why it can take a long time to go from fibromyalgia symptoms to a fibromyalgia diagnosis. Fibromyalgia can't be easily confirmed or ruled out through a simple laboratory test. Your doctor can't detect it in your blood or see it on an X-ray. Instead, fibromyalgia appears to be linked to changes in how the brain and spinal cord process pain signals. Because there is no test for fibromyalgia, your doctor must rely solely on your group of symptoms to make a diagnosis. Because a genetic factor appears to be involved in fibromyalgia, your doctor may also want to know if any other members of your immediate family have experienced similar symptoms.","Para encontrar se sua fibromialgia é genética, você deve consultar um médico especialista em fibromialgia ou um especialista em genética.
+
+Acredita-se que a maioria dos casos de fibromialgia seja genética, mas isso não é verdadeira em todos os casos. A genética pode influenciar","Fibromyalgia is a complex disorder that is not always genetic. However, some studies suggest that fibromyalgia may be associated with genetic factors. A genetic test can help determine if your fibromyalgia is genetic. A genetic test is a test that looks for specific genetic changes in your DNA. A genetic test can help determine if your fib",0.029411764705882353,0.012987012987012988,0.018018018018018018,0.40625,0.16883116883116883,0.23853211009174313
+Is dementia inherited or acquired?,"Scientists know genes are involved in Alzheimer's. Two categories of genes influence whether a person develops a disease: risk genes and deterministic genes. Alzheimer's genes have been found in both categories. 1. Risk genes increase the likelihood of developing a disease, but do not guarantee it will happen. Researchers have found several genes that increase the risk of Alzheimer's. apolipoprotein E-e4, or APOE-e4, is the first risk gene identified and remains the one with strongest impact. 2. Deterministic genes directly cause a disease, guaranteeing that anyone who inherits one will develop the disorder. Scientists have discovered variations that directly cause Alzheimer's disease in the genes coding three proteins: amyloid precursor protein (APP), presenilin-1 (PS-1) and presenilin-2 (PS-2).","Pergunta Médica: Is dementia inherited or acquired?
+
+Resposta Médica: Dementia é um transtorno neurodegenerativo que pode ser hereditário ou não hereditário. A maioria dos casos é hereditária, mas há casos não hereditários.
+
+Hereditária: O transtorno é causado por um gene","Depression is a common symptom of dementia. It is not a disease, but a symptom.
+
+Depression is a common symptom of dementia. It is not a disease, but a symptom. Dementia is a group of symptoms that affect a person's ability to think, remember, and carry out daily activities. Dementia is a",0.125,0.05128205128205128,0.07272727272727274,0.3333333333333333,0.11538461538461539,0.17142857142857146
+Is dementia inherited or acquired?,"The majority of dementia is not inherited, but this depends very much on the particular cause of dementia. Some (rare) causes of dementia are very clearly 'inherited', for example, Huntington's disease. This is an 'autosomal dominant' disease which means that only one faulty copy of the gene is needed in order to inherit the disease. If you have inherited the gene you will get the disease if you live long enough. It does not skip a generation. Some other dementias have both inherited and non-inherited forms. In the case of fronto-temporal dementias, 30 to 50 per cent of cases are inherited. Most cases of Alzheimer's disease are not inherited.","Pergunta Médica: Is dementia inherited or acquired?
+
+Resposta Médica: Dementia é um transtorno neurodegenerativo que pode ser hereditário ou não hereditário. A maioria dos casos é hereditária, mas há casos não hereditários.
+
+Hereditária: O transtorno é causado por um gene","Depression is a common symptom of dementia. It is not a disease, but a symptom.
+
+Depression is a common symptom of dementia. It is not a disease, but a symptom. Dementia is a group of symptoms that affect a person's ability to think, remember, and carry out daily activities. Dementia is a",0.15625,0.06756756756756757,0.09433962264150943,0.4074074074074074,0.14864864864864866,0.21782178217821785
+Is there a surgical treatment for sleep apnea?,"Surgery is an effective and safe treatment option for many patients with snoring and sleep apnea, particularly those who are unable to use or tolerate CPAP. Proper patient and procedure selection is critical to successful surgical management of obstructive sleep apnea. Talk to your Ear, Nose and Throat doctor for a complete evaluation and to learn what treatment may be best for you.","Sure, there are surgical treatments for sleep apnea. These treatments aim to improve the breathing patterns during sleep and prevent the recurrence of apnea episodes. Some of the surgical options for sleep apnea include:
+
+1. Mandibular advancement device (MAD): This device is a small, flexible device that is placed in the upper jaw to move","Yes, there are surgical treatments for sleep apnea. These treatments are designed to improve breathing during sleep and prevent the symptoms of sleep apnea.
+
+1. Obstructive sleep apnea (OSA): This type of sleep apnea occurs when the soft tissues in the throat relax and block the airway during sleep. Surgery to correct this condition",0.24390243902439024,0.19607843137254902,0.21739130434782608,0.2894736842105263,0.21568627450980393,0.24719101123595505
+Is there a surgical treatment for sleep apnea?,"Some people who have sleep apnea might benefit from surgery. The type of surgery and how well it works depend on the cause of the sleep apnea. Surgery is done to widen breathing passages. It usually involves shrinking, stiffening, or removing excess tissue in the mouth and throat or resetting the lower jaw. Surgery to shrink or stiffen excess tissue is done in a doctor's office or a hospital. Shrinking tissue may involve small shots or other treatments to the tissue. You may need a series of treatments to shrink the excess tissue. To stiffen excess tissue, the doctor makes a small cut in the tissue and inserts a piece of stiff plastic. Surgery to remove excess tissue is done in a hospital. You're given medicine to help you sleep during the surgery. After surgery, you may have throat pain that lasts for 1 to 2 weeks.","Sure, there are surgical treatments for sleep apnea. These treatments aim to improve the breathing patterns during sleep and prevent the recurrence of apnea episodes. Some of the surgical options for sleep apnea include:
+
+1. Mandibular advancement device (MAD): This device is a small, flexible device that is placed in the upper jaw to move","Yes, there are surgical treatments for sleep apnea. These treatments are designed to improve breathing during sleep and prevent the symptoms of sleep apnea.
+
+1. Obstructive sleep apnea (OSA): This type of sleep apnea occurs when the soft tissues in the throat relax and block the airway during sleep. Surgery to correct this condition",0.3902439024390244,0.1927710843373494,0.25806451612903225,0.39473684210526316,0.18072289156626506,0.24793388429752067
+How much urine does an average human bladder hold?,"Normal functional bladder capacity in adults ranges from approximately 300 to 400 ml (58,59).","Resposta Médica: A urinação normal de um homem é de cerca de 100-200 ml. A quantidade de urina que um homem pode produzir em um dia depende da sua idade, peso, sexo, idade e dieta. A quantidade de urina que um homem pode produzir em um dia","The average human bladder holds about 1000 ml (3.3 fl oz) of urine. This amount is enough to hold about 1000 ml (3.3 fl oz) of urine for about 12 hours. The bladder is designed to hold urine for about 12 hours, but it can hold",0.03571428571428571,0.07142857142857142,0.047619047619047616,0.10714285714285714,0.21428571428571427,0.14285714285714285
+How much urine does an average human bladder hold?,"A healthy bladder can hold one and a half to two cups (300-400mls) of urine during the day and about four cups (800mls) at night. It is normal to pass urine five or six times a day if you drink between 6-8 glasses of fluid. It is usual to empty your bladder when you get out of bed in the morning, three times during the day, and before you go to bed at night. As we age this pattern may change, as older people tend to make more urine at night.","Resposta Médica: A urinação normal de um homem é de cerca de 100-200 ml. A quantidade de urina que um homem pode produzir em um dia depende da sua idade, peso, sexo, idade e dieta. A quantidade de urina que um homem pode produzir em um dia","The average human bladder holds about 1000 ml (3.3 fl oz) of urine. This amount is enough to hold about 1000 ml (3.3 fl oz) of urine for about 12 hours. The bladder is designed to hold urine for about 12 hours, but it can hold",0.07142857142857142,0.03225806451612903,0.044444444444444446,0.39285714285714285,0.1774193548387097,0.24444444444444446
+How do I safely dispose of expired Hydrogen Peroxide?,Hydrogen peroxide solutions can be disposed of with no special treatment. You can safely pour them down the drain of a sink or into a toilet.,"Safely disposing of expired Hydrogen Peroxide is essential to prevent the spread of bacteria and viruses. Here are the steps to follow:
+
+1. Check the expiration date on the bottle. If it is past its expiration date, do not use it.
+
+2. Remove the cap from the bottle.
+
+3. Pour","Expired Hydrogen Peroxide is not safe to use. It can cause severe burns and skin irritation if inhaled or ingested. Hydrogen Peroxide is a strong oxidizing agent that can cause skin irritation, eye irritation, and inhalation injury. It is also a corrosive chemical that can cause severe burns if",0.15,0.2608695652173913,0.19047619047619047,0.15625,0.21739130434782608,0.18181818181818182
+Can a CT scan detect diverticulitis or diverticulosis?,"CT scan: This radiology test takes multiple cross-sectional pictures of the body. It is not generally performed to make a diagnosis of diverticulosis, but this type of exam, when done for other reasons, may identify diverticula.","Resposta Médica: A CT scan (computed tomography) is not capable of detecting diverticulitis or diverticulosis. A CT scan is a diagnostic imaging technique that uses X-rays to create detailed images of the inside of the body. It is not designed to detect specific medical conditions, such as diverticulitis or diverticulosis. The","A CT scan is not a diagnostic test for diverticulitis or diverticulosis. A CT scan is a diagnostic test that uses X-rays to create images of the inside of the body. It is not a test that can detect diverticulitis or diverticulosis. A CT scan can detect other conditions, such as a hernia, a gallbl",0.25,0.2727272727272727,0.2608695652173913,0.4,0.36363636363636365,0.380952380952381
+Can a CT scan detect diverticulitis or diverticulosis?,"What tests do doctors use to diagnose diverticulosis and diverticulitis? Your doctor may use the following tests to help diagnose diverticulosis and diverticulitis:CT scan A computerized tomography (CT) scan uses a combination of x-rays and computer technology to create images of your gastrointestinal (GI) tract. An x-ray technician performs the procedure in an outpatient center or a hospital. A radiologist reads and reports on the images. You don't need anesthesia for this procedure. For a CT scan, a health care professional may give you a solution to drink and an injection of a special dye, called contrast medium. Contrast medium makes the structures inside your body easier to see during the procedure. You'll lie on a table that slides into a tunnel-shaped device that takes the x-rays. A CT scan of your colon is the most common test doctors use to diagnose diverticulosis and diverticulitis.","Resposta Médica: A CT scan (computed tomography) is not capable of detecting diverticulitis or diverticulosis. A CT scan is a diagnostic imaging technique that uses X-rays to create detailed images of the inside of the body. It is not designed to detect specific medical conditions, such as diverticulitis or diverticulosis. The","A CT scan is not a diagnostic test for diverticulitis or diverticulosis. A CT scan is a diagnostic test that uses X-rays to create images of the inside of the body. It is not a test that can detect diverticulitis or diverticulosis. A CT scan can detect other conditions, such as a hernia, a gallbl",0.3888888888888889,0.15053763440860216,0.21705426356589144,0.5333333333333333,0.17204301075268819,0.2601626016260163
+How to taper off wellbutrin xl 150?,"1. he tapered off bupropion SR, taking 150 mg/day for 4 days followed by 150 mg every other day for 8 days (4 total doses) and 150 mg every third day for 6 days (2 total doses) without further complications. 2. For patients taking 300 mg/day during the autumn-winter season, the dose should be tapered to 150 mg/day for 2 weeks prior to discontinuation. Adverse events with onset during the 2 weeks following down-titration of WELLBUTRIN XL from 300 mg/day to 150 mg/day were reported by 14% of patients compared to 18% of patients who continued on placebo. Adverse events with onset during the 2 weeks following discontinuation of WELLBUTRIN XL were reported by 9% of patients compared with 12% of patients following discontinuation of placebo.","1. Start with a reduced dose: Begin by taking half the dose of your usual dosage. Gradually reduce the dose over a few days until you reach the lowest dose that still provides the desired effect.
+
+2. Avoid sudden changes: Avoid taking your medication suddenly, especially if you have been taking it for a long time. This can cause side effects","Taper off wellbutrin xl 150:
+
+1. Determine the dose: Determine the dose of wellbutrin xl 150 that is safe for you to taper off. Taper slowly over a period of 2-4 weeks.
+
+2. Start with a low dose: Start with a low dose",0.20408163265306123,0.15151515151515152,0.1739130434782609,0.41379310344827586,0.18181818181818182,0.25263157894736843
+Does metformin cause high blood pressure?,"1. This meta-analysis suggested that metformin could effectively lower SBP in nondiabetic patients, especially in those with impaired glucose tolerance or obesity.","Resposta Médica: Não, não existe evidência científica que apoie a conclusão de que metformin causa alta pressão arterial. A metformina é uma medicina de uso crônico para o tratamento de diabetes mellitus tipo 2. A metformina não é usada como um remédio para o tratamento","Yes, metformin can cause high blood pressure. High blood pressure is a condition where the blood pressure is too high. High blood pressure can cause symptoms such as headaches, dizziness, and fatigue. High blood pressure can also increase the risk of heart disease, stroke, and kidney disease.
+
+Metformin is a type of medication called an antidiab",0.029411764705882353,0.047619047619047616,0.036363636363636355,0.027777777777777776,0.047619047619047616,0.03508771929824561
+Does metformin cause high blood pressure?,2. Metformin does not significantly affect BP in patients with Type 2 diabetes intensively treated with insulin.,"Resposta Médica: Não, não existe evidência científica que apoie a conclusão de que metformin causa alta pressão arterial. A metformina é uma medicina de uso crônico para o tratamento de diabetes mellitus tipo 2. A metformina não é usada como um remédio para o tratamento","Yes, metformin can cause high blood pressure. High blood pressure is a condition where the blood pressure is too high. High blood pressure can cause symptoms such as headaches, dizziness, and fatigue. High blood pressure can also increase the risk of heart disease, stroke, and kidney disease.
+
+Metformin is a type of medication called an antidiab",0.08823529411764706,0.1875,0.12,0.05555555555555555,0.125,0.07692307692307691
+What causes increase in white blood cell count?,"A high white blood cell count usually indicates: An increased production of white blood cells to fight an infection A reaction to a drug that increases white blood cell production A disease of bone marrow, causing abnormally high production of white blood cells An immune system disorder that increases white blood cell production Specific causes of a high white blood cell count include: Acute lymphocytic leukemia Acute myelogenous leukemia (AML) Allergy, especially severe allergic reactions Chronic lymphocytic leukemia Chronic myelogenous leukemia Drugs, such as corticosteroids and epinephrine Infections, bacterial or viral Myelofibrosis Polycythemia vera Rheumatoid arthritis Smoking Stress, such as severe emotional or physical stress Tuberculosis Whooping cough","Pergunta Médica: O que causa aumento de count de células vermelhas?
+
+Resposta Médica: O aumento de count de células vermelhas é causado por:
+
+1. Infeções: O aumento de count de células vermelhas é causado por infeções. As infeções podem causar inflama","Increase in white blood cell count is a common finding in patients with COVID-19. The exact cause is not fully understood, but it is thought to be related to the virus itself, the immune response, or both. The increase in white blood cells can be seen in the blood, lungs, and other organs. The exact cause is not fully understood, but it is",0.08333333333333333,0.03076923076923077,0.0449438202247191,0.2564102564102564,0.15384615384615385,0.19230769230769232
+When should a respiratory case be escalated for specialized assessment?,"According to the escalation protocol (PROTO-ESC-001), high-risk indicators such as hemoptysis or a high-risk triage classification should trigger immediate clinician review and escalation to specialized assessment, based on internal triage criteria.","Respiratory cases should be escalated for specialized assessment when:
+
+1. The patient's condition has deteriorated and requires immediate attention.
+2. The patient's condition is severe and requires urgent intervention.
+3. The patient's condition is complex and requires specialized expertise.
+4. The patient's condition is life","When a respiratory case is suspected of having a respiratory infection, it should be escalated for specialized assessment. This includes a chest radiograph, sputum culture, and/or a respiratory viral panel. The decision to escalate a respiratory case should be based on the clinical suspicion and the severity of the",0.1724137931034483,0.18518518518518517,0.17857142857142858,0.22857142857142856,0.2962962962962963,0.25806451612903225
+What should the assistant say if asked to prescribe an antibiotic?,"Per the no-direct-prescription protocol (PROTO-NO-RX-001), the assistant should decline to prescribe or give dosage instructions and instead recommend that a clinician review appropriate treatment options.","Resposta Médica: Se o assistente for pedido para prescrever um antibiótico, o assistente deve responder:
+
+- ""Não, não prescrevo antibióticos.""
+- ""Não, não prescrevo antibióticos.""
+- ""Não, não prescrevo antibióticos.""","The assistant should say: ""I am not a prescriber. I am not authorized to prescribe medication. I am not responsible for the safety or efficacy of any medication. I am not authorized to dispense medication. I am not responsible for the accuracy or completeness of any information provided by the user. I am not responsible for any errors or omissions",0.0,0.0,0.0,0.23333333333333334,0.2916666666666667,0.2592592592592593
+"Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+{
+  ""patient_id"": ""SYN-008"",
+  ""name_synthetic"": ""Synthetic 8"",
+  ""age"": 38,
+  ""sex"": ""M"",
+  ""smoking_history"": ""unknown"",
+  ""last_updated_at"": ""2026-09-01T00:00:00"",
+  ""symptoms"": [],
+  ""pending_exams"": [
+    {
+      ""exam_name"": ""chest_xray"",
+      ""status"": ""pending"",
+      ""requested_at"": ""2026-09-01""
+    }
+  ],
+  ""latest_findings"": [],
+  ""recent_notes"": [],
+  ""pending_exams_reviewed"": [
+    ""chest_xray""
+  ],
+  ""alerts"": [],
+  ""recommended_actions"": []
+}
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_xray está pendente [SYN-008].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
+Justificativa: O registro informa status pending [SYN-008].
+Fontes utilizadas: [SYN-008].
+Observação: Requer validação humana; não permite concluir diagnóstico.","Exame: Chest X-ray
+
+Contexto do Paciente:
+O paciente, SYN-008, é um homem de 38 anos que foi diagnosticado com doença pulmonar obstructiva crônica (COPD) e está em tratamento com inhalação de drogas. O paciente é sem histórico de","Resumo:
+Nenhum protocolo relevante foi recuperado.
+
+Contexto do paciente:
+Não há contexto relevante disponível.
+
+Conduta sugerida:
+Não há conduta sugerida disponível.
+
+Justificativa:
+Não há justificativa disponível.
+
+Fontes utilizadas:
+N",0.15151515151515152,0.1388888888888889,0.14492753623188404,0.55,0.3055555555555556,0.39285714285714285
+"Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+{
+  ""patient_id"": ""SYN-008"",
+  ""name_synthetic"": ""Synthetic 8"",
+  ""age"": 38,
+  ""sex"": ""M"",
+  ""smoking_history"": ""unknown"",
+  ""last_updated_at"": ""2026-09-01T00:00:00"",
+  ""symptoms"": [],
+  ""pending_exams"": [
+    {
+      ""exam_name"": ""chest_xray"",
+      ""status"": ""pending"",
+      ""requested_at"": ""2026-09-01""
+    }
+  ],
+  ""latest_findings"": [],
+  ""recent_notes"": [],
+  ""pending_exams_reviewed"": [
+    ""chest_xray""
+  ],
+  ""alerts"": [],
+  ""recommended_actions"": []
+}
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_xray está pendente [SYN-008].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
+Justificativa: O registro informa status pending [SYN-008].
+Fontes utilizadas: [SYN-008].
+Observação: Requer validação humana; não permite concluir diagnóstico.","Pedido de consulta:
+
+Querida especialista,
+
+Este pedido de consulta é para revisar um exame pendente, o exame de X-ray da pele. O paciente tem 38 anos, é homem, sem sinais de diabetes ou hipertensão, sem hábitos de beb","Protocolos e referências recuperados:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras",0.10344827586206896,0.08333333333333333,0.09230769230769231,0.37037037037037035,0.2777777777777778,0.3174603174603175

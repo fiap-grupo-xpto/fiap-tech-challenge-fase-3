@@ -1,0 +1,79 @@
+{
+  "best_global_step": 23,
+  "best_metric": 1.1269638538360596,
+  "best_model_checkpoint": "C:/Users/guces/AppData/Local/Temp/claude/c--Users-guces-fiap-tech-challenge-fase-3/dry_run\\artifacts\\llama_medical_lora_model\\checkpoint-23",
+  "epoch": 1.0,
+  "eval_steps": 500,
+  "global_step": 23,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.22099447513812154,
+      "grad_norm": 1.081445574760437,
+      "learning_rate": 0.00016521739130434784,
+      "loss": 1.904429817199707,
+      "step": 5
+    },
+    {
+      "epoch": 0.4419889502762431,
+      "grad_norm": 0.6826083660125732,
+      "learning_rate": 0.00012173913043478263,
+      "loss": 1.5804224967956544,
+      "step": 10
+    },
+    {
+      "epoch": 0.6629834254143646,
+      "grad_norm": 1.0235371589660645,
+      "learning_rate": 7.82608695652174e-05,
+      "loss": 1.4637534141540527,
+      "step": 15
+    },
+    {
+      "epoch": 0.8839779005524862,
+      "grad_norm": 1.0075604915618896,
+      "learning_rate": 3.478260869565218e-05,
+      "loss": 1.174955177307129,
+      "step": 20
+    },
+    {
+      "epoch": 1.0,
+      "eval_loss": 1.1269638538360596,
+      "eval_runtime": 199.6256,
+      "eval_samples_per_second": 0.14,
+      "eval_steps_per_second": 0.14,
+      "step": 23
+    },
+    {
+      "epoch": 1.0,
+      "step": 23,
+      "total_flos": 500305861619712.0,
+      "train_loss": 1.494996682457302,
+      "train_runtime": 3652.5643,
+      "train_samples_per_second": 0.05,
+      "train_steps_per_second": 0.006
+    }
+  ],
+  "logging_steps": 5,
+  "max_steps": 23,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 1,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 500305861619712.0,
+  "train_batch_size": 1,
+  "trial_name": null,
+  "trial_params": null
+}

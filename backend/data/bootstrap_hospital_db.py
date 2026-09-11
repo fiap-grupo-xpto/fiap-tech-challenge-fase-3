@@ -61,6 +61,29 @@ def bootstrap(db_path: str) -> str:
                 content TEXT NOT NULL,
                 restricted_actions TEXT NOT NULL
             );
+
+            CREATE TABLE audit_log (
+                request_id TEXT PRIMARY KEY,
+                created_at TEXT NOT NULL,
+                patient_id TEXT,
+                question TEXT,
+                status TEXT,
+                assistant_answer TEXT,
+                sources_used TEXT,
+                llm_backend_used TEXT,
+                fallback_used INTEGER,
+                blocked INTEGER,
+                block_reason TEXT,
+                requires_human_review INTEGER,
+                input_validation TEXT,
+                output_validation TEXT,
+                error_message TEXT,
+                system_prompt TEXT,
+                user_prompt TEXT,
+                attempted_backend TEXT,
+                attempted_backend_error TEXT,
+                raw_answer TEXT
+            );
             """
         )
 

@@ -1,0 +1,12 @@
+{
+  "base_model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "train_epochs": 1,
+  "dtype": "torch.float32",
+  "seed": 42,
+  "max_seq_length": 1024,
+  "excluded_overlength_samples": 3,
+  "train_samples": 181,
+  "validation_samples": 28,
+  "test_samples": 24,
+  "final_training_loss": 1.494996682457302
+}

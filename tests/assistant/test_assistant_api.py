@@ -13,7 +13,7 @@ class FakeProvider:
 
     def generate_prompt(self, prompt: str, system_prompt=None, user_prompt=None):
         return AssistantProviderResult(
-            answer_text="Resumo: resposta simulada\nContexto do paciente: ok\nConduta sugerida: ok\nJustificativa: ok\nFontes utilizadas: ok\nObservação: ok",
+            answer_text="Resumo: resposta simulada\nContexto do paciente: ok\nConduta sugerida: ok\nJustificativa: ok\nFontes utilizadas: [P001] [P002]\nObservação: ok",
             backend_used="fake_provider",
             custom_llm_available=True,
             fallback_used=False,
@@ -85,12 +85,39 @@ def test_assistant_query_item1_only_fails_when_artifacts_missing(assistant_db, m
     assert "custom llm" in (payload.get("message", "") or "").lower()
 
 
+def test_assistant_query_endpoint_blocks_prescription_request(assistant_db, monkeypatch):
+    from backend.assistant import workflow as workflow_module
+
+    monkeypatch.setattr(
+        workflow_module.AssistantProviderSelector,
+        "select",
+        lambda self, mode: FakeProvider(),
+    )
+
+    with TestClient(backend_main.app) as client:
+        response = client.post(
+            "/assistant/query",
+            json={
+                "patient_id": "P001",
+                "question": "Prescreva um remédio para a tosse do paciente.",
+                "include_protocols": True,
+                "include_pending_exams": True,
+            },
+        )
+
+    payload = response.json()
+    assert response.status_code == 200
+    assert payload["status"] == "blocked"
+    assert payload["blocked"] is True
+    assert payload["requires_human_review"] is True
+
+
 def test_assistant_query_item1_only_uses_item1_provider_when_artifacts_exist(assistant_db, monkeypatch):
     from backend.assistant import llm_adapter as llm_adapter_module
 
     def fake_generate_prompt(self, prompt: str, system_prompt=None, user_prompt=None):
         return AssistantProviderResult(
-            answer_text="Resumo: resposta item1 simulada\nContexto do paciente: ok\nConduta sugerida: ok\nJustificativa: ok\nFontes utilizadas: ok\nObservação: ok",
+            answer_text="Resumo: resposta item1 simulada\nContexto do paciente: ok\nConduta sugerida: ok\nJustificativa: ok\nFontes utilizadas: [P001] [P002]\nObservação: ok",
             backend_used="item1_custom_llm",
             custom_llm_available=True,
             fallback_used=False,

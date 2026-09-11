@@ -128,12 +128,30 @@ class Item1LocalProvider(BaseAssistantProvider):
 
         try:
             model, tokenizer = self._get_model_and_tokenizer()
-            inputs = tokenizer(prompt, return_tensors="pt")
+
+            if system_prompt is not None and user_prompt is not None:
+                # Usa o chat template nativo do tokenizer (o MESMO formato usado para
+                # montar o texto de treino no notebook de fine-tuning) em vez do texto
+                # genérico "System: ...\nHuman: ..." produzido pelo LangChain — sem
+                # isso, o modelo era servido em produção com uma distribuição de
+                # entrada diferente da que ele viu durante o treino.
+                messages = [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt},
+                ]
+                formatted_prompt = tokenizer.apply_chat_template(
+                    messages, tokenize=False, add_generation_prompt=True
+                )
+            else:
+                formatted_prompt = prompt
+
+            inputs = tokenizer(formatted_prompt, return_tensors="pt")
             if hasattr(model, "device") and inputs is not None:
                 try:
                     inputs = {k: v.to(model.device) for k, v in inputs.items()}
                 except Exception:
                     pass
+            input_length = inputs["input_ids"].shape[1]
             outputs = model.generate(
                 **inputs,
                 max_new_tokens=250,
@@ -143,8 +161,13 @@ class Item1LocalProvider(BaseAssistantProvider):
                 pad_token_id=tokenizer.pad_token_id,
                 eos_token_id=tokenizer.eos_token_id,
             )
-            generated = tokenizer.decode(outputs[0], skip_special_tokens=True)
-            answer_text = generated[len(prompt) :].strip() if generated.startswith(prompt) else generated.strip()
+            # Decodifica só os tokens gerados após o prompt (por posição, não por
+            # comparação de string) — com chat templates, o prompt formatado contém
+            # tokens especiais que `skip_special_tokens=True` remove do texto
+            # decodificado, o que quebraria uma checagem de prefixo por string.
+            answer_text = tokenizer.decode(
+                outputs[0][input_length:], skip_special_tokens=True
+            ).strip()
 
             return AssistantProviderResult(
                 answer_text=answer_text,
@@ -260,6 +283,60 @@ class GeminiFallbackProvider(BaseAssistantProvider):
         )
 
 
+class AutoFallbackProvider(BaseAssistantProvider):
+    """Tenta o modelo local (Item 1) primeiro e só recorre ao Gemini quando a geração
+    genuinamente falha — não apenas porque a pasta de artefatos existe. `is_available()`
+    do Item1LocalProvider só verifica se o diretório existe, não se o modelo carrega; sem
+    esta camada, uma falha real de carregamento (dependência ausente, peso corrompido)
+    ficava presa no provedor local em vez de cair para o Gemini de verdade.
+    """
+
+    def __init__(self, primary: BaseAssistantProvider, fallback: BaseAssistantProvider):
+        self._primary = primary
+        self._fallback = fallback
+
+    def is_available(self) -> bool:
+        return self._primary.is_available() or self._fallback.is_available()
+
+    def generate_prompt(
+        self,
+        prompt: str,
+        system_prompt: Optional[str] = None,
+        user_prompt: Optional[str] = None,
+    ) -> AssistantProviderResult:
+        if self._primary.is_available():
+            try:
+                primary_result = self._primary.generate_prompt(
+                    prompt, system_prompt=system_prompt, user_prompt=user_prompt
+                )
+            except Exception as exc:
+                primary_result = AssistantProviderResult(
+                    answer_text="", backend_used="item1_custom_llm", custom_llm_available=False,
+                    fallback_used=False, provider_error=str(exc))
+            if primary_result.provider_error is None and primary_result.answer_text.strip():
+                return primary_result
+            if primary_result.provider_error is None:
+                primary_result.provider_error = "Empty model response"
+
+            # A tentativa primária falhou mas o fallback pode dar certo — isso não pode
+            # apagar o rastro do que deu errado. Sem isto, um "success" via Gemini
+            # escondia completamente que o modelo local falhou e por quê, inclusive da
+            # auditoria (nada no log indicava que houve uma tentativa anterior).
+            try:
+                fallback_result = self._fallback.generate_prompt(
+                    prompt, system_prompt=system_prompt, user_prompt=user_prompt
+                )
+            except Exception as exc:
+                fallback_result = AssistantProviderResult(
+                    answer_text="", backend_used="gemini_fallback", custom_llm_available=False,
+                    fallback_used=True, provider_error=str(exc))
+            fallback_result.attempted_backend = primary_result.backend_used
+            fallback_result.attempted_backend_error = primary_result.provider_error
+            return fallback_result
+
+        return self._fallback.generate_prompt(prompt, system_prompt=system_prompt, user_prompt=user_prompt)
+
+
 class AssistantProviderSelector:
     def __init__(self):
         base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -278,7 +355,7 @@ class AssistantProviderSelector:
             tokenizer_dir = self.tokenizer_dir if os.path.isdir(self.tokenizer_dir) else None
             return Item1LocalProvider(self.model_dir, tokenizer_dir)
 
-        item1_provider = Item1LocalProvider(self.model_dir, self.tokenizer_dir)
-        if item1_provider.is_available():
-            return item1_provider
-        return GeminiFallbackProvider()
+        return AutoFallbackProvider(
+            Item1LocalProvider(self.model_dir, self.tokenizer_dir),
+            GeminiFallbackProvider(),
+        )

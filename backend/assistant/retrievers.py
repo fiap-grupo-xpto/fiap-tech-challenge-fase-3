@@ -189,3 +189,16 @@ def derive_recommended_actions(
         seen.add(normalized)
         deduped.append(action)
     return deduped
+
+
+def requires_human_validation(
+    patient_context: PatientContext, protocols: Sequence[SourceReference]
+) -> bool:
+    """PROTO-HITL-001 ("Human Validation Requirement") states that ALL assistant
+    suggestions require clinician validation before being acted on — that is a
+    standing safety policy, not something conditional on which protocols a given
+    question happened to keyword-match during retrieval. So every delivered
+    suggestion requires human review; escalation urgency (e.g. high-risk findings)
+    is still surfaced separately via `alerts`.
+    """
+    return True

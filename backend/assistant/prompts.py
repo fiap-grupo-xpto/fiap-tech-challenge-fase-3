@@ -30,6 +30,10 @@ def build_output_instructions() -> str:
         "- Não diga que há diagnóstico confirmado.\n"
         "- Não prescreva diretamente.\n"
         "- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.\n"
+        "- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].\n"
+        "- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.\n"
+        "- Ao responder sobre exames pendentes, inclua o exam_name exato.\n"
+        "- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.\n"
         "- Seja objetivo.\n"
         "- Não use markdown.\n"
     )

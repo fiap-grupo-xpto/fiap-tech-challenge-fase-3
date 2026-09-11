@@ -25,9 +25,11 @@ Conteúdo coberto:
 - avaliação comparativa no conjunto de teste.
 
 Arquivos principais:
-- Notebook principal: [fine_tuning_llm_medico.ipynb](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/notebooks/fine_tuning_llm_medico.ipynb)
+- Script de treino (fonte de verdade dos artefatos de produção): [run_finetuning.py](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/run_finetuning.py)
+- Notebook de referência/exploração: [fine_tuning_llm_medico.ipynb](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/notebooks/fine_tuning_llm_medico.ipynb)
 - Dataset bruto: [TREC-2017-LiveQA-Medical-Test-Questions-w-summaries.xml](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/data/raw/TREC-2017-LiveQA-Medical-Test-Questions-w-summaries.xml)
-- Documentação do módulo: [llm_finetuning/README.md](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/README.md)
+- Resultados da avaliação comparativa (base vs. fine-tuned): [comparative_evaluation_results.csv](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/evaluation/comparative_evaluation_results.csv)
+- Documentação do módulo (inclui métricas reais e limitações conhecidas): [llm_finetuning/README.md](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/README.md)
 
 ### 2. Assistente Médico com LangChain
 
