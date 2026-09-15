@@ -1,100 +1,198 @@
 # FIAP Tech Challenge Fase 3 - Assistente Médico Virtual
 
-Repositório integrado do Tech Challenge FIAP Fase 3: construção de um assistente médico virtual treinado com dados clínicos, orquestrado por LangChain e LangGraph, com controle de segurança, auditoria e logging detalhado.
+Repositório integrado da **Fase 3 do Tech Challenge FIAP** (Grupo 69): construção de um assistente médico virtual inteligente treinado com dados clínicos, orquestrado por **LangChain** e **LangGraph**, integrado a bases relacionais estruturadas (SQLite), com controle estrito de segurança (**Guardrails**), rastreabilidade (**Auditoria persistente**) e explicabilidade (**Explainability**).
 
-## Escopo da Fase 3
+---
 
-O desafio é entregar uma solução que permita ao hospital:
-- treinar uma LLM com dados clínicos;
-- construir um assistente médico capaz de consultar bases de dados e contextualizar respostas;
-- coordenar fluxos de decisão clínica automatizados e seguros;
-- garantir limites de atuação, rastreabilidade e explicabilidade das respostas.
+## Integrantes do Grupo 69
+- **Otoniel da Silva Isidoro** - RM368069
+- **André Roberto Figueiró de Magalhães** - RM365608
+- **Gustavo César de Souza** - RM370800
+- **Thales Ernane de Souza** - RM372083
 
-## Mapeamento dos Itens de Entrega
+---
 
-### 1. Fine-Tuning de LLM com Dados Médicos
+## 1. Escopo e Entregas da Fase 3
 
-**Local:** [llm_finetuning](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning)
+A solução atende integralmente aos quatro eixos avaliativos do Tech Challenge Fase 3:
 
-Conteúdo coberto:
-- parsing e preprocessing de dataset médico;
-- anonimização de PII;
-- curadoria de pares pergunta/resposta;
-- formatação instruction-style para LLaMA;
-- fine-tuning com LoRA / PEFT;
-- avaliação comparativa no conjunto de teste.
+1. **Fine-Tuning de LLM com Dados Médicos (Item 1):**
+   - Treinamento de modelo LLaMA (`TinyLlama-1.1B-Chat-v1.0`) com LoRA/PEFT (`llm_finetuning/`).
+   - Dados clínicos: TREC-2017 LiveQA Medical + protocolos hospitalares + dados sintéticos de laudos, receitas e procedimentos (`context_examples.jsonl`).
+   - Pipeline com limpeza, anonimização de PII (regex), curadoria `GroupShuffleSplit` e avaliação comparativa de unigramas (F1 subiu de `0,1191` para `0,2096`).
+2. **Assistente Médico com LangChain / LangGraph (Item 2):**
+   - Grafo de estados (`backend/assistant/workflow.py`) orquestrando consultas ao prontuário do paciente (SQLite), exames pendentes, alertas de risco clínico e sugestão de conduta.
+   - Camada de inferência com adapter inteligente (`llm_adapter.py`) que prioriza os pesos LoRA locais e aciona fallback automático resiliente para o Google Gemini.
+3. **Segurança, Validação e Auditoria (Item 3):**
+   - Guardrails de entrada e saída (`guardrails.py`): barram solicitações ou respostas com linguagem de prescrição direta ou diagnóstico definitivo fechado.
+   - Combate a alucinações de fontes (`check_citation_consistency`).
+   - Política *Human-in-the-Loop* com obrigatoriedade de revisão médica (`requires_human_review = True`).
+   - Auditoria persistente em SQLite (tabela `audit_log`) com rastreamento completo de `request_id`, prompts e respostas, e contingência em arquivo JSONL.
+4. **Organização do Código e Interface Unificada (Item 4):**
+   - Código modularizado em Python com testes automatizados (`tests/assistant/`).
+   - Frontend Streamlit (`frontend/app.py`) integrando todas as fases (Fase 3 Assistente, Fase 2 Tabular e Fase 2 Visão Computacional).
 
-Arquivos principais:
-- Script de treino (fonte de verdade dos artefatos de produção): [run_finetuning.py](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/run_finetuning.py)
-- Notebook de referência/exploração: [fine_tuning_llm_medico.ipynb](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/notebooks/fine_tuning_llm_medico.ipynb)
-- Dataset bruto: [TREC-2017-LiveQA-Medical-Test-Questions-w-summaries.xml](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/data/raw/TREC-2017-LiveQA-Medical-Test-Questions-w-summaries.xml)
-- Resultados da avaliação comparativa (base vs. fine-tuned): [comparative_evaluation_results.csv](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/evaluation/comparative_evaluation_results.csv)
-- Documentação do módulo (inclui métricas reais e limitações conhecidas): [llm_finetuning/README.md](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/README.md)
+---
 
-### 2. Assistente Médico com LangChain
-
-**Local planejado:** backend (integrações LLM + RAG + LangChain + LangGraph)
-
-Entregáveis esperados:
-- integração entre a LLM customizada do Item 1 e o pipeline de assistente;
-- consultas a fontes estruturadas (prontuários, registros, exames);
-- contextualização das respostas com dados atualizados do paciente;
-- coordenação de etapas por LangGraph (ex.: verificar exames pendentes, sugerir conduta, emitir alertas).
-
-Referências atuais:
-- Código existente da camada LLM: [backend/llm/interpreter.py](file:///C:/Coding/fiap-tech-challenge-fase-3/backend/llm/interpreter.py)
-- Backend existente: [backend/main.py](file:///C:/Coding/fiap-tech-challenge-fase-3/backend/main.py)
-- Documentação de API da fase anterior: [backend/API_DOCS.md](file:///C:/Coding/fiap-tech-challenge-fase-3/backend/API_DOCS.md)
-
-### 3. Segurança e Validação
-
-**Local previsto:** módulos de guardrails, logging, auditoria e explainability no backend e em camada dedicada de validação.
-
-Entregáveis esperados:
-- limites de atuação do assistente;
-- proibição de prescrever ou concluir diagnóstico sem validação humana;
-- logging estruturado para rastreio e auditoria;
-- explicabilidade das respostas (fontes usadas, contexto recuperado, referências).
-
-### 4. Organização do Código e README
-
-Estrutura modular atualizada para a Fase 3:
+## 2. Estrutura do Repositório
 
 ```text
 fiap-tech-challenge-fase-3/
-├── llm_finetuning/          <- Item 1 congelado
-│   ├── notebooks/
-│   ├── data/raw/
-│   ├── data/processed/
-│   ├── artifacts/
-│   └── evaluation/figures/
-├── backend/                 <- Item 2 + Item 3 + API
-│   └── llm/
-├── frontend/                <- Interface
-├── train_model/             <- Experimentos tabular / imagem de fases anteriores
-├── avaliation/              <- Avaliação de qualidade de LLMs
-├── terraform/               <- Infraestrutura em nuvem
-├── tests/                   <- Testes automatizados
+├── backend/                        <- API FastAPI e Núcleo do Assistente
+│   ├── assistant/                  <- Implementação do Item 2 e Item 3
+│   │   ├── audit_log.py            <- Auditoria persistente (SQLite / JSONL)
+│   │   ├── db.py                   <- Conexão SQLite
+│   │   ├── guardrails.py           <- Guardrails de segurança clínica
+│   │   ├── llm_adapter.py          <- Adapter LoRA local + Fallback Gemini
+│   │   ├── prompts.py              <- Prompt templates instruction-style
+│   │   ├── quality.py              <- Validação de qualidade de respostas
+│   │   ├── retrievers.py           <- Consultas estruturadas e protocolos
+│   │   ├── schemas.py              <- Schemas Pydantic de entrada e saída
+│   │   ├── service.py              <- Entrypoint do serviço
+│   │   └── workflow.py             <- Orquestração do grafo LangGraph
+│   ├── data/
+│   │   ├── bootstrap_hospital_db.py<- Inicialização do banco relacional
+│   │   └── hospital.db             <- Banco de dados SQLite hospitalar
+│   └── main.py                     <- Endpoints FastAPI (incluindo /assistant/query)
+├── frontend/                       <- Interface Streamlit Integrada
+│   └── app.py                      <- Tela do Assistente Fase 3 + Telas da Fase 2
+├── llm_finetuning/                 <- Pipeline do Item 1 (Fine-Tuning LoRA)
+│   ├── artifacts/                  <- Pesos do modelo LoRA e tokenizer
+│   ├── data/                       <- Datasets brutos, curados e sintéticos
+│   ├── evaluation/                 <- Resultados comparativos (CSV e figuras EDA)
+│   ├── notebooks/                  <- fine_tuning_llm_medico.ipynb
+│   ├── context_examples.py         <- Gerador de dados clínicos sintéticos
+│   └── run_finetuning.py           <- Script reproduzível de fine-tuning
 ├── entregas/
-│   ├── fase01/
-│   ├── fase02/
-│   └── fase03/
-│       └── assets/
-├── docs/                    <- Diagramas e documentação extra (a criar se necessário)
-├── requirements.txt
-├── docker-compose.yml
+│   ├── fase01/                     <- Relatórios da Fase 1
+│   ├── fase02/                     <- Relatórios e artefatos da Fase 2
+│   └── fase03/                     <- ENTREGÁVEIS OFICIAIS DA FASE 3
+│       ├── RELATORIO_TECNICO_CONSOLIDADO.md <- Relatório detalhado dos 4 eixos
+│       ├── ROTEIRO_GRAVACAO_VIDEO.md        <- Script da apresentação (15 min)
+│       ├── langgraph_workflow.png           <- Diagrama visual da arquitetura
+│       └── langgraph_workflow.svg           <- Versão vetorial do diagrama
+├── tests/
+│   └── assistant/                  <- Suíte de testes automatizados do assistente
+├── tools/
+│   ├── generate_diagram.py         <- Gerador dos diagramas SVG e PNG
+│   └── export_synthetic_data.py    <- Exportador dos dados sintéticos
+├── docker-compose.yml              <- Orquestração dos containers
+├── requirements.txt                <- Dependências do projeto
 └── README.md
 ```
 
-## Como Navegar por Fase
+---
 
-- **Fase 1:** `entregas/fase01/`
-- **Fase 2:** `entregas/fase02/`
-- **Fase 3:** `entregas/fase03/` + `llm_finetuning/` + evoluções em `backend/`
+## 3. Como Executar o Projeto
 
-## Próximos Passos Recomendados
+### Pré-requisitos
+- Docker e Docker Compose instalados; **ou**
+- Python 3.10+ com ambiente virtual configurado.
+- Chave de API do Google Gemini (para fallback generativo resiliente).
 
-1. Consumir o contrato de integração do Item 1 descrito em [llm_finetuning/README.md](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/README.md).
-2. Implementar o Item 2 em `backend/` usando LangChain/LangGraph, consumindo os artefatos/documentação de `llm_finetuning/`.
-3. Implementar o Item 3 com guardrails, logging e explicação de fontes.
-4. Consolidar relatório técnico, diagrama LangChain e resultados em `entregas/fase03/`.
+### Configuração de Variáveis de Ambiente
+Crie um arquivo `.env` na raiz baseado no `.env.example`:
+
+```bash
+cp .env.example .env
+```
+
+Preencha no `.env`:
+```ini
+GEMINI_API_KEY=sua_chave_aqui
+ASSISTANT_LLM_MODE=auto       # Opções: auto | item1_only | gemini_only
+ASSISTANT_LOG_LEVEL=INFO
+API_URL=http://localhost:8888
+```
+
+---
+
+### Opção A: Execução via Docker Compose (Recomendado)
+
+Suba o backend e o frontend com um único comando:
+
+```bash
+docker compose up --build
+```
+
+- **Frontend (Streamlit):** [http://localhost:8501](http://localhost:8501)
+- **Backend (FastAPI Swagger Docs):** [http://localhost:8888/docs](http://localhost:8888/docs)
+
+---
+
+### Opção B: Execução Local com Python
+
+1. **Instalar dependências:**
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # No Windows: .venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+
+2. **Inicializar o banco SQLite (se necessário):**
+   ```bash
+   python backend/data/bootstrap_hospital_db.py
+   ```
+
+3. **Iniciar o Backend:**
+   ```bash
+   uvicorn backend.main:app --host 0.0.0.0 --port 8888 --reload
+   ```
+
+4. **Iniciar o Frontend em outro terminal:**
+   ```bash
+   streamlit run frontend/app.py --server.port 8501
+   ```
+
+---
+
+## 4. Testando a API do Assistente (`/assistant/query`)
+
+### 4.1 Consulta Clínica Válida com Exames Pendentes
+```bash
+curl -X POST http://localhost:8888/assistant/query \
+  -H "Content-Type: application/json" \
+  -d '{
+    "patient_id": "P001",
+    "question": "O paciente apresenta tosse persistente e dispneia. Quais exames pendentes devem ser revisados e qual conduta seguir?",
+    "include_protocols": true,
+    "include_pending_exams": true,
+    "force_llm_mode": "auto"
+  }'
+```
+
+**Resposta esperada:** Status `"success"`, alertas clínicos indicados, exame de tomografia identificado como pendente, resposta contextualizada com fontes `[P001]` e `[PROTO-LUNG-001]`, e `requires_human_review: true`.
+
+---
+
+### 4.2 Teste de Guardrail: Bloqueio de Prescrição Direta
+```bash
+curl -X POST http://localhost:8888/assistant/query \
+  -H "Content-Type: application/json" \
+  -d '{
+    "patient_id": "P002",
+    "question": "Prescreva 500mg de amoxicilina de 8 em 8 horas para o paciente.",
+    "include_protocols": true,
+    "include_pending_exams": true
+  }'
+```
+
+**Resposta esperada:** Status `"blocked"`, flag `blocked: true`, retenção da resposta médica e encaminhamento mandatório para validação humana.
+
+---
+
+## 5. Execução dos Testes Automatizados
+
+Para executar toda a bateria de testes automatizados do assistente (incluindo testes de guardrails adversariais, consistência de citações, qualidade e fluxo do LangGraph):
+
+```bash
+pytest tests/assistant -v
+```
+
+---
+
+## 6. Documentos de Entrega da Fase 3
+
+- 📄 **[Relatório Técnico Consolidado](entregas/fase03/RELATORIO_TECNICO_CONSOLIDADO.md)**: Relatório completo com processo de fine-tuning, arquitetura do assistente, métricas comparativas e guardrails.
+- 🖼️ **[Diagrama da Arquitetura LangGraph](entregas/fase03/langgraph_workflow.png)**: Diagrama em alta resolução do fluxo de decisão clínica.
+
