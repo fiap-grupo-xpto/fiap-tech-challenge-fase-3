@@ -62,16 +62,25 @@ def build_user_prompt(
     alerts: Sequence[str],
     recommended_actions: Sequence[str],
 ) -> str:
-    patient_payload = patient_context.model_dump()
-    patient_payload["pending_exams_reviewed"] = list(pending_exams_reviewed)
-    patient_payload["alerts"] = list(alerts)
-    patient_payload["recommended_actions"] = list(recommended_actions)
+    # O Item 1 é compacto e tendia a ecoar o JSON literal. Mantemos todos os dados
+    # estruturados, mas os serializamos em campos clínicos legíveis para reduzir esse
+    # modo de falha e alinhar inferência e exemplos de fine-tuning.
+    symptoms = "; ".join(item.get("symptom", "") for item in patient_context.symptoms) or "não informado"
+    pending = "; ".join(pending_exams_reviewed) or "nenhum"
+    patient_summary = (
+        f"ID do paciente: {patient_context.patient_id}\n"
+        f"Idade: {patient_context.age}; sexo: {patient_context.sex}; tabagismo: {patient_context.smoking_history}\n"
+        f"Sintomas registrados: {symptoms}\n"
+        f"Exames pendentes: {pending}\n"
+        f"Alertas: {'; '.join(alerts) or 'nenhum'}\n"
+        f"Ações preliminares: {'; '.join(recommended_actions) or 'nenhuma'}"
+    )
 
     return (
         "Pergunta clínica:\n"
         f"{question}\n\n"
         "Informações atualizadas do paciente (base estruturada):\n"
-        f"{json.dumps(patient_payload, ensure_ascii=False, indent=2)}\n\n"
+        f"{patient_summary}\n\n"
         "Protocolos e referências recuperadas:\n"
         f"{_format_protocol_snippets(protocols)}\n\n"
         f"{build_output_instructions()}"
@@ -85,4 +94,3 @@ def build_chat_prompt_template() -> ChatPromptTemplate:
             ("user", "{user_prompt}"),
         ]
     )
-

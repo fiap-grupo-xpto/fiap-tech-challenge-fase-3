@@ -44,6 +44,16 @@ def _route_after_output_validation(state: AssistantWorkflowState) -> str:
     if state.get("error_message"):
         return "format_error"
     if state.get("blocked"):
+        provider_result = state.get("provider_result")
+        # Uma resposta inválida do Item 1 não é uma resposta clínica utilizável. Como
+        # a entrada já passou pelos guardrails, é seguro tentar Gemini com o MESMO
+        # contexto estruturado antes de recorrer à síntese determinística.
+        if (
+            provider_result
+            and provider_result.backend_used == "item1_custom_llm"
+            and not state.get("gemini_retry_attempted")
+        ):
+            return "retry_with_gemini"
         # A pergunta já passou pela validação de entrada. Quando apenas a saída da
         # LLM é insegura ou não atende à qualidade mínima, não a exibimos, mas também
         # não descartamos o contexto clínico estruturado que pode ser apresentado com
@@ -227,11 +237,67 @@ def validate_output_node(state: AssistantWorkflowState) -> Dict[str, Any]:
         ],
     )
 
-    result: Dict[str, Any] = {"output_validation": guardrail_result}
+    result: Dict[str, Any] = {
+        "output_validation": guardrail_result,
+        # O estado precisa ser explicitamente limpo após uma segunda resposta válida;
+        # caso contrário, o `blocked=True` do Item 1 continuaria ativo no LangGraph.
+        "blocked": guardrail_result.blocked,
+        "block_reason": guardrail_result.reason,
+    }
     if guardrail_result.blocked:
-        result["blocked"] = True
-        result["block_reason"] = guardrail_result.reason
+        provider_result = state.get("provider_result")
+        if provider_result and provider_result.backend_used == "item1_custom_llm":
+            result["item1_output_validation"] = guardrail_result
     return result
+
+
+def retry_with_gemini_node(state: AssistantWorkflowState) -> Dict[str, Any]:
+    """Tenta Gemini quando a resposta do Item 1 falha nos validadores de saída."""
+    prior_result: AssistantProviderResult = state["provider_result"]
+    prior_validation: GuardrailResult = state["output_validation"]
+    selector = AssistantProviderSelector()
+    provider = selector.select("gemini_only")
+    prompt_template = build_chat_prompt_template()
+    prompt_value = prompt_template.invoke(
+        {"system_prompt": state["system_prompt"], "user_prompt": state["user_prompt"]}
+    )
+    retry_result: AssistantProviderResult = provider.generate_prompt(
+        prompt_value.to_string(),
+        system_prompt=state["system_prompt"],
+        user_prompt=state["user_prompt"],
+    )
+    retry_result.attempted_backend = prior_result.backend_used
+    retry_result.attempted_backend_error = (
+        "Item 1 output rejected: " + ", ".join(prior_validation.matched_rules)
+    )
+
+    result: Dict[str, Any] = {
+        "provider_result": retry_result,
+        "gemini_retry_attempted": True,
+        "blocked": False,
+        "block_reason": None,
+    }
+    if not retry_result.answer_text.strip() and not retry_result.provider_error:
+        retry_result.provider_error = "Empty Gemini response after Item 1 validation failure"
+    if retry_result.provider_error:
+        result["provider_failure_message"] = (
+            f"LLM generation failed ({retry_result.backend_used}): {retry_result.provider_error}"
+        )
+    return result
+
+
+def _validation_details(state: AssistantWorkflowState) -> list[str]:
+    details: list[str] = []
+    item1_validation = state.get("item1_output_validation")
+    if item1_validation and item1_validation.matched_rules:
+        details.extend(f"item1:{rule}" for rule in item1_validation.matched_rules)
+    output_validation = state.get("output_validation")
+    if output_validation and output_validation.matched_rules:
+        details.extend(f"final:{rule}" for rule in output_validation.matched_rules)
+    input_validation = state.get("input_validation")
+    if input_validation and input_validation.matched_rules:
+        details.extend(f"input:{rule}" for rule in input_validation.matched_rules)
+    return list(dict.fromkeys(details))
 
 
 def format_response_node(state: AssistantWorkflowState) -> Dict[str, Any]:
@@ -257,6 +323,7 @@ def format_response_node(state: AssistantWorkflowState) -> Dict[str, Any]:
             attempted_backend_error=provider_result.attempted_backend_error if provider_result else None,
             request_id=state.get("request_id"),
             message=state.get("error_message"),
+            validation_details=_validation_details(state),
         )
         return {"response": response}
 
@@ -294,6 +361,7 @@ def format_response_node(state: AssistantWorkflowState) -> Dict[str, Any]:
         attempted_backend=provider_result.attempted_backend if provider_result else None,
         attempted_backend_error=provider_result.attempted_backend_error if provider_result else None,
         request_id=state.get("request_id"),
+        validation_details=_validation_details(state),
     )
     return {"response": response}
 
@@ -338,6 +406,7 @@ def format_blocked_response_node(state: AssistantWorkflowState) -> Dict[str, Any
         attempted_backend_error=provider_result.attempted_backend_error if provider_result else None,
         request_id=state.get("request_id"),
         message=block_reason,
+        validation_details=_validation_details(state),
     )
     return {"response": response}
 
@@ -395,6 +464,7 @@ def format_safe_fallback_response_node(state: AssistantWorkflowState) -> Dict[st
         attempted_backend_error=provider_result.attempted_backend_error if provider_result else None,
         request_id=state.get("request_id"),
         message="A saída da LLM foi retida; a resposta exibida é uma síntese segura e determinística.",
+        validation_details=_validation_details(state),
     )
     return {"response": response}
 
@@ -448,6 +518,7 @@ def build_assistant_graph():
     graph.add_node("build_prompt", build_prompt_node)
     graph.add_node("generate_answer", generate_answer_node)
     graph.add_node("validate_output", validate_output_node)
+    graph.add_node("retry_with_gemini", retry_with_gemini_node)
     graph.add_node("format_response", format_response_node)
     graph.add_node("format_error", format_error_node)
     graph.add_node("format_blocked", format_blocked_response_node)
@@ -486,7 +557,17 @@ def build_assistant_graph():
             "format_error": "format_error",
             "format_blocked": "format_blocked",
             "format_safe_fallback": "format_safe_fallback",
+            "retry_with_gemini": "retry_with_gemini",
             "format_response": "format_response",
+        },
+    )
+    graph.add_conditional_edges(
+        "retry_with_gemini",
+        _route_after_generation,
+        {
+            "format_error": "format_error",
+            "format_safe_fallback": "format_safe_fallback",
+            "validate_output": "validate_output",
         },
     )
     graph.add_edge("format_response", "log_interaction")

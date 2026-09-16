@@ -10,7 +10,7 @@
 - **Thales Ernane de Souza** - RM372083
 
 **Repositório Git:** [https://github.com/fiap-grupo-xpto/fiap-tech-challenge-fase-3](https://github.com/fiap-grupo-xpto/fiap-tech-challenge-fase-3)  
-**Link do Vídeo de Demonstração:** `[Inserir link do YouTube aqui]` *(até 15 minutos)*
+**Link do Vídeo de Demonstração:** [https://youtu.be/KzwPc3wTJpI](https://youtu.be/KzwPc3wTJpI) *(até 15 minutos)*
 
 ---
 

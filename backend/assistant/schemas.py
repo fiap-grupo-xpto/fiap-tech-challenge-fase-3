@@ -74,6 +74,7 @@ class AssistantQueryResponse(BaseModel):
     attempted_backend_error: Optional[str] = None
     request_id: Optional[str] = None
     message: Optional[str] = None
+    validation_details: List[str] = Field(default_factory=list)
 
 
 class AssistantWorkflowState(TypedDict, total=False):
@@ -89,6 +90,8 @@ class AssistantWorkflowState(TypedDict, total=False):
     provider_result: AssistantProviderResult
     input_validation: GuardrailResult
     output_validation: GuardrailResult
+    item1_output_validation: GuardrailResult
+    gemini_retry_attempted: bool
     blocked: bool
     block_reason: str
     response: AssistantQueryResponse

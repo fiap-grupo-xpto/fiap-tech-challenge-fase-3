@@ -1,66 +1,66 @@
 qid,question_anon,answer_anon,text
-TQ9,Can streptococcal infection cause systemic diseases such as Wegener's?,"Granulomatosis with polyangiitis (GPA), previously known as Wegener's granulomatosis, is a rare disease. The cause of GPA is unknown. It can affect people at any age. Men and women are equally affected. It is more common in whites. Symptoms may include joint pain, weakness, tiredness, and cold symptoms such as a runny nose that doesn't get better. Doctors use blood tests, chest X-rays, and biopsies to diagnose GPA and rule out other causes of the symptoms.","<|system|>
+TQ4,What are the treatments and precautions for VDRL positive (syphilis) patients?,"Syphilis If the RPR, VDRL, or TRUST tests are positive, one of the following tests will be needed to confirm the diagnosis: FTA-ABS (fluorescent treponemal antibody test); MHA-TP; TP-EIA; TP-PA. Syphilis can be treated with antibiotics, such as: Doxycycline (type of tetracycline given to people who are allergic to penicillin); Penicillin G benzathine. Length of treatment depends on how severe the syphilis is, and factors such as the person's overall health. Several hours after getting treatment for the early stages of syphilis, people may experience the Jarisch-Herxheimer reaction. This process is caused by an immune reaction to the breakdown products of the infection. Follow-up blood tests must be done at 3, 6, 12, and 24 months to ensure that the infection is gone. Avoid sexual contact when the chancre is present. Use condoms until two follow-up tests have shown that the infection has been cured, to reduce the chance of transmitting the infection. All sexual partners of the person with syphilis should also be treated. Syphilis can spread very easily in the primary and secondary stages.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Can streptococcal infection cause systemic diseases such as Wegener's?</s>
+Pergunta Médica: What are the treatments and precautions for VDRL positive (syphilis) patients?</s>
 <|assistant|>
-Granulomatosis with polyangiitis (GPA), previously known as Wegener's granulomatosis, is a rare disease. The cause of GPA is unknown. It can affect people at any age. Men and women are equally affected. It is more common in whites. Symptoms may include joint pain, weakness, tiredness, and cold symptoms such as a runny nose that doesn't get better. Doctors use blood tests, chest X-rays, and biopsies to diagnose GPA and rule out other causes of the symptoms.</s>
+Syphilis If the RPR, VDRL, or TRUST tests are positive, one of the following tests will be needed to confirm the diagnosis: FTA-ABS (fluorescent treponemal antibody test); MHA-TP; TP-EIA; TP-PA. Syphilis can be treated with antibiotics, such as: Doxycycline (type of tetracycline given to people who are allergic to penicillin); Penicillin G benzathine. Length of treatment depends on how severe the syphilis is, and factors such as the person's overall health. Several hours after getting treatment for the early stages of syphilis, people may experience the Jarisch-Herxheimer reaction. This process is caused by an immune reaction to the breakdown products of the infection. Follow-up blood tests must be done at 3, 6, 12, and 24 months to ensure that the infection is gone. Avoid sexual contact when the chancre is present. Use condoms until two follow-up tests have shown that the infection has been cured, to reduce the chance of transmitting the infection. All sexual partners of the person with syphilis should also be treated. Syphilis can spread very easily in the primary and secondary stages.</s>
 "
-TQ9,Can streptococcal infection cause systemic diseases such as Wegener's?,"Granulomatosis with polyangiitis (Wegener's) - GPA - is serious but treatable. * The cause of GPA is unknown. * GPA often affects the sinuses, lungs, and kidneys. It can lead to kidney failure if not treated.The cause of GPA is unknown. GPA often affects the sinuses, lungs, and kidneys. It can lead to kidney failure if not treated.","<|system|>
+TQ11,Could second hand smoke contribute to or cause early AMD?,"Smoking increases a person's chances of developing AMD by two to five fold. Because the retina has a high rate of oxygen consumption, anything that affects oxygen delivery to the retina may affect vision. Smoking causes oxidative damage, which may contribute to the development and progression of this disease. Learn more about why smoking damages the retina, and explore a number of steps you can take to protect your vision.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Can streptococcal infection cause systemic diseases such as Wegener's?</s>
+Pergunta Médica: Could second hand smoke contribute to or cause early AMD?</s>
 <|assistant|>
-Granulomatosis with polyangiitis (Wegener's) - GPA - is serious but treatable. * The cause of GPA is unknown. * GPA often affects the sinuses, lungs, and kidneys. It can lead to kidney failure if not treated.The cause of GPA is unknown. GPA often affects the sinuses, lungs, and kidneys. It can lead to kidney failure if not treated.</s>
+Smoking increases a person's chances of developing AMD by two to five fold. Because the retina has a high rate of oxygen consumption, anything that affects oxygen delivery to the retina may affect vision. Smoking causes oxidative damage, which may contribute to the development and progression of this disease. Learn more about why smoking damages the retina, and explore a number of steps you can take to protect your vision.</s>
 "
-TQ9,Can streptococcal infection cause systemic diseases such as Wegener's?,"Wegener's granulomatosis triggered by infection? Wegener's granulomatosis is a systemic disease of unknown origin, although recent studies suggest that auto-immune mechanisms and infection play a role in the pathogenesis of this disease. During follow-up, nasal carriage of Staphyloccocus Aureus could be documented. An overview of Wegener's granulomatosis will be provided with emphasis on the potential role of acute infections as a trigger for Wegener's granulomatosis and the head and neck manifestations.","<|system|>
+TQ11,Could second hand smoke contribute to or cause early AMD?,"AIM: To undertake a systematic review of the literature on the effect of environmental tobacco smoke (ETS) and eye disease. RESULTS: Seven studies evaluated the possible relationship between ETS and an eye disease. These studies referred to refractive errors in children (n = 2), cataract (n = 1), age-related macular degeneration (n = 3) and Grave ophthalmopathy (n = 1). The data available were insufficient to establish conclusive relationships between ETS and these eye diseases. CONCLUSION: Very scarce data exist in the literature on the effect of ETS on diseases of the eye. It seems appropriate that ETS should be included in future studies addressing the effect of smoking on eye disease.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Can streptococcal infection cause systemic diseases such as Wegener's?</s>
+Pergunta Médica: Could second hand smoke contribute to or cause early AMD?</s>
 <|assistant|>
-Wegener's granulomatosis triggered by infection? Wegener's granulomatosis is a systemic disease of unknown origin, although recent studies suggest that auto-immune mechanisms and infection play a role in the pathogenesis of this disease. During follow-up, nasal carriage of Staphyloccocus Aureus could be documented. An overview of Wegener's granulomatosis will be provided with emphasis on the potential role of acute infections as a trigger for Wegener's granulomatosis and the head and neck manifestations.</s>
+AIM: To undertake a systematic review of the literature on the effect of environmental tobacco smoke (ETS) and eye disease. RESULTS: Seven studies evaluated the possible relationship between ETS and an eye disease. These studies referred to refractive errors in children (n = 2), cataract (n = 1), age-related macular degeneration (n = 3) and Grave ophthalmopathy (n = 1). The data available were insufficient to establish conclusive relationships between ETS and these eye diseases. CONCLUSION: Very scarce data exist in the literature on the effect of ETS on diseases of the eye. It seems appropriate that ETS should be included in future studies addressing the effect of smoking on eye disease.</s>
 "
-TQ9,Can streptococcal infection cause systemic diseases such as Wegener's?,"Types of Group A Streptococcal Infections Cellulitis and Erysipelas Cellulitis is inflammation of the skin and deep underlying tissues. Erysipelas is an inflammatory disease of the upper layers of the skin. Group A strep (streptococcal) bacteria are the most common cause of cellulitis and erysipelas. To learn more visit the Medline Plus cellulitis site (link is external) or visit the MedlinePlus erysipelas site (link is external). Impetigo Impetigo is an infection of the top layers of the skin and is most common among children ages 2 to 6 years. It usually starts when bacteria get into a cut, scratch, or insect bite. To learn more visit the MedlinePlus impetigo site (link is external). Scarlet Fever Scarlet fever - or scarlatina - is a bacterial infection caused by group A Streptococcus or ""group A strep."" This illness affects a small percentage of people who have strep throat or, less commonly, streptococcal skin infections. To learn more visit the MedlinePlus scarlet fever site (link is external). Severe Strep Infections Some types of group A strep bacteria cause severe infections, such as Bacteremia (bloodstream infections) - To learn more visit visit the MedlinePlus sepsis site (link is external). Toxic shock syndrome (multi-organ infection) - To learn more visit the MedlinePlus toxic shock syndrome site (link is external). Necrotizing fasciitis (flesh-eating disease) - To learn more visit the Centers for Disease Control and Prevention necrotizing fasciitis site (link is external). Strep Throat Many things can cause that unpleasant, scratchy, and sometimes painful condition known as a sore throat. Viruses, bacteria, allergens, environmental irritants (such as cigarette smoke), chronic postnasal drip, and fungi can all cause a sore throat. While many sore throats will get better without treatment, some throat infections - including strep throat - may need antibiotic treatment. To learn more visit the MedlinePlus strep throat site (link is external).","<|system|>
+TQ36,What are the causes and long-term pulmonary complications of congenital diaphragmatic hernia?,"Congenital diaphragmatic hernia (CDH) can occur as an isolated finding, as part of a genetic syndrome or chromosome abnormality, or with additional birth defects of unknown cause.[5] Some cases have been linked to in utero exposures.[6] In the majority of cases, the cause is not known.[5]","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Can streptococcal infection cause systemic diseases such as Wegener's?</s>
+Pergunta Médica: What are the causes and long-term pulmonary complications of congenital diaphragmatic hernia?</s>
 <|assistant|>
-Types of Group A Streptococcal Infections Cellulitis and Erysipelas Cellulitis is inflammation of the skin and deep underlying tissues. Erysipelas is an inflammatory disease of the upper layers of the skin. Group A strep (streptococcal) bacteria are the most common cause of cellulitis and erysipelas. To learn more visit the Medline Plus cellulitis site (link is external) or visit the MedlinePlus erysipelas site (link is external). Impetigo Impetigo is an infection of the top layers of the skin and is most common among children ages 2 to 6 years. It usually starts when bacteria get into a cut, scratch, or insect bite. To learn more visit the MedlinePlus impetigo site (link is external). Scarlet Fever Scarlet fever - or scarlatina - is a bacterial infection caused by group A Streptococcus or ""group A strep."" This illness affects a small percentage of people who have strep throat or, less commonly, streptococcal skin infections. To learn more visit the MedlinePlus scarlet fever site (link is external). Severe Strep Infections Some types of group A strep bacteria cause severe infections, such as Bacteremia (bloodstream infections) - To learn more visit visit the MedlinePlus sepsis site (link is external). Toxic shock syndrome (multi-organ infection) - To learn more visit the MedlinePlus toxic shock syndrome site (link is external). Necrotizing fasciitis (flesh-eating disease) - To learn more visit the Centers for Disease Control and Prevention necrotizing fasciitis site (link is external). Strep Throat Many things can cause that unpleasant, scratchy, and sometimes painful condition known as a sore throat. Viruses, bacteria, allergens, environmental irritants (such as cigarette smoke), chronic postnasal drip, and fungi can all cause a sore throat. While many sore throats will get better without treatment, some throat infections - including strep throat - may need antibiotic treatment. To learn more visit the MedlinePlus strep throat site (link is external).</s>
+Congenital diaphragmatic hernia (CDH) can occur as an isolated finding, as part of a genetic syndrome or chromosome abnormality, or with additional birth defects of unknown cause.[5] Some cases have been linked to in utero exposures.[6] In the majority of cases, the cause is not known.[5]</s>
 "
-TQ9,Can streptococcal infection cause systemic diseases such as Wegener's?,"The sources of disease caused by group B strep bacteria are unknown. Group B strep bacteria are common in the gastrointestinal tract (the part of your body that digests food, including the stomach and intestines) of men and women and may be a source of some infection. Types of Infection and Symptoms Symptoms depend on the part of the body that is infected. Below are common diseases caused by group B strep bacteria in adults and their symptoms. Bacteremia and sepsis (blood infections) symptoms include: Fever Chills Low alertness Pneumonia (lung infection) symptoms include: Fever and chills Cough Rapid breathing or difficulty breathing Chest pain Skin and soft-tissue infections often appear as a bump or infected area on the skin that may be: Red Swollen or painful Warm to the touch Full of pus or other drainage These skin infections may also be accompanied by a fever. Bone and joint infections often appear as pain in the infected area and might also include: Fever Chills Swelling Stiffness or inability to use affected limb or joint Rarely in adults, group B strep bacteria can cause meningitis (infection of the fluid and lining surrounding the brain and spinal cord).","<|system|>
+TQ36,What are the causes and long-term pulmonary complications of congenital diaphragmatic hernia?,"Isolated congenital diaphragmatic hernia is rarely inherited. In almost all cases, there is only one affected individual in a family. When congenital diaphragmatic hernia occurs as a feature of a genetic syndrome or chromosomal abnormality, it may cluster in families according to the inheritance pattern for that condition.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Can streptococcal infection cause systemic diseases such as Wegener's?</s>
+Pergunta Médica: What are the causes and long-term pulmonary complications of congenital diaphragmatic hernia?</s>
 <|assistant|>
-The sources of disease caused by group B strep bacteria are unknown. Group B strep bacteria are common in the gastrointestinal tract (the part of your body that digests food, including the stomach and intestines) of men and women and may be a source of some infection. Types of Infection and Symptoms Symptoms depend on the part of the body that is infected. Below are common diseases caused by group B strep bacteria in adults and their symptoms. Bacteremia and sepsis (blood infections) symptoms include: Fever Chills Low alertness Pneumonia (lung infection) symptoms include: Fever and chills Cough Rapid breathing or difficulty breathing Chest pain Skin and soft-tissue infections often appear as a bump or infected area on the skin that may be: Red Swollen or painful Warm to the touch Full of pus or other drainage These skin infections may also be accompanied by a fever. Bone and joint infections often appear as pain in the infected area and might also include: Fever Chills Swelling Stiffness or inability to use affected limb or joint Rarely in adults, group B strep bacteria can cause meningitis (infection of the fluid and lining surrounding the brain and spinal cord).</s>
+Isolated congenital diaphragmatic hernia is rarely inherited. In almost all cases, there is only one affected individual in a family. When congenital diaphragmatic hernia occurs as a feature of a genetic syndrome or chromosomal abnormality, it may cluster in families according to the inheritance pattern for that condition.</s>
 "
-TQ19,"What is the stability, effectiveness and toxicity of sevoflurane once the product container has been opened?","We prepared a 20% sevoflurane lipid emulsion using caprylic triglyceride (i.e., medium-chain triglyceride). In rats, this emulsion was an effective anesthetic and was not associated with adverse events. The emulsion was stable after consecutive evaluation for 365 days and for 180 minutes after the vial was opened.","<|system|>
+TQ36,What are the causes and long-term pulmonary complications of congenital diaphragmatic hernia?,"The contents of your child's abdomen, including the stomach, intestines, liver and spleen may go through the hole and into his chest. This prevents the normal development of the lung on that side, and may also affect the growth of the other lung. And when your child's lungs don't fully develop, he will have trouble breathing after he is born. Complications of a CDH may include: Chronic lung disease: This serious condition can require your child to have oxygen or medications after being discharged from the hospital.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: What is the stability, effectiveness and toxicity of sevoflurane once the product container has been opened?</s>
+Pergunta Médica: What are the causes and long-term pulmonary complications of congenital diaphragmatic hernia?</s>
 <|assistant|>
-We prepared a 20% sevoflurane lipid emulsion using caprylic triglyceride (i.e., medium-chain triglyceride). In rats, this emulsion was an effective anesthetic and was not associated with adverse events. The emulsion was stable after consecutive evaluation for 365 days and for 180 minutes after the vial was opened.</s>
+The contents of your child's abdomen, including the stomach, intestines, liver and spleen may go through the hole and into his chest. This prevents the normal development of the lung on that side, and may also affect the growth of the other lung. And when your child's lungs don't fully develop, he will have trouble breathing after he is born. Complications of a CDH may include: Chronic lung disease: This serious condition can require your child to have oxygen or medications after being discharged from the hospital.</s>
 "
-TQ19,"What is the stability, effectiveness and toxicity of sevoflurane once the product container has been opened?","Sevoflurane is stable when stored under normal room lighting conditions. No discernible degradation of sevoflurane occurs in the presence of strong acids or heat. Sevoflurane is not corrosive to stainless steel, brass, aluminum nickel-plated brass, chrome-plated brass or copper beryllium alloy.","<|system|>
+TQ40,What is methylprednisolone?,"Methylprednisolone, a corticosteroid, is similar to a natural hormone produced by your adrenal glands. It is often used to replace this chemical when your body does not make enough of it. It relieves inflammation (swelling, heat, redness, and pain) and is used to treat certain forms of arthritis; skin, blood, kidney, eye, thyroid, and intestinal disorders (e.g., colitis); severe allergies; and asthma. Methylprednisolone is also used to treat certain types of cancer. This medication is sometimes prescribed for other uses; ask your doctor or pharmacist for more information.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: What is the stability, effectiveness and toxicity of sevoflurane once the product container has been opened?</s>
+Pergunta Médica: What is methylprednisolone?</s>
 <|assistant|>
-Sevoflurane is stable when stored under normal room lighting conditions. No discernible degradation of sevoflurane occurs in the presence of strong acids or heat. Sevoflurane is not corrosive to stainless steel, brass, aluminum nickel-plated brass, chrome-plated brass or copper beryllium alloy.</s>
+Methylprednisolone, a corticosteroid, is similar to a natural hormone produced by your adrenal glands. It is often used to replace this chemical when your body does not make enough of it. It relieves inflammation (swelling, heat, redness, and pain) and is used to treat certain forms of arthritis; skin, blood, kidney, eye, thyroid, and intestinal disorders (e.g., colitis); severe allergies; and asthma. Methylprednisolone is also used to treat certain types of cancer. This medication is sometimes prescribed for other uses; ask your doctor or pharmacist for more information.</s>
 "
-TQ29,Are there chronic diarrhea treatments less congested than Loperamide?,"IMODIUM - loperamide hydrochloride capsule Chronic Diarrhea Adults: The recommended initial dose is 4 mg (two capsules) followed by 2 mg (one capsule) after each unformed stool until diarrhea is controlled, after which the dosage of IMODIUM should be reduced to meet individual requirements. When the optimal daily dosage has been established, this amount may then be administered as a single dose or in divided doses. The average daily maintenance dosage in clinical trials was 4 to 8 mg (two to four capsules). A dosage of 16 mg (eight capsules) was rarely exceeded. If clinical improvement is not observed after treatment with 16 mg per day for at least 10 days, symptoms are unlikely to be controlled by further administration. IMODIUM administration may be continued if diarrhea cannot be adequately controlled with diet or specific treatment.","<|system|>
+TQ40,What is methylprednisolone?,"Methylprednisolone (By mouth) meth-il-pred-NIS-oh-lone Treats many diseases and conditions, including problems related to inflammation. This medicine is a corticosteroid. Drug classes: Endocrine-Metabolic Agent, Immune Suppressant Uses of This Medicine: Methylprednisolone provides relief for inflamed areas of the body. It is used to treat a number of different conditions, such as inflammation (swelling), severe allergies, adrenal problems, arthritis, asthma, blood or bone marrow problems, eye or vision problems, lupus, skin conditions, kidney problems, ulcerative colitis, and flare-ups of multiple sclerosis. Methylprednisolone is a corticosteroid (cortisone-like medicine or steroid). It works on the immune system to help relieve swelling, redness, itching, and allergic reactions. This medicine is available only with your doctor's prescription.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Are there chronic diarrhea treatments less congested than Loperamide?</s>
+Pergunta Médica: What is methylprednisolone?</s>
 <|assistant|>
-IMODIUM - loperamide hydrochloride capsule Chronic Diarrhea Adults: The recommended initial dose is 4 mg (two capsules) followed by 2 mg (one capsule) after each unformed stool until diarrhea is controlled, after which the dosage of IMODIUM should be reduced to meet individual requirements. When the optimal daily dosage has been established, this amount may then be administered as a single dose or in divided doses. The average daily maintenance dosage in clinical trials was 4 to 8 mg (two to four capsules). A dosage of 16 mg (eight capsules) was rarely exceeded. If clinical improvement is not observed after treatment with 16 mg per day for at least 10 days, symptoms are unlikely to be controlled by further administration. IMODIUM administration may be continued if diarrhea cannot be adequately controlled with diet or specific treatment.</s>
+Methylprednisolone (By mouth) meth-il-pred-NIS-oh-lone Treats many diseases and conditions, including problems related to inflammation. This medicine is a corticosteroid. Drug classes: Endocrine-Metabolic Agent, Immune Suppressant Uses of This Medicine: Methylprednisolone provides relief for inflamed areas of the body. It is used to treat a number of different conditions, such as inflammation (swelling), severe allergies, adrenal problems, arthritis, asthma, blood or bone marrow problems, eye or vision problems, lupus, skin conditions, kidney problems, ulcerative colitis, and flare-ups of multiple sclerosis. Methylprednisolone is a corticosteroid (cortisone-like medicine or steroid). It works on the immune system to help relieve swelling, redness, itching, and allergic reactions. This medicine is available only with your doctor's prescription.</s>
 "
-TQ29,Are there chronic diarrhea treatments less congested than Loperamide?,"A focused workup of chronic diarrhea may yield a specific diagnosis, including diarrhea-predominant IBS (dIBS), functional diarrhea, diabetic diarrhea, bile acid-induced diarrhea, and microscopic colitis. Ideally, therapeutic decisions are specifically tailored to target the underlying pathophysiology, including, for example, gluten restriction for celiac disease, rotating antibiotics for small bowel bacterial overgrowth, budesonide therapy for collagenous colitis, and loperamide for treatment of functional diarrhea. It is also important to assess the role of diet and medications in chronic diarrhea. However, if no specific causes are identified following workup, empiric therapy with simple opiate antidiarrheals such as loperamide may be effective. If this proves unsuccessful, the use of more potent agents, including codeine and opium, may be considered.","<|system|>
+TQ40,What is methylprednisolone?,"Methylprednisolone (By injection) meth-il-pred-NIS-oh-lone Treats inflammation, severe allergies, flare-ups of ongoing illnesses, and many other medical problems. May also be used to decrease some symptoms of cancer. This medicine is a corticosteroid (cortisone-like medicine or steroid). Drug classes: Endocrine-Metabolic Agent, Immune Suppressant Uses of This Medicine: Methylprednisolone injection provides relief for inflamed areas of the body. It is used to treat a number of different conditions, such as inflammation (swelling), severe allergies, adrenal problems, arthritis, asthma, blood or bone marrow problems, eye or vision problems, lupus, skin conditions, kidney problems, ulcerative colitis, and flare-ups of multiple sclerosis. Methylprednisolone is a corticosteroid (cortisone-like medicine or steroid). It works on the immune system to help relieve swelling, redness, itching, and allergic reactions. This medicine is available only with your doctor's prescription.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Are there chronic diarrhea treatments less congested than Loperamide?</s>
+Pergunta Médica: What is methylprednisolone?</s>
 <|assistant|>
-A focused workup of chronic diarrhea may yield a specific diagnosis, including diarrhea-predominant IBS (dIBS), functional diarrhea, diabetic diarrhea, bile acid-induced diarrhea, and microscopic colitis. Ideally, therapeutic decisions are specifically tailored to target the underlying pathophysiology, including, for example, gluten restriction for celiac disease, rotating antibiotics for small bowel bacterial overgrowth, budesonide therapy for collagenous colitis, and loperamide for treatment of functional diarrhea. It is also important to assess the role of diet and medications in chronic diarrhea. However, if no specific causes are identified following workup, empiric therapy with simple opiate antidiarrheals such as loperamide may be effective. If this proves unsuccessful, the use of more potent agents, including codeine and opium, may be considered.</s>
+Methylprednisolone (By injection) meth-il-pred-NIS-oh-lone Treats inflammation, severe allergies, flare-ups of ongoing illnesses, and many other medical problems. May also be used to decrease some symptoms of cancer. This medicine is a corticosteroid (cortisone-like medicine or steroid). Drug classes: Endocrine-Metabolic Agent, Immune Suppressant Uses of This Medicine: Methylprednisolone injection provides relief for inflamed areas of the body. It is used to treat a number of different conditions, such as inflammation (swelling), severe allergies, adrenal problems, arthritis, asthma, blood or bone marrow problems, eye or vision problems, lupus, skin conditions, kidney problems, ulcerative colitis, and flare-ups of multiple sclerosis. Methylprednisolone is a corticosteroid (cortisone-like medicine or steroid). It works on the immune system to help relieve swelling, redness, itching, and allergic reactions. This medicine is available only with your doctor's prescription.</s>
 "
 TQ43,Can electrical high voltage shock cause swallowing difficulty?,"An electrical injury is damage to the skin or internal organs when a person comes into direct contact with an electrical current. Symptoms may include: Changes in alertness (consciousness) Broken bones Heart attack (chest, arm, neck, jaw, or back pain) Headache Problems with swallowing, vision, or hearing Irregular heartbeat Muscle spasms and pain Numbness or tingling Breathing problems or lung failure Seizures Skin burns","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
@@ -69,319 +69,58 @@ Pergunta Médica: Can electrical high voltage shock cause swallowing difficulty?
 <|assistant|>
 An electrical injury is damage to the skin or internal organs when a person comes into direct contact with an electrical current. Symptoms may include: Changes in alertness (consciousness) Broken bones Heart attack (chest, arm, neck, jaw, or back pain) Headache Problems with swallowing, vision, or hearing Irregular heartbeat Muscle spasms and pain Numbness or tingling Breathing problems or lung failure Seizures Skin burns</s>
 "
-TQ54,Can Low dose naltrexone be used for treatment of severe depression?,"The purpose of this pilot study is to determine if taking a low dose of naltrexone in addition to an antidepressant medication can help treat relapse or recurrence in people with Major Depressive Disorder (MDD). The U.S. Food and Drug Administration (FDA) has approved naltrexone for the treatment of alcohol dependence and opioid dependence, but the FDA has not approved naltrexone to treat depression. The investigators hypothesize that patients with breakthrough depression on an antidepressant regimen containing a pro-dopaminergic agent assigned to treatment with low dose naltrexone will demonstrate higher rates of response compared to those patients taking placebo.","<|system|>
+TQ44,How long can unopened calcitonin salmon nasal spray be left unrefrigerated?,"Store unopened bottle in refrigerator between 2 degrees to 8 degrees C (36 degrees to 46 degrees F). Protect from freezing. Store bottle in use at room temperature between 20 degrees to 25 degrees C (68 degrees to 77 degrees F) in an upright position, for up to 30 days (2 mL fill) or 35 days (3.7 mL fill).","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Can Low dose naltrexone be used for treatment of severe depression?</s>
+Pergunta Médica: How long can unopened calcitonin salmon nasal spray be left unrefrigerated?</s>
 <|assistant|>
-The purpose of this pilot study is to determine if taking a low dose of naltrexone in addition to an antidepressant medication can help treat relapse or recurrence in people with Major Depressive Disorder (MDD). The U.S. Food and Drug Administration (FDA) has approved naltrexone for the treatment of alcohol dependence and opioid dependence, but the FDA has not approved naltrexone to treat depression. The investigators hypothesize that patients with breakthrough depression on an antidepressant regimen containing a pro-dopaminergic agent assigned to treatment with low dose naltrexone will demonstrate higher rates of response compared to those patients taking placebo.</s>
+Store unopened bottle in refrigerator between 2 degrees to 8 degrees C (36 degrees to 46 degrees F). Protect from freezing. Store bottle in use at room temperature between 20 degrees to 25 degrees C (68 degrees to 77 degrees F) in an upright position, for up to 30 days (2 mL fill) or 35 days (3.7 mL fill).</s>
 "
-TQ54,Can Low dose naltrexone be used for treatment of severe depression?,LDN augmentation showed some benefit for MDD relapse on dopaminergic agents. Confirmation in larger studies is needed.,"<|system|>
+TQ44,How long can unopened calcitonin salmon nasal spray be left unrefrigerated?,Calcitonin salmon remained stable in nasal spray after being stored for three days at 25 or 40 degrees C,"<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Can Low dose naltrexone be used for treatment of severe depression?</s>
+Pergunta Médica: How long can unopened calcitonin salmon nasal spray be left unrefrigerated?</s>
 <|assistant|>
-LDN augmentation showed some benefit for MDD relapse on dopaminergic agents. Confirmation in larger studies is needed.</s>
+Calcitonin salmon remained stable in nasal spray after being stored for three days at 25 or 40 degrees C</s>
 "
-TQ57,What are the causes and treatments for rib cage pain?,"Ribcage pain may be caused by any of the following: Bruised, cracked, or fractured rib Inflammation of cartilage near the breastbone (costochondritis) Osteoporosis Pleurisy (the pain is worse when breathing deeply) Rest and not moving the area (immobilization) are the best cures for a ribcage fracture. Follow your health care provider's instructions for treating the cause of ribcage pain.","<|system|>
+TQ53,Where can I find exercise or support groups for nph?,"Management of NPH Diagnosing normal pressure hydrocephalus (NPH) can be frustrating. Symptoms of gait disturbance, mild dementia and poor bladder control occur with other health conditions that affect people over 60. These conditions may also coexist with hydrocephalus, creating a challenge to clear and accurate diagnosis and making treatment difficult. Visit our community portals for age and life stage specific resources. Be informed and current about normal pressure hydrocephalus by tuning into interactive, free webinars on a variety of topics.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: What are the causes and treatments for rib cage pain?</s>
+Pergunta Médica: Where can I find exercise or support groups for nph?</s>
 <|assistant|>
-Ribcage pain may be caused by any of the following: Bruised, cracked, or fractured rib Inflammation of cartilage near the breastbone (costochondritis) Osteoporosis Pleurisy (the pain is worse when breathing deeply) Rest and not moving the area (immobilization) are the best cures for a ribcage fracture. Follow your health care provider's instructions for treating the cause of ribcage pain.</s>
+Management of NPH Diagnosing normal pressure hydrocephalus (NPH) can be frustrating. Symptoms of gait disturbance, mild dementia and poor bladder control occur with other health conditions that affect people over 60. These conditions may also coexist with hydrocephalus, creating a challenge to clear and accurate diagnosis and making treatment difficult. Visit our community portals for age and life stage specific resources. Be informed and current about normal pressure hydrocephalus by tuning into interactive, free webinars on a variety of topics.</s>
 "
-TQ71,What is maximum daily dosage of Metformin?,The maximum recommended daily dose of metformin hydrochloride tablets are 2550 mg in adults and 2000 mg in pediatric patients (10-16 years of age).,"<|system|>
+TQ64,Does quinine in seltzer water ease leg cramps?,"Muscle cramps can occur anywhere and in anyone; however, leg cramps are especially common in older people. Quinine is a medicine which has been used to treat cramps for many years. There is conflicting evidence for its ability to reduce cramps. Quinine can cause serious, even fatal adverse events, especially in overdosage. There is low quality evidence that quinine (200 mg to 500 mg daily) significantly reduces cramp number and cramp days and moderate quality evidence that quinine reduces cramp intensity. There is moderate quality evidence that there are more minor adverse events with quinine compared to placebo but no increase in major adverse events. However, there are reliable reports from other sources that an overdose of quinine can cause serious harm including death. More research is needed to clarify the best dose and duration of treatment, as well as alternatives to quinine for cramps. The evidence is current to October 2014.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: What is maximum daily dosage of Metformin?</s>
+Pergunta Médica: Does quinine in seltzer water ease leg cramps?</s>
 <|assistant|>
-The maximum recommended daily dose of metformin hydrochloride tablets are 2550 mg in adults and 2000 mg in pediatric patients (10-16 years of age).</s>
+Muscle cramps can occur anywhere and in anyone; however, leg cramps are especially common in older people. Quinine is a medicine which has been used to treat cramps for many years. There is conflicting evidence for its ability to reduce cramps. Quinine can cause serious, even fatal adverse events, especially in overdosage. There is low quality evidence that quinine (200 mg to 500 mg daily) significantly reduces cramp number and cramp days and moderate quality evidence that quinine reduces cramp intensity. There is moderate quality evidence that there are more minor adverse events with quinine compared to placebo but no increase in major adverse events. However, there are reliable reports from other sources that an overdose of quinine can cause serious harm including death. More research is needed to clarify the best dose and duration of treatment, as well as alternatives to quinine for cramps. The evidence is current to October 2014.</s>
 "
-TQ75,How is rickets inherited?,"Hereditary hypophosphatemic rickets can have several patterns of inheritance. When the condition results from mutations in the PHEX gene, it is inherited in an X-linked dominant pattern. The PHEX gene is located on the X chromosome, which is one of the two sex chromosomes. In females (who have two X chromosomes), a mutation in one of the two copies of the gene in each cell is sufficient to cause the disorder. In males (who have only one X chromosome), a mutation in the only copy of the gene in each cell causes the disorder. Less commonly, hereditary hypophosphatemic rickets can have an X-linked recessive pattern of inheritance. This form of the condition is often called Dent disease. Like the PHEX gene, the gene associated with Dent disease is located on the X chromosome. In males, one altered copy of the gene in each cell is sufficient to cause the condition. In females, a mutation would have to occur in both copies of the gene to cause the disorder. Because it is unlikely that females will have two altered copies of this gene, males are affected by X-linked recessive disorders much more frequently than females. In a few families, hereditary hypophosphatemic rickets has had an autosomal dominant inheritance pattern, which means one copy of an altered gene in each cell is sufficient to cause the disorder. The rare condition HHRH has an autosomal recessive pattern of inheritance, which means both copies of a gene in each cell have mutations.","<|system|>
+TQ87,Can chronic cervicitis cause infertility?,"1. Cervicitis will go away within a few days to a week after you start taking antibiotics. If you have pelvic inflammatory disease, it may take a few weeks to treat the infection completely. Pelvic inflammatory disease can cause more serious problems, such as infertility or pain from scar tissue. 2. Cervicitis may last for months to years. Cervicitis may lead to pain with intercourse (dyspareunia).","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: How is rickets inherited?</s>
+Pergunta Médica: Can chronic cervicitis cause infertility?</s>
 <|assistant|>
-Hereditary hypophosphatemic rickets can have several patterns of inheritance. When the condition results from mutations in the PHEX gene, it is inherited in an X-linked dominant pattern. The PHEX gene is located on the X chromosome, which is one of the two sex chromosomes. In females (who have two X chromosomes), a mutation in one of the two copies of the gene in each cell is sufficient to cause the disorder. In males (who have only one X chromosome), a mutation in the only copy of the gene in each cell causes the disorder. Less commonly, hereditary hypophosphatemic rickets can have an X-linked recessive pattern of inheritance. This form of the condition is often called Dent disease. Like the PHEX gene, the gene associated with Dent disease is located on the X chromosome. In males, one altered copy of the gene in each cell is sufficient to cause the condition. In females, a mutation would have to occur in both copies of the gene to cause the disorder. Because it is unlikely that females will have two altered copies of this gene, males are affected by X-linked recessive disorders much more frequently than females. In a few families, hereditary hypophosphatemic rickets has had an autosomal dominant inheritance pattern, which means one copy of an altered gene in each cell is sufficient to cause the disorder. The rare condition HHRH has an autosomal recessive pattern of inheritance, which means both copies of a gene in each cell have mutations.</s>
+1. Cervicitis will go away within a few days to a week after you start taking antibiotics. If you have pelvic inflammatory disease, it may take a few weeks to treat the infection completely. Pelvic inflammatory disease can cause more serious problems, such as infertility or pain from scar tissue. 2. Cervicitis may last for months to years. Cervicitis may lead to pain with intercourse (dyspareunia).</s>
 "
-TQ75,How is rickets inherited?,"Hypophosphatemic rickets is most often inherited in an X-linked dominant manner. This means that the gene responsible for the condition is located on the X chromosome, and having only one mutated copy of the gene is enough to cause the condition. Because males have only one X chromosome (and one Y chromosome) and females have two X chromosomes, X-linked dominant conditions affect males and females differently. Both males and females can have an X-linked dominant condition. However, because males don't have a second, working copy of the gene (as females do), they usually have more severe disease than females. If a father has the mutated X-linked gene: all of his daughters will inherit the mutated gene (they will all receive his X chromosome) none of his sons will inherit the mutated gene (they only inherit his Y chromosome) If a mother has the mutated X-linked gene, each of her children (both male and female) has a 50% chance to inherit the mutated gene. Less commonly, hypophosphatemic rickets is inherited in an X-linked recessive, autosomal dominant, or autosomal recessive manner.","<|system|>
+TQ91,What are the effects of smoking on the digestive system?,"1. Smoking has been found to increase the risk of cancers of the mouth, esophagus, stomach, and pancreas. Research suggests that smoking may also increase the risk of cancers of the liver, colon, and rectum. Smoking increases the risk of heartburn and gastroesophageal reflux disease (GERD). Smoking increases the risk of peptic ulcers. Smoking may worsen some liver diseases, including primary biliary cirrhosis and nonalcoholic fatty liver disease (NAFLD). Current and former smokers have a higher risk of developing Crohn's disease than people who have never smoked. People who smoke are more likely to develop colon polyps. Smoking increases the risk of developing pancreatitis. Some studies have shown that smoking may increase the risk of developing gallstones. 2. Epidemiological and experimental evidence have shown that nicotine has harmful effects on the gastric mucosa. The mechanisms by which cigarette smoking or nicotine adversely affect the gastric mucosa have not been fully elucidated. In this report, clinical and experimental data are reviewed. The effects of nicotine from smoking on gastric aggressive or defensive factors are discussed. Nicotine potentiates gastric aggressive factors and attenuates defensive factors; it also increases acid and pepsin secretions, gastric motility, duodenogastric reflux of bile salts, the risk of Helicobacter pylori infection, levels of free radicals, and platelet-activating factor, endothelin generation, and vasopressin secretion. Additionally, nicotine impairs the therapeutic effect of H2-receptor antagonists and decreases prostaglandin synthesis, gastric mucosal blood flow, mucus secretion, and epidermal growth factor secretion. Although many of the studies provide conflicting results, the bulk of the evidence supports the hypothesis that nicotine is harmful to the gastric mucosa.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: How is rickets inherited?</s>
+Pergunta Médica: What are the effects of smoking on the digestive system?</s>
 <|assistant|>
-Hypophosphatemic rickets is most often inherited in an X-linked dominant manner. This means that the gene responsible for the condition is located on the X chromosome, and having only one mutated copy of the gene is enough to cause the condition. Because males have only one X chromosome (and one Y chromosome) and females have two X chromosomes, X-linked dominant conditions affect males and females differently. Both males and females can have an X-linked dominant condition. However, because males don't have a second, working copy of the gene (as females do), they usually have more severe disease than females. If a father has the mutated X-linked gene: all of his daughters will inherit the mutated gene (they will all receive his X chromosome) none of his sons will inherit the mutated gene (they only inherit his Y chromosome) If a mother has the mutated X-linked gene, each of her children (both male and female) has a 50% chance to inherit the mutated gene. Less commonly, hypophosphatemic rickets is inherited in an X-linked recessive, autosomal dominant, or autosomal recessive manner.</s>
-"
-TQ77,What health issues could be caused by Homozygous MTHFR A1298C and what is the prognosis?,"MTHFR gene mutation is a genetic change that affects an enzyme involved in breaking down the amino acid homocysteine.[1][2][3] C677T and A1298C are two very common MTHFR gene changes. People with MTHFR gene mutations may develop elevated levels of homocysteine in their blood (homocysteinemia) or urine (homocystinuria). Risks for health effects vary depending on the levels of homocysteine.[5] High homocysteine levels in the body may occur if the MTHFR enzyme is not functioning normally due to MTHFR mutations such as C677T and A1298C. Elevated levels of homocysteine can also occur if there is a lack of folate or B vitamins. Homocysteine levels also tend to rise with age, smoking, and use of certain drugs (such as carbamazepine, methotrexate, and phenytoin).[13][14] It is important to ensure that people with and without MTHFR gene mutations receive adequate amounts of folate, choline, and B vitamins (B12, B6, and riboflavin) to mitigate health risks. If adequate nutrition cannot be attained through diet alone, supplementation with folate (e.g., levomefolate (5-methyl THF) or folinic acid) and B vitamins is considered.[3][13] Speak to a healthcare professional if you have questions about your nutrition or need for vitamin supplementation.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta Médica: What health issues could be caused by Homozygous MTHFR A1298C and what is the prognosis?</s>
-<|assistant|>
-MTHFR gene mutation is a genetic change that affects an enzyme involved in breaking down the amino acid homocysteine.[1][2][3] C677T and A1298C are two very common MTHFR gene changes. People with MTHFR gene mutations may develop elevated levels of homocysteine in their blood (homocysteinemia) or urine (homocystinuria). Risks for health effects vary depending on the levels of homocysteine.[5] High homocysteine levels in the body may occur if the MTHFR enzyme is not functioning normally due to MTHFR mutations such as C677T and A1298C. Elevated levels of homocysteine can also occur if there is a lack of folate or B vitamins. Homocysteine levels also tend to rise with age, smoking, and use of certain drugs (such as carbamazepine, methotrexate, and phenytoin).[13][14] It is important to ensure that people with and without MTHFR gene mutations receive adequate amounts of folate, choline, and B vitamins (B12, B6, and riboflavin) to mitigate health risks. If adequate nutrition cannot be attained through diet alone, supplementation with folate (e.g., levomefolate (5-methyl THF) or folinic acid) and B vitamins is considered.[3][13] Speak to a healthcare professional if you have questions about your nutrition or need for vitamin supplementation.</s>
-"
-TQ77,What health issues could be caused by Homozygous MTHFR A1298C and what is the prognosis?,"Outlook (Prognosis) Although no cure exists for homocystinuria, vitamin B therapy can help about half of people affected by the condition. If the diagnosis is made in childhood, starting a low-methionine diet quickly may prevent some intellectual disability and other complications of the disease. For this reason, some states screen for homocystinuria in all newborns. People whose blood homocysteine levels continue to rise are at increased risk for blood clots. Clots can cause serious medical problems and shorten lifespan. Possible Complications Most serious complications result from blood clots. These episodes can be life-threatening. Dislocated lenses of the eyes can seriously damage vision. Lens replacement surgery may be needed. Intellectual disability is a serious consequence of the disease. But, it can be reduced if diagnosed early.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta Médica: What health issues could be caused by Homozygous MTHFR A1298C and what is the prognosis?</s>
-<|assistant|>
-Outlook (Prognosis) Although no cure exists for homocystinuria, vitamin B therapy can help about half of people affected by the condition. If the diagnosis is made in childhood, starting a low-methionine diet quickly may prevent some intellectual disability and other complications of the disease. For this reason, some states screen for homocystinuria in all newborns. People whose blood homocysteine levels continue to rise are at increased risk for blood clots. Clots can cause serious medical problems and shorten lifespan. Possible Complications Most serious complications result from blood clots. These episodes can be life-threatening. Dislocated lenses of the eyes can seriously damage vision. Lens replacement surgery may be needed. Intellectual disability is a serious consequence of the disease. But, it can be reduced if diagnosed early.</s>
-"
-SYN-001,"Pergunta clínica:
-Qual exame está pendente? Indique a fonte.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-001"",
-  ""name_synthetic"": ""Synthetic 1"",
-  ""age"": 31,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""spirometry"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""spirometry""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-","Resumo: O exame spirometry está pendente [SYN-001].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame spirometry.
-Justificativa: O registro informa status pending [SYN-001].
-Fontes utilizadas: [SYN-001].
-Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta clínica:
-Qual exame está pendente? Indique a fonte.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-001"",
-  ""name_synthetic"": ""Synthetic 1"",
-  ""age"": 31,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""spirometry"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""spirometry""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-</s>
-<|assistant|>
-Resumo: O exame spirometry está pendente [SYN-001].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame spirometry.
-Justificativa: O registro informa status pending [SYN-001].
-Fontes utilizadas: [SYN-001].
-Observação: Requer validação humana; não permite concluir diagnóstico.</s>
-"
-SYN-001,"Pergunta clínica:
-Which pending exam should the clinician review? Cite its source.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-001"",
-  ""name_synthetic"": ""Synthetic 1"",
-  ""age"": 31,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""spirometry"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""spirometry""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-","Resumo: O exame spirometry está pendente [SYN-001].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame spirometry.
-Justificativa: O registro informa status pending [SYN-001].
-Fontes utilizadas: [SYN-001].
-Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta clínica:
-Which pending exam should the clinician review? Cite its source.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-001"",
-  ""name_synthetic"": ""Synthetic 1"",
-  ""age"": 31,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""spirometry"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""spirometry""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-</s>
-<|assistant|>
-Resumo: O exame spirometry está pendente [SYN-001].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame spirometry.
-Justificativa: O registro informa status pending [SYN-001].
-Fontes utilizadas: [SYN-001].
-Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+1. Smoking has been found to increase the risk of cancers of the mouth, esophagus, stomach, and pancreas. Research suggests that smoking may also increase the risk of cancers of the liver, colon, and rectum. Smoking increases the risk of heartburn and gastroesophageal reflux disease (GERD). Smoking increases the risk of peptic ulcers. Smoking may worsen some liver diseases, including primary biliary cirrhosis and nonalcoholic fatty liver disease (NAFLD). Current and former smokers have a higher risk of developing Crohn's disease than people who have never smoked. People who smoke are more likely to develop colon polyps. Smoking increases the risk of developing pancreatitis. Some studies have shown that smoking may increase the risk of developing gallstones. 2. Epidemiological and experimental evidence have shown that nicotine has harmful effects on the gastric mucosa. The mechanisms by which cigarette smoking or nicotine adversely affect the gastric mucosa have not been fully elucidated. In this report, clinical and experimental data are reviewed. The effects of nicotine from smoking on gastric aggressive or defensive factors are discussed. Nicotine potentiates gastric aggressive factors and attenuates defensive factors; it also increases acid and pepsin secretions, gastric motility, duodenogastric reflux of bile salts, the risk of Helicobacter pylori infection, levels of free radicals, and platelet-activating factor, endothelin generation, and vasopressin secretion. Additionally, nicotine impairs the therapeutic effect of H2-receptor antagonists and decreases prostaglandin synthesis, gastric mucosal blood flow, mucus secretion, and epidermal growth factor secretion. Although many of the studies provide conflicting results, the bulk of the evidence supports the hypothesis that nicotine is harmful to the gastric mucosa.</s>
 "
 SYN-002,"Pergunta clínica:
 Qual exame está pendente? Indique a fonte.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-002"",
-  ""name_synthetic"": ""Synthetic 2"",
-  ""age"": 32,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-002
+Idade: 32; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -416,29 +155,12 @@ Pergunta clínica:
 Qual exame está pendente? Indique a fonte.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-002"",
-  ""name_synthetic"": ""Synthetic 2"",
-  ""age"": 32,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-002
+Idade: 32; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -474,29 +196,12 @@ SYN-002,"Pergunta clínica:
 Which pending exam should the clinician review? Cite its source.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-002"",
-  ""name_synthetic"": ""Synthetic 2"",
-  ""age"": 32,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-002
+Idade: 32; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -531,29 +236,12 @@ Pergunta clínica:
 Which pending exam should the clinician review? Cite its source.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-002"",
-  ""name_synthetic"": ""Synthetic 2"",
-  ""age"": 32,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-002
+Idade: 32; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -585,33 +273,16 @@ Justificativa: O registro informa status pending [SYN-002].
 Fontes utilizadas: [SYN-002].
 Observação: Requer validação humana; não permite concluir diagnóstico.</s>
 "
-SYN-009,"Pergunta clínica:
+SYN-005,"Pergunta clínica:
 Qual exame está pendente? Indique a fonte.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-009"",
-  ""name_synthetic"": ""Synthetic 9"",
-  ""age"": 39,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_ct"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_ct""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-005
+Idade: 35; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -634,471 +305,11 @@ Regras:
 - Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
 - Seja objetivo.
 - Não use markdown.
-","Resumo: O exame chest_ct está pendente [SYN-009].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
-Justificativa: O registro informa status pending [SYN-009].
-Fontes utilizadas: [SYN-009].
-Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta clínica:
-Qual exame está pendente? Indique a fonte.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-009"",
-  ""name_synthetic"": ""Synthetic 9"",
-  ""age"": 39,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_ct"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_ct""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-</s>
-<|assistant|>
-Resumo: O exame chest_ct está pendente [SYN-009].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
-Justificativa: O registro informa status pending [SYN-009].
-Fontes utilizadas: [SYN-009].
-Observação: Requer validação humana; não permite concluir diagnóstico.</s>
-"
-SYN-009,"Pergunta clínica:
-Which pending exam should the clinician review? Cite its source.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-009"",
-  ""name_synthetic"": ""Synthetic 9"",
-  ""age"": 39,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_ct"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_ct""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-","Resumo: O exame chest_ct está pendente [SYN-009].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
-Justificativa: O registro informa status pending [SYN-009].
-Fontes utilizadas: [SYN-009].
-Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta clínica:
-Which pending exam should the clinician review? Cite its source.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-009"",
-  ""name_synthetic"": ""Synthetic 9"",
-  ""age"": 39,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_ct"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_ct""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-</s>
-<|assistant|>
-Resumo: O exame chest_ct está pendente [SYN-009].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
-Justificativa: O registro informa status pending [SYN-009].
-Fontes utilizadas: [SYN-009].
-Observação: Requer validação humana; não permite concluir diagnóstico.</s>
-"
-SYN-016,"Pergunta clínica:
-Qual exame está pendente? Indique a fonte.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-016"",
-  ""name_synthetic"": ""Synthetic 16"",
-  ""age"": 46,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""spirometry"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""spirometry""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-","Resumo: O exame spirometry está pendente [SYN-016].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame spirometry.
-Justificativa: O registro informa status pending [SYN-016].
-Fontes utilizadas: [SYN-016].
-Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta clínica:
-Qual exame está pendente? Indique a fonte.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-016"",
-  ""name_synthetic"": ""Synthetic 16"",
-  ""age"": 46,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""spirometry"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""spirometry""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-</s>
-<|assistant|>
-Resumo: O exame spirometry está pendente [SYN-016].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame spirometry.
-Justificativa: O registro informa status pending [SYN-016].
-Fontes utilizadas: [SYN-016].
-Observação: Requer validação humana; não permite concluir diagnóstico.</s>
-"
-SYN-016,"Pergunta clínica:
-Which pending exam should the clinician review? Cite its source.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-016"",
-  ""name_synthetic"": ""Synthetic 16"",
-  ""age"": 46,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""spirometry"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""spirometry""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-","Resumo: O exame spirometry está pendente [SYN-016].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame spirometry.
-Justificativa: O registro informa status pending [SYN-016].
-Fontes utilizadas: [SYN-016].
-Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta clínica:
-Which pending exam should the clinician review? Cite its source.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-016"",
-  ""name_synthetic"": ""Synthetic 16"",
-  ""age"": 46,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""spirometry"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""spirometry""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-</s>
-<|assistant|>
-Resumo: O exame spirometry está pendente [SYN-016].
-Contexto do paciente: Não há resultado desse exame no contexto fornecido.
-Conduta sugerida: O clínico deve revisar o status do exame spirometry.
-Justificativa: O registro informa status pending [SYN-016].
-Fontes utilizadas: [SYN-016].
-Observação: Requer validação humana; não permite concluir diagnóstico.</s>
-"
-SYN-017,"Pergunta clínica:
-Qual exame está pendente? Indique a fonte.
-
-Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-017"",
-  ""name_synthetic"": ""Synthetic 17"",
-  ""age"": 47,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
-
-Protocolos e referências recuperadas:
-Nenhum protocolo relevante foi recuperado.
-
-Responda obrigatoriamente neste formato, em texto simples:
-Resumo:
-Contexto do paciente:
-Conduta sugerida:
-Justificativa:
-Fontes utilizadas:
-Observação:
-
-Regras:
-- Não diga que há diagnóstico confirmado.
-- Não prescreva diretamente.
-- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
-- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
-- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
-- Ao responder sobre exames pendentes, inclua o exam_name exato.
-- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
-- Seja objetivo.
-- Não use markdown.
-","Resumo: O exame chest_xray está pendente [SYN-017].
+","Resumo: O exame chest_xray está pendente [SYN-005].
 Contexto do paciente: Não há resultado desse exame no contexto fornecido.
 Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
-Justificativa: O registro informa status pending [SYN-017].
-Fontes utilizadas: [SYN-017].
+Justificativa: O registro informa status pending [SYN-005].
+Fontes utilizadas: [SYN-005].
 Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
@@ -1106,29 +317,12 @@ Pergunta clínica:
 Qual exame está pendente? Indique a fonte.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-017"",
-  ""name_synthetic"": ""Synthetic 17"",
-  ""age"": 47,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-005
+Idade: 35; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -1153,40 +347,23 @@ Regras:
 - Não use markdown.
 </s>
 <|assistant|>
-Resumo: O exame chest_xray está pendente [SYN-017].
+Resumo: O exame chest_xray está pendente [SYN-005].
 Contexto do paciente: Não há resultado desse exame no contexto fornecido.
 Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
-Justificativa: O registro informa status pending [SYN-017].
-Fontes utilizadas: [SYN-017].
+Justificativa: O registro informa status pending [SYN-005].
+Fontes utilizadas: [SYN-005].
 Observação: Requer validação humana; não permite concluir diagnóstico.</s>
 "
-SYN-017,"Pergunta clínica:
+SYN-005,"Pergunta clínica:
 Which pending exam should the clinician review? Cite its source.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-017"",
-  ""name_synthetic"": ""Synthetic 17"",
-  ""age"": 47,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-005
+Idade: 35; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -1209,11 +386,11 @@ Regras:
 - Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
 - Seja objetivo.
 - Não use markdown.
-","Resumo: O exame chest_xray está pendente [SYN-017].
+","Resumo: O exame chest_xray está pendente [SYN-005].
 Contexto do paciente: Não há resultado desse exame no contexto fornecido.
 Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
-Justificativa: O registro informa status pending [SYN-017].
-Fontes utilizadas: [SYN-017].
+Justificativa: O registro informa status pending [SYN-005].
+Fontes utilizadas: [SYN-005].
 Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
@@ -1221,29 +398,12 @@ Pergunta clínica:
 Which pending exam should the clinician review? Cite its source.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-017"",
-  ""name_synthetic"": ""Synthetic 17"",
-  ""age"": 47,
-  ""sex"": ""F"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-005
+Idade: 35; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -1268,10 +428,1054 @@ Regras:
 - Não use markdown.
 </s>
 <|assistant|>
-Resumo: O exame chest_xray está pendente [SYN-017].
+Resumo: O exame chest_xray está pendente [SYN-005].
 Contexto do paciente: Não há resultado desse exame no contexto fornecido.
 Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
-Justificativa: O registro informa status pending [SYN-017].
-Fontes utilizadas: [SYN-017].
+Justificativa: O registro informa status pending [SYN-005].
+Fontes utilizadas: [SYN-005].
 Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-006,"Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-006
+Idade: 36; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_ct está pendente [SYN-006].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-006].
+Fontes utilizadas: [SYN-006].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-006
+Idade: 36; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame chest_ct está pendente [SYN-006].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-006].
+Fontes utilizadas: [SYN-006].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-006,"Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-006
+Idade: 36; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_ct está pendente [SYN-006].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-006].
+Fontes utilizadas: [SYN-006].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-006
+Idade: 36; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame chest_ct está pendente [SYN-006].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-006].
+Fontes utilizadas: [SYN-006].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-014,"Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-014
+Idade: 44; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_xray está pendente [SYN-014].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
+Justificativa: O registro informa status pending [SYN-014].
+Fontes utilizadas: [SYN-014].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-014
+Idade: 44; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame chest_xray está pendente [SYN-014].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
+Justificativa: O registro informa status pending [SYN-014].
+Fontes utilizadas: [SYN-014].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-014,"Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-014
+Idade: 44; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_xray está pendente [SYN-014].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
+Justificativa: O registro informa status pending [SYN-014].
+Fontes utilizadas: [SYN-014].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-014
+Idade: 44; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame chest_xray está pendente [SYN-014].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
+Justificativa: O registro informa status pending [SYN-014].
+Fontes utilizadas: [SYN-014].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-019,"Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-019
+Idade: 49; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: spirometry
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame spirometry está pendente [SYN-019].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame spirometry.
+Justificativa: O registro informa status pending [SYN-019].
+Fontes utilizadas: [SYN-019].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-019
+Idade: 49; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: spirometry
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame spirometry está pendente [SYN-019].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame spirometry.
+Justificativa: O registro informa status pending [SYN-019].
+Fontes utilizadas: [SYN-019].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-019,"Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-019
+Idade: 49; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: spirometry
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame spirometry está pendente [SYN-019].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame spirometry.
+Justificativa: O registro informa status pending [SYN-019].
+Fontes utilizadas: [SYN-019].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-019
+Idade: 49; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: spirometry
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame spirometry está pendente [SYN-019].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame spirometry.
+Justificativa: O registro informa status pending [SYN-019].
+Fontes utilizadas: [SYN-019].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-REP-000,"Pergunta clínica:
+Qual o modelo de estruturação de laudo e conduta recomendada para este achado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-000
+Idade: 45; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Laudo preliminar indica achado de nódulo pulmonar em lobo superior direito de 6mm em Tomografia de Tórax [SYN-REP-000].
+Contexto do paciente: Paciente 45 anos, histórico active smoker [SYN-REP-000].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-000], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual o modelo de estruturação de laudo e conduta recomendada para este achado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-000
+Idade: 45; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Laudo preliminar indica achado de nódulo pulmonar em lobo superior direito de 6mm em Tomografia de Tórax [SYN-REP-000].
+Contexto do paciente: Paciente 45 anos, histórico active smoker [SYN-REP-000].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-000], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.</s>
+"
+SYN-REP-000,"Pergunta clínica:
+Como estruturar o resumo clínico deste achado de imagem com base no protocolo?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-000
+Idade: 45; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Laudo preliminar indica achado de nódulo pulmonar em lobo superior direito de 6mm em Tomografia de Tórax [SYN-REP-000].
+Contexto do paciente: Paciente 45 anos, histórico active smoker [SYN-REP-000].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-000], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Como estruturar o resumo clínico deste achado de imagem com base no protocolo?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-000
+Idade: 45; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Laudo preliminar indica achado de nódulo pulmonar em lobo superior direito de 6mm em Tomografia de Tórax [SYN-REP-000].
+Contexto do paciente: Paciente 45 anos, histórico active smoker [SYN-REP-000].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-000], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.</s>
+"
+SYN-PROC-001,"Pergunta clínica:
+Quais os preparos e procedimentos internos necessários para a realização de biópsia pulmonar percutânea guiada por TC?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-001
+Idade: 56; sexo: M; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: biópsia pulmonar percutânea guiada por TC
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Procedimento de biópsia pulmonar percutânea guiada por TC agendado para o paciente [SYN-PROC-001].
+Contexto do paciente: Registro hospitalar [SYN-PROC-001].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-001], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Quais os preparos e procedimentos internos necessários para a realização de biópsia pulmonar percutânea guiada por TC?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-001
+Idade: 56; sexo: M; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: biópsia pulmonar percutânea guiada por TC
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Procedimento de biópsia pulmonar percutânea guiada por TC agendado para o paciente [SYN-PROC-001].
+Contexto do paciente: Registro hospitalar [SYN-PROC-001].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-001], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.</s>
+"
+SYN-PROC-001,"Pergunta clínica:
+Qual o fluxo operacional hospitalar para o procedimento biópsia pulmonar percutânea guiada por TC agendado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-001
+Idade: 56; sexo: M; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: biópsia pulmonar percutânea guiada por TC
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Procedimento de biópsia pulmonar percutânea guiada por TC agendado para o paciente [SYN-PROC-001].
+Contexto do paciente: Registro hospitalar [SYN-PROC-001].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-001], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual o fluxo operacional hospitalar para o procedimento biópsia pulmonar percutânea guiada por TC agendado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-001
+Idade: 56; sexo: M; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: biópsia pulmonar percutânea guiada por TC
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Procedimento de biópsia pulmonar percutânea guiada por TC agendado para o paciente [SYN-PROC-001].
+Contexto do paciente: Registro hospitalar [SYN-PROC-001].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-001], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.</s>
+"
+SYN-PROC-002,"Pergunta clínica:
+Quais os preparos e procedimentos internos necessários para a realização de espirometria com prova broncodilatadora?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-002
+Idade: 57; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: espirometria com prova broncodilatadora
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Procedimento de espirometria com prova broncodilatadora agendado para o paciente [SYN-PROC-002].
+Contexto do paciente: Registro hospitalar [SYN-PROC-002].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-002], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Quais os preparos e procedimentos internos necessários para a realização de espirometria com prova broncodilatadora?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-002
+Idade: 57; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: espirometria com prova broncodilatadora
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Procedimento de espirometria com prova broncodilatadora agendado para o paciente [SYN-PROC-002].
+Contexto do paciente: Registro hospitalar [SYN-PROC-002].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-002], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.</s>
+"
+SYN-PROC-002,"Pergunta clínica:
+Qual o fluxo operacional hospitalar para o procedimento espirometria com prova broncodilatadora agendado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-002
+Idade: 57; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: espirometria com prova broncodilatadora
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Procedimento de espirometria com prova broncodilatadora agendado para o paciente [SYN-PROC-002].
+Contexto do paciente: Registro hospitalar [SYN-PROC-002].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-002], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual o fluxo operacional hospitalar para o procedimento espirometria com prova broncodilatadora agendado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-002
+Idade: 57; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: espirometria com prova broncodilatadora
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Procedimento de espirometria com prova broncodilatadora agendado para o paciente [SYN-PROC-002].
+Contexto do paciente: Registro hospitalar [SYN-PROC-002].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-002], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.</s>
 "

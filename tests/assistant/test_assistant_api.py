@@ -228,6 +228,43 @@ def test_assistant_query_uses_safe_fallback_when_model_output_is_unsafe(assistan
     assert audit_entry["output_validation"]["blocked"] is True
 
 
+def test_item1_quality_rejection_retries_gemini_and_exposes_rule(assistant_db, monkeypatch):
+    from backend.assistant import llm_adapter as llm_adapter_module
+
+    def rejected_item1(self, prompt: str, system_prompt=None, user_prompt=None):
+        return AssistantProviderResult(
+            answer_text='{"patient_id": "P001"}',
+            backend_used="item1_custom_llm",
+            custom_llm_available=True,
+            fallback_used=False,
+        )
+
+    def accepted_gemini(self, prompt: str, system_prompt=None, user_prompt=None):
+        return AssistantProviderResult(
+            answer_text="Resumo: Revisão do exame pendente [P001].\nContexto do paciente: Registro disponível [P001].\nConduta sugerida: Revisar a Tomografia Computadorizada de Tórax.\nJustificativa: Exame pendente no prontuário [P001].\nFontes utilizadas: [P001].\nObservação: Requer revisão humana.",
+            backend_used="gemini_fallback",
+            custom_llm_available=False,
+            fallback_used=True,
+        )
+
+    monkeypatch.setattr(llm_adapter_module.Item1LocalProvider, "generate_prompt", rejected_item1)
+    monkeypatch.setattr(llm_adapter_module.GeminiFallbackProvider, "generate_prompt", accepted_gemini)
+
+    with TestClient(backend_main.app) as client:
+        response = client.post("/assistant/query", json={
+            "patient_id": "P001", "question": "Qual exame pendente deve ser revisado?",
+            "force_llm_mode": "item1_only",
+        })
+
+    payload = response.json()
+    assert response.status_code == 200
+    assert payload["status"] == "success"
+    assert payload["llm_backend_used"] == "gemini_fallback"
+    assert payload["attempted_backend"] == "item1_custom_llm"
+    assert "quality:context_echo" in payload["attempted_backend_error"]
+    assert "item1:quality:context_echo" in payload["validation_details"]
+
+
 def test_assistant_query_item1_only_uses_item1_provider_when_artifacts_exist(assistant_db, monkeypatch):
     from backend.assistant import llm_adapter as llm_adapter_module
 

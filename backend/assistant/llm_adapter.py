@@ -192,7 +192,7 @@ class Item1LocalProvider(BaseAssistantProvider):
             input_length = inputs["input_ids"].shape[1]
             outputs = model.generate(
                 **inputs,
-                max_new_tokens=int(os.getenv("ITEM1_MAX_NEW_TOKENS", "96")),
+                max_new_tokens=int(os.getenv("ITEM1_MAX_NEW_TOKENS", "160")),
                 do_sample=False,
                 pad_token_id=tokenizer.pad_token_id,
                 eos_token_id=tokenizer.eos_token_id,

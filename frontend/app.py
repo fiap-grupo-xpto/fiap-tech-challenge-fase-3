@@ -269,6 +269,21 @@ if st.session_state.stage == 3:
                         # Details and Audit Expander
                         with st.expander("🔍 Auditoria Detalhada & Fontes Consultadas (Explainability)", expanded=False):
                             st.write(f"**Request ID:** `{resp.get('request_id')}`")
+                            validation_details = resp.get("validation_details", [])
+                            if validation_details:
+                                st.markdown("**Validações e recuperação do modelo:**")
+                                st.caption(
+                                    "Regras técnicas que motivaram retenção ou troca de provider; "
+                                    "não substituem a revisão clínica."
+                                )
+                                for detail in validation_details:
+                                    st.code(detail, language=None)
+                            if resp.get("attempted_backend_error"):
+                                st.warning(
+                                    "**Motivo da troca de provider:** "
+                                    f"`{resp.get('attempted_backend')}` — "
+                                    f"{resp['attempted_backend_error']}"
+                                )
                             st.markdown("**Todas as Fontes Recuperadas do SQLite:**")
                             st.json(resp.get("sources_used", []))
 

@@ -1,101 +1,66 @@
 qid,question_anon,answer_anon,text
-TQ2,"Do Zolmitriptan 5mg tablets manufactured by GLOBAL PHARMACEUTICALS, DIVISION OF IMPAX LABORATORIES INC. contain gluten?","Zolmitriptan tablets are available as 2.5 mg (yellow and functionally-scored) and 5 mg (pink, not scored) film coated tablets for oral administration. The film coated tablets contain anhydrous lactose NF, microcrystalline cellulose NF, sodium starch glycolate NF, magnesium stearate NF, hydroxypropyl methylcellulose USP, titanium dioxide USP, polyethylene glycol 400 NF, yellow iron oxide NF (2.5 mg tablet), red iron oxide NF (5 mg tablet), and polyethylene glycol 8000 NF. Zolmitriptan orally disintegrating tablets are available as 2.5 mg and 5 mg white uncoated tablets. The orally disintegrating tablets contain mannitol USP, microcrystalline cellulose NF, crospovidone NF, aspartame NF [see WARNINGS AND PRECAUTIONS (5.9)], sodium bicarbonate USP, citric acid anhydrous USP, colloidal silicon dioxide NF, magnesium stearate NF and orange flavor SN 027512.","<|system|>
+TQ19,"What is the stability, effectiveness and toxicity of sevoflurane once the product container has been opened?","We prepared a 20% sevoflurane lipid emulsion using caprylic triglyceride (i.e., medium-chain triglyceride). In rats, this emulsion was an effective anesthetic and was not associated with adverse events. The emulsion was stable after consecutive evaluation for 365 days and for 180 minutes after the vial was opened.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Do Zolmitriptan 5mg tablets manufactured by GLOBAL PHARMACEUTICALS, DIVISION OF IMPAX LABORATORIES INC. contain gluten?</s>
+Pergunta Médica: What is the stability, effectiveness and toxicity of sevoflurane once the product container has been opened?</s>
 <|assistant|>
-Zolmitriptan tablets are available as 2.5 mg (yellow and functionally-scored) and 5 mg (pink, not scored) film coated tablets for oral administration. The film coated tablets contain anhydrous lactose NF, microcrystalline cellulose NF, sodium starch glycolate NF, magnesium stearate NF, hydroxypropyl methylcellulose USP, titanium dioxide USP, polyethylene glycol 400 NF, yellow iron oxide NF (2.5 mg tablet), red iron oxide NF (5 mg tablet), and polyethylene glycol 8000 NF. Zolmitriptan orally disintegrating tablets are available as 2.5 mg and 5 mg white uncoated tablets. The orally disintegrating tablets contain mannitol USP, microcrystalline cellulose NF, crospovidone NF, aspartame NF [see WARNINGS AND PRECAUTIONS (5.9)], sodium bicarbonate USP, citric acid anhydrous USP, colloidal silicon dioxide NF, magnesium stearate NF and orange flavor SN 027512.</s>
+We prepared a 20% sevoflurane lipid emulsion using caprylic triglyceride (i.e., medium-chain triglyceride). In rats, this emulsion was an effective anesthetic and was not associated with adverse events. The emulsion was stable after consecutive evaluation for 365 days and for 180 minutes after the vial was opened.</s>
 "
-TQ4,What are the treatments and precautions for VDRL positive (syphilis) patients?,"Syphilis If the RPR, VDRL, or TRUST tests are positive, one of the following tests will be needed to confirm the diagnosis: FTA-ABS (fluorescent treponemal antibody test); MHA-TP; TP-EIA; TP-PA. Syphilis can be treated with antibiotics, such as: Doxycycline (type of tetracycline given to people who are allergic to penicillin); Penicillin G benzathine. Length of treatment depends on how severe the syphilis is, and factors such as the person's overall health. Several hours after getting treatment for the early stages of syphilis, people may experience the Jarisch-Herxheimer reaction. This process is caused by an immune reaction to the breakdown products of the infection. Follow-up blood tests must be done at 3, 6, 12, and 24 months to ensure that the infection is gone. Avoid sexual contact when the chancre is present. Use condoms until two follow-up tests have shown that the infection has been cured, to reduce the chance of transmitting the infection. All sexual partners of the person with syphilis should also be treated. Syphilis can spread very easily in the primary and secondary stages.","<|system|>
+TQ19,"What is the stability, effectiveness and toxicity of sevoflurane once the product container has been opened?","Sevoflurane is stable when stored under normal room lighting conditions. No discernible degradation of sevoflurane occurs in the presence of strong acids or heat. Sevoflurane is not corrosive to stainless steel, brass, aluminum nickel-plated brass, chrome-plated brass or copper beryllium alloy.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: What are the treatments and precautions for VDRL positive (syphilis) patients?</s>
+Pergunta Médica: What is the stability, effectiveness and toxicity of sevoflurane once the product container has been opened?</s>
 <|assistant|>
-Syphilis If the RPR, VDRL, or TRUST tests are positive, one of the following tests will be needed to confirm the diagnosis: FTA-ABS (fluorescent treponemal antibody test); MHA-TP; TP-EIA; TP-PA. Syphilis can be treated with antibiotics, such as: Doxycycline (type of tetracycline given to people who are allergic to penicillin); Penicillin G benzathine. Length of treatment depends on how severe the syphilis is, and factors such as the person's overall health. Several hours after getting treatment for the early stages of syphilis, people may experience the Jarisch-Herxheimer reaction. This process is caused by an immune reaction to the breakdown products of the infection. Follow-up blood tests must be done at 3, 6, 12, and 24 months to ensure that the infection is gone. Avoid sexual contact when the chancre is present. Use condoms until two follow-up tests have shown that the infection has been cured, to reduce the chance of transmitting the infection. All sexual partners of the person with syphilis should also be treated. Syphilis can spread very easily in the primary and secondary stages.</s>
+Sevoflurane is stable when stored under normal room lighting conditions. No discernible degradation of sevoflurane occurs in the presence of strong acids or heat. Sevoflurane is not corrosive to stainless steel, brass, aluminum nickel-plated brass, chrome-plated brass or copper beryllium alloy.</s>
 "
-TQ6,Could anesthesia cause brain damage in FXTAS patients?,"Likewise, we don't know whether other developmental processes, or environmental factors, affect the expression of FXTAS. For example, although it hasn't been rigorously studied, investigators at UC Davis are interested in the possibility that surgery under a general anesthetic may affect the progression of FXTAS.","<|system|>
+TQ38,Is there research on the causes and treatments for the Antiphospholipid Syndrome?,"Antiphospholipid syndrome can be caused by an underlying condition, such as an autoimmune disorder, infection or certain medications, or you can develop the syndrome without an underlying cause.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Could anesthesia cause brain damage in FXTAS patients?</s>
+Pergunta Médica: Is there research on the causes and treatments for the Antiphospholipid Syndrome?</s>
 <|assistant|>
-Likewise, we don't know whether other developmental processes, or environmental factors, affect the expression of FXTAS. For example, although it hasn't been rigorously studied, investigators at UC Davis are interested in the possibility that surgery under a general anesthetic may affect the progression of FXTAS.</s>
+Antiphospholipid syndrome can be caused by an underlying condition, such as an autoimmune disorder, infection or certain medications, or you can develop the syndrome without an underlying cause.</s>
 "
-TQ6,Could anesthesia cause brain damage in FXTAS patients?,"Typically patients with FXTAS do not tolerate surgery with general anesthesia well and further deterioration in both motor and cognitive abilities is typically seen (Jacquemont et al 2004). Therefore, surgery should be avoided if at all possible.","<|system|>
+TQ38,Is there research on the causes and treatments for the Antiphospholipid Syndrome?,"Doctors generally use medications that reduce your blood's tendency to clot to help prevent complications of antiphospholipid syndrome. If you have thrombosis, standard initial treatment involves a combination of blood-thinning (anticoagulant) medications.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Could anesthesia cause brain damage in FXTAS patients?</s>
+Pergunta Médica: Is there research on the causes and treatments for the Antiphospholipid Syndrome?</s>
 <|assistant|>
-Typically patients with FXTAS do not tolerate surgery with general anesthesia well and further deterioration in both motor and cognitive abilities is typically seen (Jacquemont et al 2004). Therefore, surgery should be avoided if at all possible.</s>
+Doctors generally use medications that reduce your blood's tendency to clot to help prevent complications of antiphospholipid syndrome. If you have thrombosis, standard initial treatment involves a combination of blood-thinning (anticoagulant) medications.</s>
 "
-TQ15,How do I find out if my fibromyalgia is genetic?,"Is fibromyalgia hereditary? Answers from Kevin C. Fleming, M.D. Fibromyalgia isn't passed directly from parents to children, but the disorder does appear to cluster within families. The odds of developing fibromyalgia are several times higher in the immediate families of people with fibromyalgia than in families in which no one has fibromyalgia. In fact, studies of DNA from family members of people with fibromyalgia and other chronic pain syndromes have turned up a number of genes that could help explain why these disorders seem to run in families. Each of these genes plays a role in your nervous system's response to pain. Some of the same genes are also associated with depression and anxiety, which may be the reason why certain antidepressant medications help reduce fibromyalgia symptoms.","<|system|>
+TQ45,Whar are Schmorl's nodes?,"Schmorl nodes, also referred as intravertebral disc herniations, refer to protrusions of the cartilage of the intervertebral disc through the vertebral body endplate and into the adjacent vertebra. The protrusions may contact the marrow of the vertebra, leading to inflammation.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: How do I find out if my fibromyalgia is genetic?</s>
+Pergunta Médica: Whar are Schmorl's nodes?</s>
 <|assistant|>
-Is fibromyalgia hereditary? Answers from Kevin C. Fleming, M.D. Fibromyalgia isn't passed directly from parents to children, but the disorder does appear to cluster within families. The odds of developing fibromyalgia are several times higher in the immediate families of people with fibromyalgia than in families in which no one has fibromyalgia. In fact, studies of DNA from family members of people with fibromyalgia and other chronic pain syndromes have turned up a number of genes that could help explain why these disorders seem to run in families. Each of these genes plays a role in your nervous system's response to pain. Some of the same genes are also associated with depression and anxiety, which may be the reason why certain antidepressant medications help reduce fibromyalgia symptoms.</s>
+Schmorl nodes, also referred as intravertebral disc herniations, refer to protrusions of the cartilage of the intervertebral disc through the vertebral body endplate and into the adjacent vertebra. The protrusions may contact the marrow of the vertebra, leading to inflammation.</s>
 "
-TQ15,How do I find out if my fibromyalgia is genetic?,"Although the etiology of FM remains unknown, it is thought to involve some combination of genetic susceptibility and environmental exposure that triggers further alterations in gene expression. Because FM shows marked familial aggregation, most previous research has focused on genetic predisposition to FM and has revealed associations between genetic factors and the development of FM, including specific gene polymorphisms involved in the serotonergic, dopaminergic, and catecholaminergic pathways. The aim of this review was to discuss the current evidence regarding genetic factors that may play a role in the development and symptom severity of FM.","<|system|>
+TQ45,Whar are Schmorl's nodes?,"First described in 1927, a Schmorl's node (SN) is the herniation of nucleus pulposus (NP) through the cartilaginous and bony end plate into the body of the adjacent vertebra. SNs are common findings on imaging, and although most SNs are asymptomatic, some have been shown to become painful lesions. In this manuscript, we review the literature regarding the epidemiology, clinical presentation, pathogenesis, imaging, and management of SNs.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: How do I find out if my fibromyalgia is genetic?</s>
+Pergunta Médica: Whar are Schmorl's nodes?</s>
 <|assistant|>
-Although the etiology of FM remains unknown, it is thought to involve some combination of genetic susceptibility and environmental exposure that triggers further alterations in gene expression. Because FM shows marked familial aggregation, most previous research has focused on genetic predisposition to FM and has revealed associations between genetic factors and the development of FM, including specific gene polymorphisms involved in the serotonergic, dopaminergic, and catecholaminergic pathways. The aim of this review was to discuss the current evidence regarding genetic factors that may play a role in the development and symptom severity of FM.</s>
+First described in 1927, a Schmorl's node (SN) is the herniation of nucleus pulposus (NP) through the cartilaginous and bony end plate into the body of the adjacent vertebra. SNs are common findings on imaging, and although most SNs are asymptomatic, some have been shown to become painful lesions. In this manuscript, we review the literature regarding the epidemiology, clinical presentation, pathogenesis, imaging, and management of SNs.</s>
 "
-TQ15,How do I find out if my fibromyalgia is genetic?,"That's why it can take a long time to go from fibromyalgia symptoms to a fibromyalgia diagnosis. Fibromyalgia can't be easily confirmed or ruled out through a simple laboratory test. Your doctor can't detect it in your blood or see it on an X-ray. Instead, fibromyalgia appears to be linked to changes in how the brain and spinal cord process pain signals. Because there is no test for fibromyalgia, your doctor must rely solely on your group of symptoms to make a diagnosis. Because a genetic factor appears to be involved in fibromyalgia, your doctor may also want to know if any other members of your immediate family have experienced similar symptoms.","<|system|>
+TQ65,What are non-toxic treatments and prevention protocols for mite infestation in humans?,"When a person is infested with scabies mites the first time, symptoms may not appear for up to two months after being infested. However, an infested person can transmit scabies, even if they do not have symptoms. Scabies usually is passed by direct, prolonged skin-to-skin contact with an infested person. However, a person with crusted (Norwegian) scabies can spread the infestation by brief skin-to-skin contact or by exposure to bedding, clothing, or even furniture that he/she has used. Scabies is prevented by avoiding direct skin-to-skin contact with an infested person or with items such as clothing or bedding used by an infested person. Scabies treatment usually is recommended for members of the same household, particularly for those who have had prolonged skin-to-skin contact. All household members and other potentially exposed persons should be treated at the same time as the infested person to prevent possible reexposure and reinfestation. Bedding and clothing worn or used next to the skin anytime during the 3 days before treatment should be machine washed and dried using the hot water and hot dryer cycles or be dry-cleaned. Items that cannot be dry-cleaned or laundered can be disinfested by storing in a closed plastic bag for several days to a week. Scabies mites generally do not survive more than 2 to 3 days away from human skin. Children and adults usually can return to child care, school, or work the day after treatment. Persons with crusted scabies and their close contacts, including household members, should be treated rapidly and aggressively to avoid outbreaks. Institutional outbreaks can be difficult to control and require a rapid, aggressive, and sustained response. Rooms used by a patient with crusted scabies should be thoroughly cleaned and vacuumed after use.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: How do I find out if my fibromyalgia is genetic?</s>
+Pergunta Médica: What are non-toxic treatments and prevention protocols for mite infestation in humans?</s>
 <|assistant|>
-That's why it can take a long time to go from fibromyalgia symptoms to a fibromyalgia diagnosis. Fibromyalgia can't be easily confirmed or ruled out through a simple laboratory test. Your doctor can't detect it in your blood or see it on an X-ray. Instead, fibromyalgia appears to be linked to changes in how the brain and spinal cord process pain signals. Because there is no test for fibromyalgia, your doctor must rely solely on your group of symptoms to make a diagnosis. Because a genetic factor appears to be involved in fibromyalgia, your doctor may also want to know if any other members of your immediate family have experienced similar symptoms.</s>
+When a person is infested with scabies mites the first time, symptoms may not appear for up to two months after being infested. However, an infested person can transmit scabies, even if they do not have symptoms. Scabies usually is passed by direct, prolonged skin-to-skin contact with an infested person. However, a person with crusted (Norwegian) scabies can spread the infestation by brief skin-to-skin contact or by exposure to bedding, clothing, or even furniture that he/she has used. Scabies is prevented by avoiding direct skin-to-skin contact with an infested person or with items such as clothing or bedding used by an infested person. Scabies treatment usually is recommended for members of the same household, particularly for those who have had prolonged skin-to-skin contact. All household members and other potentially exposed persons should be treated at the same time as the infested person to prevent possible reexposure and reinfestation. Bedding and clothing worn or used next to the skin anytime during the 3 days before treatment should be machine washed and dried using the hot water and hot dryer cycles or be dry-cleaned. Items that cannot be dry-cleaned or laundered can be disinfested by storing in a closed plastic bag for several days to a week. Scabies mites generally do not survive more than 2 to 3 days away from human skin. Children and adults usually can return to child care, school, or work the day after treatment. Persons with crusted scabies and their close contacts, including household members, should be treated rapidly and aggressively to avoid outbreaks. Institutional outbreaks can be difficult to control and require a rapid, aggressive, and sustained response. Rooms used by a patient with crusted scabies should be thoroughly cleaned and vacuumed after use.</s>
 "
-TQ27,Is dementia inherited or acquired?,"Scientists know genes are involved in Alzheimer's. Two categories of genes influence whether a person develops a disease: risk genes and deterministic genes. Alzheimer's genes have been found in both categories. 1. Risk genes increase the likelihood of developing a disease, but do not guarantee it will happen. Researchers have found several genes that increase the risk of Alzheimer's. apolipoprotein E-e4, or APOE-e4, is the first risk gene identified and remains the one with strongest impact. 2. Deterministic genes directly cause a disease, guaranteeing that anyone who inherits one will develop the disorder. Scientists have discovered variations that directly cause Alzheimer's disease in the genes coding three proteins: amyloid precursor protein (APP), presenilin-1 (PS-1) and presenilin-2 (PS-2).","<|system|>
+TQ65,What are non-toxic treatments and prevention protocols for mite infestation in humans?,"Products used to treat scabies are called scabicides because they kill scabies mites; some also kill mite eggs. Scabicides used to treat human scabies are available only with a doctor's prescription. No ""over-the-counter"" (non-prescription) products have been tested and approved to treat scabies. Scabicide lotion or cream should be applied to all areas of the body from the neck down to the feet and toes. In addition, when treating infants and young children, scabicide lotion or cream also should be applied to their entire head and neck because scabies can affect their face, scalp, and neck, as well as the rest of their body. Only permethrin or sulfur ointment may be used in infants. The lotion or cream should be applied to a clean body and left on for the recommended time before washing it off. Clean clothing should be worn after treatment. Both sexual and close personal contacts who have had direct prolonged skin-to-skin contact with an infested person within the preceding month should be examined and treated. All persons should be treated at the same time to prevent reinfestation.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Is dementia inherited or acquired?</s>
+Pergunta Médica: What are non-toxic treatments and prevention protocols for mite infestation in humans?</s>
 <|assistant|>
-Scientists know genes are involved in Alzheimer's. Two categories of genes influence whether a person develops a disease: risk genes and deterministic genes. Alzheimer's genes have been found in both categories. 1. Risk genes increase the likelihood of developing a disease, but do not guarantee it will happen. Researchers have found several genes that increase the risk of Alzheimer's. apolipoprotein E-e4, or APOE-e4, is the first risk gene identified and remains the one with strongest impact. 2. Deterministic genes directly cause a disease, guaranteeing that anyone who inherits one will develop the disorder. Scientists have discovered variations that directly cause Alzheimer's disease in the genes coding three proteins: amyloid precursor protein (APP), presenilin-1 (PS-1) and presenilin-2 (PS-2).</s>
+Products used to treat scabies are called scabicides because they kill scabies mites; some also kill mite eggs. Scabicides used to treat human scabies are available only with a doctor's prescription. No ""over-the-counter"" (non-prescription) products have been tested and approved to treat scabies. Scabicide lotion or cream should be applied to all areas of the body from the neck down to the feet and toes. In addition, when treating infants and young children, scabicide lotion or cream also should be applied to their entire head and neck because scabies can affect their face, scalp, and neck, as well as the rest of their body. Only permethrin or sulfur ointment may be used in infants. The lotion or cream should be applied to a clean body and left on for the recommended time before washing it off. Clean clothing should be worn after treatment. Both sexual and close personal contacts who have had direct prolonged skin-to-skin contact with an infested person within the preceding month should be examined and treated. All persons should be treated at the same time to prevent reinfestation.</s>
 "
-TQ27,Is dementia inherited or acquired?,"The majority of dementia is not inherited, but this depends very much on the particular cause of dementia. Some (rare) causes of dementia are very clearly 'inherited', for example, Huntington's disease. This is an 'autosomal dominant' disease which means that only one faulty copy of the gene is needed in order to inherit the disease. If you have inherited the gene you will get the disease if you live long enough. It does not skip a generation. Some other dementias have both inherited and non-inherited forms. In the case of fronto-temporal dementias, 30 to 50 per cent of cases are inherited. Most cases of Alzheimer's disease are not inherited.","<|system|>
+TQ65,What are non-toxic treatments and prevention protocols for mite infestation in humans?,"Scabies treatment involves eliminating the infestation with medications. Several creams and lotions are available with a doctor's prescription. You usually apply the medication over all your body, from your neck down, and leave the medication on for at least eight hours. A second treatment is needed if new burrows and rash appear. Because scabies spreads so easily, your doctor will likely recommend treatment for all household members and other close contacts, even if they show no signs of scabies infestation. Medications commonly prescribed for scabies include: Permethrin cream, 5 percent (Elimite). Permethrin is a topical cream that contains chemicals that kill scabies mites and their eggs. It is generally considered safe for adults, pregnant women, and children ages 2 months and older. This medicine is not recommended for nursing mothers. Lindane lotion. This medication - also a chemical treatment - is recommended only for people who can't tolerate other approved treatments, or for whom other treatments didn't work. This medication isn't safe for children younger than age 2 years, women who are pregnant or nursing, the elderly, or anyone who weighs less than 110 pounds (50 kilograms). Crotamiton (Eurax). This medication is available as a cream or a lotion. It's applied once a day for two days. This medication isn't recommended for children or for women who are pregnant or nursing. Frequent treatment failure has been reported with crotamiton. Ivermectin (Stromectol). Doctors may prescribe this oral medication for people with altered immune systems, for people who have crusted scabies, or for people who don't respond to the prescription lotions and creams. Ivermectin isn't recommended for women who are pregnant or nursing, or for children who weigh less than 33 pounds (15 kg). Although these medications kill the mites promptly, you may find that the itching doesn't stop entirely for several weeks. Doctors may prescribe other topical medications, such as sulfur compounded in petrolatum, for people who don't respond to or can't use these medications.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Is dementia inherited or acquired?</s>
+Pergunta Médica: What are non-toxic treatments and prevention protocols for mite infestation in humans?</s>
 <|assistant|>
-The majority of dementia is not inherited, but this depends very much on the particular cause of dementia. Some (rare) causes of dementia are very clearly 'inherited', for example, Huntington's disease. This is an 'autosomal dominant' disease which means that only one faulty copy of the gene is needed in order to inherit the disease. If you have inherited the gene you will get the disease if you live long enough. It does not skip a generation. Some other dementias have both inherited and non-inherited forms. In the case of fronto-temporal dementias, 30 to 50 per cent of cases are inherited. Most cases of Alzheimer's disease are not inherited.</s>
-"
-TQ28,Is there a surgical treatment for sleep apnea?,"Surgery is an effective and safe treatment option for many patients with snoring and sleep apnea, particularly those who are unable to use or tolerate CPAP. Proper patient and procedure selection is critical to successful surgical management of obstructive sleep apnea. Talk to your Ear, Nose and Throat doctor for a complete evaluation and to learn what treatment may be best for you.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta Médica: Is there a surgical treatment for sleep apnea?</s>
-<|assistant|>
-Surgery is an effective and safe treatment option for many patients with snoring and sleep apnea, particularly those who are unable to use or tolerate CPAP. Proper patient and procedure selection is critical to successful surgical management of obstructive sleep apnea. Talk to your Ear, Nose and Throat doctor for a complete evaluation and to learn what treatment may be best for you.</s>
-"
-TQ28,Is there a surgical treatment for sleep apnea?,"Some people who have sleep apnea might benefit from surgery. The type of surgery and how well it works depend on the cause of the sleep apnea. Surgery is done to widen breathing passages. It usually involves shrinking, stiffening, or removing excess tissue in the mouth and throat or resetting the lower jaw. Surgery to shrink or stiffen excess tissue is done in a doctor's office or a hospital. Shrinking tissue may involve small shots or other treatments to the tissue. You may need a series of treatments to shrink the excess tissue. To stiffen excess tissue, the doctor makes a small cut in the tissue and inserts a piece of stiff plastic. Surgery to remove excess tissue is done in a hospital. You're given medicine to help you sleep during the surgery. After surgery, you may have throat pain that lasts for 1 to 2 weeks.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta Médica: Is there a surgical treatment for sleep apnea?</s>
-<|assistant|>
-Some people who have sleep apnea might benefit from surgery. The type of surgery and how well it works depend on the cause of the sleep apnea. Surgery is done to widen breathing passages. It usually involves shrinking, stiffening, or removing excess tissue in the mouth and throat or resetting the lower jaw. Surgery to shrink or stiffen excess tissue is done in a doctor's office or a hospital. Shrinking tissue may involve small shots or other treatments to the tissue. You may need a series of treatments to shrink the excess tissue. To stiffen excess tissue, the doctor makes a small cut in the tissue and inserts a piece of stiff plastic. Surgery to remove excess tissue is done in a hospital. You're given medicine to help you sleep during the surgery. After surgery, you may have throat pain that lasts for 1 to 2 weeks.</s>
-"
-TQ31,How much urine does an average human bladder hold?,"Normal functional bladder capacity in adults ranges from approximately 300 to 400 ml (58,59).","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta Médica: How much urine does an average human bladder hold?</s>
-<|assistant|>
-Normal functional bladder capacity in adults ranges from approximately 300 to 400 ml (58,59).</s>
-"
-TQ31,How much urine does an average human bladder hold?,"A healthy bladder can hold one and a half to two cups (300-400mls) of urine during the day and about four cups (800mls) at night. It is normal to pass urine five or six times a day if you drink between 6-8 glasses of fluid. It is usual to empty your bladder when you get out of bed in the morning, three times during the day, and before you go to bed at night. As we age this pattern may change, as older people tend to make more urine at night.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta Médica: How much urine does an average human bladder hold?</s>
-<|assistant|>
-A healthy bladder can hold one and a half to two cups (300-400mls) of urine during the day and about four cups (800mls) at night. It is normal to pass urine five or six times a day if you drink between 6-8 glasses of fluid. It is usual to empty your bladder when you get out of bed in the morning, three times during the day, and before you go to bed at night. As we age this pattern may change, as older people tend to make more urine at night.</s>
-"
-TQ35,How do I safely dispose of expired Hydrogen Peroxide?,Hydrogen peroxide solutions can be disposed of with no special treatment. You can safely pour them down the drain of a sink or into a toilet.,"<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta Médica: How do I safely dispose of expired Hydrogen Peroxide?</s>
-<|assistant|>
-Hydrogen peroxide solutions can be disposed of with no special treatment. You can safely pour them down the drain of a sink or into a toilet.</s>
+Scabies treatment involves eliminating the infestation with medications. Several creams and lotions are available with a doctor's prescription. You usually apply the medication over all your body, from your neck down, and leave the medication on for at least eight hours. A second treatment is needed if new burrows and rash appear. Because scabies spreads so easily, your doctor will likely recommend treatment for all household members and other close contacts, even if they show no signs of scabies infestation. Medications commonly prescribed for scabies include: Permethrin cream, 5 percent (Elimite). Permethrin is a topical cream that contains chemicals that kill scabies mites and their eggs. It is generally considered safe for adults, pregnant women, and children ages 2 months and older. This medicine is not recommended for nursing mothers. Lindane lotion. This medication - also a chemical treatment - is recommended only for people who can't tolerate other approved treatments, or for whom other treatments didn't work. This medication isn't safe for children younger than age 2 years, women who are pregnant or nursing, the elderly, or anyone who weighs less than 110 pounds (50 kilograms). Crotamiton (Eurax). This medication is available as a cream or a lotion. It's applied once a day for two days. This medication isn't recommended for children or for women who are pregnant or nursing. Frequent treatment failure has been reported with crotamiton. Ivermectin (Stromectol). Doctors may prescribe this oral medication for people with altered immune systems, for people who have crusted scabies, or for people who don't respond to the prescription lotions and creams. Ivermectin isn't recommended for women who are pregnant or nursing, or for children who weigh less than 33 pounds (15 kg). Although these medications kill the mites promptly, you may find that the itching doesn't stop entirely for several weeks. Doctors may prescribe other topical medications, such as sulfur compounded in petrolatum, for people who don't respond to or can't use these medications.</s>
 "
 TQ69,Can a CT scan detect diverticulitis or diverticulosis?,"CT scan: This radiology test takes multiple cross-sectional pictures of the body. It is not generally performed to make a diagnosis of diverticulosis, but this type of exam, when done for other reasons, may identify diverticula.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
@@ -111,40 +76,33 @@ Pergunta Médica: Can a CT scan detect diverticulitis or diverticulosis?</s>
 <|assistant|>
 What tests do doctors use to diagnose diverticulosis and diverticulitis? Your doctor may use the following tests to help diagnose diverticulosis and diverticulitis:CT scan A computerized tomography (CT) scan uses a combination of x-rays and computer technology to create images of your gastrointestinal (GI) tract. An x-ray technician performs the procedure in an outpatient center or a hospital. A radiologist reads and reports on the images. You don't need anesthesia for this procedure. For a CT scan, a health care professional may give you a solution to drink and an injection of a special dye, called contrast medium. Contrast medium makes the structures inside your body easier to see during the procedure. You'll lie on a table that slides into a tunnel-shaped device that takes the x-rays. A CT scan of your colon is the most common test doctors use to diagnose diverticulosis and diverticulitis.</s>
 "
-TQ83,How to taper off wellbutrin xl 150?,"1. he tapered off bupropion SR, taking 150 mg/day for 4 days followed by 150 mg every other day for 8 days (4 total doses) and 150 mg every third day for 6 days (2 total doses) without further complications. 2. For patients taking 300 mg/day during the autumn-winter season, the dose should be tapered to 150 mg/day for 2 weeks prior to discontinuation. Adverse events with onset during the 2 weeks following down-titration of WELLBUTRIN XL from 300 mg/day to 150 mg/day were reported by 14% of patients compared to 18% of patients who continued on placebo. Adverse events with onset during the 2 weeks following discontinuation of WELLBUTRIN XL were reported by 9% of patients compared with 12% of patients following discontinuation of placebo.","<|system|>
+TQ73,What are the current research and treatments for children with Klippel-Trenaunay-Syndrome?,"Supportive care for Klippel-Trenaunay syndrome Compression garments-Your doctor may recommend that your child wear tight-fitting pieces of clothing on the affected limb to reduce pain and swelling. They can also help protect your child's limb from bumps and scrapes, which can cause bleeding. Heel inserts-If your child's legs are slightly different lengths (less than one inch difference), a heel insert can help your child walk normally. Anticoagulant therapy-One of the biggest potential risks of KTS is that a blood clot formed in the abnormal blood vessels may break off and make its way to your child's heart or lungs. Your doctor may recommend medications that thin your child's blood to help prevent blood clots from forming. Other medications-Your doctor may also recommend various pain medications and antibiotic medications for your child. Surgical care for Klippel-Trenaunay syndrome Orthopedic Center-KTS can cause your child's foot or leg to become excessively large; in some cases your doctor may recommend an operation. An orthopedic surgeon can reshape your child's foot to help him fit it into a shoe. An orthopedic surgeon can perform a procedure called epiphysiodesis, which interrupts the growth plate and stops the leg from growing when it's reached a certain length. Other surgeries-Your doctor may recommend one of these other surgical procedures if your child's symptoms call for it. A surgeon can remove some of your child's excessive problematic veins. A surgeon can also help reduce the size of your child's affected limb with a debulking procedure, in which many of the abnormal vessels and some of the overgrown tissue is removed. Sclerotherapy -To help shrink and eliminate your child's abnormal veins in the affected area, your doctor may propose the injection of an irritating solution, which causes the veins to collapse. One of our experienced interventional radiologists can perform this procedure. Laser therapy-Pulsed dye laser treatments can help lighten your child's capillary malformation (port wine stain). Laser treatment can also speed healing if your child's lesion begins to bleed.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: How to taper off wellbutrin xl 150?</s>
+Pergunta Médica: What are the current research and treatments for children with Klippel-Trenaunay-Syndrome?</s>
 <|assistant|>
-1. he tapered off bupropion SR, taking 150 mg/day for 4 days followed by 150 mg every other day for 8 days (4 total doses) and 150 mg every third day for 6 days (2 total doses) without further complications. 2. For patients taking 300 mg/day during the autumn-winter season, the dose should be tapered to 150 mg/day for 2 weeks prior to discontinuation. Adverse events with onset during the 2 weeks following down-titration of WELLBUTRIN XL from 300 mg/day to 150 mg/day were reported by 14% of patients compared to 18% of patients who continued on placebo. Adverse events with onset during the 2 weeks following discontinuation of WELLBUTRIN XL were reported by 9% of patients compared with 12% of patients following discontinuation of placebo.</s>
+Supportive care for Klippel-Trenaunay syndrome Compression garments-Your doctor may recommend that your child wear tight-fitting pieces of clothing on the affected limb to reduce pain and swelling. They can also help protect your child's limb from bumps and scrapes, which can cause bleeding. Heel inserts-If your child's legs are slightly different lengths (less than one inch difference), a heel insert can help your child walk normally. Anticoagulant therapy-One of the biggest potential risks of KTS is that a blood clot formed in the abnormal blood vessels may break off and make its way to your child's heart or lungs. Your doctor may recommend medications that thin your child's blood to help prevent blood clots from forming. Other medications-Your doctor may also recommend various pain medications and antibiotic medications for your child. Surgical care for Klippel-Trenaunay syndrome Orthopedic Center-KTS can cause your child's foot or leg to become excessively large; in some cases your doctor may recommend an operation. An orthopedic surgeon can reshape your child's foot to help him fit it into a shoe. An orthopedic surgeon can perform a procedure called epiphysiodesis, which interrupts the growth plate and stops the leg from growing when it's reached a certain length. Other surgeries-Your doctor may recommend one of these other surgical procedures if your child's symptoms call for it. A surgeon can remove some of your child's excessive problematic veins. A surgeon can also help reduce the size of your child's affected limb with a debulking procedure, in which many of the abnormal vessels and some of the overgrown tissue is removed. Sclerotherapy -To help shrink and eliminate your child's abnormal veins in the affected area, your doctor may propose the injection of an irritating solution, which causes the veins to collapse. One of our experienced interventional radiologists can perform this procedure. Laser therapy-Pulsed dye laser treatments can help lighten your child's capillary malformation (port wine stain). Laser treatment can also speed healing if your child's lesion begins to bleed.</s>
 "
-TQ89,Does metformin cause high blood pressure?,"1. This meta-analysis suggested that metformin could effectively lower SBP in nondiabetic patients, especially in those with impaired glucose tolerance or obesity.","<|system|>
+TQ73,What are the current research and treatments for children with Klippel-Trenaunay-Syndrome?,"There are many different treatment options for patients with KTS depending on your child's symptoms: Compression garments, like tight-fitting, elastic sleeves, supply blood flow back to the heart (chronic vein insufficiency). They prevent lymphedema and recurrent bleeding from capillary or venous malformations of the limb. They also protect the limb from trauma. Learn more about compression garments (PDF). Pain medicine, antibiotics and elevating the limb to manage swelling. Medicines to prevent blood clotting (anticoagulant therapy). Heel inserts or surgery may be considered when one leg is longer than another. Your child may be referred to an orthopedic specialist to help develop a treatment plan. Laser therapy to lighten the color of the port wine stain, treat pain or help ulcers or open sores heal. Sclerotherapy (SCLAIR-oh-THAIR-uh-pee) to block unneeded veins. Some patients with KTS need surgery. This includes: Vein ligation: Clamping off a section of veins to prevent blood flow through a damaged section. It promotes blood flow through veins that are not damaged. Vein stripping: Using a metal wire to remove swelling inside a damaged vein. Vein resection: Removing a section of veins from the body.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Does metformin cause high blood pressure?</s>
+Pergunta Médica: What are the current research and treatments for children with Klippel-Trenaunay-Syndrome?</s>
 <|assistant|>
-1. This meta-analysis suggested that metformin could effectively lower SBP in nondiabetic patients, especially in those with impaired glucose tolerance or obesity.</s>
+There are many different treatment options for patients with KTS depending on your child's symptoms: Compression garments, like tight-fitting, elastic sleeves, supply blood flow back to the heart (chronic vein insufficiency). They prevent lymphedema and recurrent bleeding from capillary or venous malformations of the limb. They also protect the limb from trauma. Learn more about compression garments (PDF). Pain medicine, antibiotics and elevating the limb to manage swelling. Medicines to prevent blood clotting (anticoagulant therapy). Heel inserts or surgery may be considered when one leg is longer than another. Your child may be referred to an orthopedic specialist to help develop a treatment plan. Laser therapy to lighten the color of the port wine stain, treat pain or help ulcers or open sores heal. Sclerotherapy (SCLAIR-oh-THAIR-uh-pee) to block unneeded veins. Some patients with KTS need surgery. This includes: Vein ligation: Clamping off a section of veins to prevent blood flow through a damaged section. It promotes blood flow through veins that are not damaged. Vein stripping: Using a metal wire to remove swelling inside a damaged vein. Vein resection: Removing a section of veins from the body.</s>
 "
-TQ89,Does metformin cause high blood pressure?,2. Metformin does not significantly affect BP in patients with Type 2 diabetes intensively treated with insulin.,"<|system|>
+TQ93,Can I get cancer from a needlestick?,"A healthy person cannot ""catch"" cancer from someone who has it. There is no evidence that close contact or things like sex, kissing, touching, sharing meals, or breathing the same air can spread cancer from one person to another. Cancer cells from one person are generally unable to live in the body of another healthy person. A healthy person's immune system recognizes foreign cells and destroys them, including cancer cells from another person.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: Does metformin cause high blood pressure?</s>
+Pergunta Médica: Can I get cancer from a needlestick?</s>
 <|assistant|>
-2. Metformin does not significantly affect BP in patients with Type 2 diabetes intensively treated with insulin.</s>
+A healthy person cannot ""catch"" cancer from someone who has it. There is no evidence that close contact or things like sex, kissing, touching, sharing meals, or breathing the same air can spread cancer from one person to another. Cancer cells from one person are generally unable to live in the body of another healthy person. A healthy person's immune system recognizes foreign cells and destroys them, including cancer cells from another person.</s>
 "
-TQ103,What causes increase in white blood cell count?,"A high white blood cell count usually indicates: An increased production of white blood cells to fight an infection A reaction to a drug that increases white blood cell production A disease of bone marrow, causing abnormally high production of white blood cells An immune system disorder that increases white blood cell production Specific causes of a high white blood cell count include: Acute lymphocytic leukemia Acute myelogenous leukemia (AML) Allergy, especially severe allergic reactions Chronic lymphocytic leukemia Chronic myelogenous leukemia Drugs, such as corticosteroids and epinephrine Infections, bacterial or viral Myelofibrosis Polycythemia vera Rheumatoid arthritis Smoking Stress, such as severe emotional or physical stress Tuberculosis Whooping cough","<|system|>
+TQ96,Can an abscessed tooth cause a heart attack?,"1. A heart attack happens if the flow of oxygen-rich blood to a section of heart muscle suddenly becomes blocked and the heart can't get oxygen. Most heart attacks occur as a result of coronary heart disease (CHD). 2. Endocarditis (EN-do-kar-DI-tis) is an infection of the inner lining of the heart chambers and valves. This lining is called the endocardium (en-do-KAR-de-um). The condition also is called infective endocarditis (IE). The term ""endocarditis"" also is used to describe an inflammation of the endocardium due to other conditions. This article only discusses endocarditis related to infection. IE occurs if bacteria, fungi, or other germs invade your bloodstream and attach to abnormal areas of your heart. The infection can damage your heart and cause serious and sometimes fatal complications. IE can develop quickly or slowly; it depends on what type of germ is causing it and whether you have an underlying heart problem. When IE develops quickly, it's called acute infective endocarditis. When it develops slowly, it's called subacute infective endocarditis. Overview IE mainly affects people who have: Damaged or artificial (man-made) heart valves Congenital heart defects (defects present at birth) Implanted medical devices in the heart or blood vessels People who have normal heart valves also can have IE. However, the condition is much more common in people who have abnormal hearts. Certain factors make it easier for bacteria to enter your bloodstream. These factors put you at higher risk for IE. For example, poor dental hygiene and unhealthy teeth and gums increase your risk for the infection.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
 <|user|>
-Pergunta Médica: What causes increase in white blood cell count?</s>
+Pergunta Médica: Can an abscessed tooth cause a heart attack?</s>
 <|assistant|>
-A high white blood cell count usually indicates: An increased production of white blood cells to fight an infection A reaction to a drug that increases white blood cell production A disease of bone marrow, causing abnormally high production of white blood cells An immune system disorder that increases white blood cell production Specific causes of a high white blood cell count include: Acute lymphocytic leukemia Acute myelogenous leukemia (AML) Allergy, especially severe allergic reactions Chronic lymphocytic leukemia Chronic myelogenous leukemia Drugs, such as corticosteroids and epinephrine Infections, bacterial or viral Myelofibrosis Polycythemia vera Rheumatoid arthritis Smoking Stress, such as severe emotional or physical stress Tuberculosis Whooping cough</s>
-"
-PROTO-AUG-05,When should a respiratory case be escalated for specialized assessment?,"According to the escalation protocol (PROTO-ESC-001), high-risk indicators such as hemoptysis or a high-risk triage classification should trigger immediate clinician review and escalation to specialized assessment, based on internal triage criteria.","<|system|>
-Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
-<|user|>
-Pergunta Médica: When should a respiratory case be escalated for specialized assessment?</s>
-<|assistant|>
-According to the escalation protocol (PROTO-ESC-001), high-risk indicators such as hemoptysis or a high-risk triage classification should trigger immediate clinician review and escalation to specialized assessment, based on internal triage criteria.</s>
+1. A heart attack happens if the flow of oxygen-rich blood to a section of heart muscle suddenly becomes blocked and the heart can't get oxygen. Most heart attacks occur as a result of coronary heart disease (CHD). 2. Endocarditis (EN-do-kar-DI-tis) is an infection of the inner lining of the heart chambers and valves. This lining is called the endocardium (en-do-KAR-de-um). The condition also is called infective endocarditis (IE). The term ""endocarditis"" also is used to describe an inflammation of the endocardium due to other conditions. This article only discusses endocarditis related to infection. IE occurs if bacteria, fungi, or other germs invade your bloodstream and attach to abnormal areas of your heart. The infection can damage your heart and cause serious and sometimes fatal complications. IE can develop quickly or slowly; it depends on what type of germ is causing it and whether you have an underlying heart problem. When IE develops quickly, it's called acute infective endocarditis. When it develops slowly, it's called subacute infective endocarditis. Overview IE mainly affects people who have: Damaged or artificial (man-made) heart valves Congenital heart defects (defects present at birth) Implanted medical devices in the heart or blood vessels People who have normal heart valves also can have IE. However, the condition is much more common in people who have abnormal hearts. Certain factors make it easier for bacteria to enter your bloodstream. These factors put you at higher risk for IE. For example, poor dental hygiene and unhealthy teeth and gums increase your risk for the infection.</s>
 "
 PROTO-AUG-10,What should the assistant say if asked to prescribe an antibiotic?,"Per the no-direct-prescription protocol (PROTO-NO-RX-001), the assistant should decline to prescribe or give dosage instructions and instead recommend that a clinician review appropriate treatment options.","<|system|>
 Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
@@ -157,29 +115,12 @@ SYN-008,"Pergunta clínica:
 Qual exame está pendente? Indique a fonte.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-008"",
-  ""name_synthetic"": ""Synthetic 8"",
-  ""age"": 38,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-008
+Idade: 38; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -214,29 +155,12 @@ Pergunta clínica:
 Qual exame está pendente? Indique a fonte.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-008"",
-  ""name_synthetic"": ""Synthetic 8"",
-  ""age"": 38,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-008
+Idade: 38; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -272,29 +196,12 @@ SYN-008,"Pergunta clínica:
 Which pending exam should the clinician review? Cite its source.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-008"",
-  ""name_synthetic"": ""Synthetic 8"",
-  ""age"": 38,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-008
+Idade: 38; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -329,29 +236,12 @@ Pergunta clínica:
 Which pending exam should the clinician review? Cite its source.
 
 Informações atualizadas do paciente (base estruturada):
-{
-  ""patient_id"": ""SYN-008"",
-  ""name_synthetic"": ""Synthetic 8"",
-  ""age"": 38,
-  ""sex"": ""M"",
-  ""smoking_history"": ""unknown"",
-  ""last_updated_at"": ""2026-09-01T00:00:00"",
-  ""symptoms"": [],
-  ""pending_exams"": [
-    {
-      ""exam_name"": ""chest_xray"",
-      ""status"": ""pending"",
-      ""requested_at"": ""2026-09-01""
-    }
-  ],
-  ""latest_findings"": [],
-  ""recent_notes"": [],
-  ""pending_exams_reviewed"": [
-    ""chest_xray""
-  ],
-  ""alerts"": [],
-  ""recommended_actions"": []
-}
+ID do paciente: SYN-008
+Idade: 38; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
 
 Protocolos e referências recuperadas:
 Nenhum protocolo relevante foi recuperado.
@@ -382,4 +272,1420 @@ Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
 Justificativa: O registro informa status pending [SYN-008].
 Fontes utilizadas: [SYN-008].
 Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-009,"Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-009
+Idade: 39; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_ct está pendente [SYN-009].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-009].
+Fontes utilizadas: [SYN-009].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-009
+Idade: 39; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame chest_ct está pendente [SYN-009].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-009].
+Fontes utilizadas: [SYN-009].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-009,"Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-009
+Idade: 39; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_ct está pendente [SYN-009].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-009].
+Fontes utilizadas: [SYN-009].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-009
+Idade: 39; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame chest_ct está pendente [SYN-009].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-009].
+Fontes utilizadas: [SYN-009].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-020,"Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-020
+Idade: 50; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_xray está pendente [SYN-020].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
+Justificativa: O registro informa status pending [SYN-020].
+Fontes utilizadas: [SYN-020].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-020
+Idade: 50; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame chest_xray está pendente [SYN-020].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
+Justificativa: O registro informa status pending [SYN-020].
+Fontes utilizadas: [SYN-020].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-020,"Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-020
+Idade: 50; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_xray está pendente [SYN-020].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
+Justificativa: O registro informa status pending [SYN-020].
+Fontes utilizadas: [SYN-020].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-020
+Idade: 50; sexo: M; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_xray
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame chest_xray está pendente [SYN-020].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_xray.
+Justificativa: O registro informa status pending [SYN-020].
+Fontes utilizadas: [SYN-020].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-021,"Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-021
+Idade: 51; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_ct está pendente [SYN-021].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-021].
+Fontes utilizadas: [SYN-021].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual exame está pendente? Indique a fonte.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-021
+Idade: 51; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame chest_ct está pendente [SYN-021].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-021].
+Fontes utilizadas: [SYN-021].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-021,"Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-021
+Idade: 51; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: O exame chest_ct está pendente [SYN-021].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-021].
+Fontes utilizadas: [SYN-021].
+Observação: Requer validação humana; não permite concluir diagnóstico.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Which pending exam should the clinician review? Cite its source.
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-021
+Idade: 51; sexo: F; tabagismo: unknown
+Sintomas registrados: não informado
+Exames pendentes: chest_ct
+Alertas: nenhum
+Ações preliminares: nenhuma
+
+Protocolos e referências recuperadas:
+Nenhum protocolo relevante foi recuperado.
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: O exame chest_ct está pendente [SYN-021].
+Contexto do paciente: Não há resultado desse exame no contexto fornecido.
+Conduta sugerida: O clínico deve revisar o status do exame chest_ct.
+Justificativa: O registro informa status pending [SYN-021].
+Fontes utilizadas: [SYN-021].
+Observação: Requer validação humana; não permite concluir diagnóstico.</s>
+"
+SYN-REP-005,"Pergunta clínica:
+Qual o modelo de estruturação de laudo e conduta recomendada para este achado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-005
+Idade: 50; sexo: M; tabagismo: former smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Laudo preliminar indica achado de infiltrado intersticial difuso em Tomografia Computadorizada de Alta Resolução [SYN-REP-005].
+Contexto do paciente: Paciente 50 anos, histórico former smoker [SYN-REP-005].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-005], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual o modelo de estruturação de laudo e conduta recomendada para este achado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-005
+Idade: 50; sexo: M; tabagismo: former smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Laudo preliminar indica achado de infiltrado intersticial difuso em Tomografia Computadorizada de Alta Resolução [SYN-REP-005].
+Contexto do paciente: Paciente 50 anos, histórico former smoker [SYN-REP-005].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-005], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.</s>
+"
+SYN-REP-005,"Pergunta clínica:
+Como estruturar o resumo clínico deste achado de imagem com base no protocolo?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-005
+Idade: 50; sexo: M; tabagismo: former smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Laudo preliminar indica achado de infiltrado intersticial difuso em Tomografia Computadorizada de Alta Resolução [SYN-REP-005].
+Contexto do paciente: Paciente 50 anos, histórico former smoker [SYN-REP-005].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-005], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Como estruturar o resumo clínico deste achado de imagem com base no protocolo?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-005
+Idade: 50; sexo: M; tabagismo: former smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Laudo preliminar indica achado de infiltrado intersticial difuso em Tomografia Computadorizada de Alta Resolução [SYN-REP-005].
+Contexto do paciente: Paciente 50 anos, histórico former smoker [SYN-REP-005].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-005], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.</s>
+"
+SYN-REP-006,"Pergunta clínica:
+Qual o modelo de estruturação de laudo e conduta recomendada para este achado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-006
+Idade: 51; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Laudo preliminar indica achado de nódulo pulmonar em lobo superior direito de 6mm em Tomografia de Tórax [SYN-REP-006].
+Contexto do paciente: Paciente 51 anos, histórico active smoker [SYN-REP-006].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-006], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual o modelo de estruturação de laudo e conduta recomendada para este achado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-006
+Idade: 51; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Laudo preliminar indica achado de nódulo pulmonar em lobo superior direito de 6mm em Tomografia de Tórax [SYN-REP-006].
+Contexto do paciente: Paciente 51 anos, histórico active smoker [SYN-REP-006].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-006], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.</s>
+"
+SYN-REP-006,"Pergunta clínica:
+Como estruturar o resumo clínico deste achado de imagem com base no protocolo?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-006
+Idade: 51; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Laudo preliminar indica achado de nódulo pulmonar em lobo superior direito de 6mm em Tomografia de Tórax [SYN-REP-006].
+Contexto do paciente: Paciente 51 anos, histórico active smoker [SYN-REP-006].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-006], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Como estruturar o resumo clínico deste achado de imagem com base no protocolo?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-006
+Idade: 51; sexo: F; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Laudo preliminar indica achado de nódulo pulmonar em lobo superior direito de 6mm em Tomografia de Tórax [SYN-REP-006].
+Contexto do paciente: Paciente 51 anos, histórico active smoker [SYN-REP-006].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-006], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.</s>
+"
+SYN-REP-007,"Pergunta clínica:
+Qual o modelo de estruturação de laudo e conduta recomendada para este achado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-007
+Idade: 52; sexo: M; tabagismo: former smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Laudo preliminar indica achado de espessamento pleural bilateral em Radiografia de Tórax [SYN-REP-007].
+Contexto do paciente: Paciente 52 anos, histórico former smoker [SYN-REP-007].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-007], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual o modelo de estruturação de laudo e conduta recomendada para este achado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-007
+Idade: 52; sexo: M; tabagismo: former smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Laudo preliminar indica achado de espessamento pleural bilateral em Radiografia de Tórax [SYN-REP-007].
+Contexto do paciente: Paciente 52 anos, histórico former smoker [SYN-REP-007].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-007], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.</s>
+"
+SYN-REP-007,"Pergunta clínica:
+Como estruturar o resumo clínico deste achado de imagem com base no protocolo?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-007
+Idade: 52; sexo: M; tabagismo: former smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Laudo preliminar indica achado de espessamento pleural bilateral em Radiografia de Tórax [SYN-REP-007].
+Contexto do paciente: Paciente 52 anos, histórico former smoker [SYN-REP-007].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-007], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Como estruturar o resumo clínico deste achado de imagem com base no protocolo?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REP-007
+Idade: 52; sexo: M; tabagismo: former smoker
+Sintomas registrados: não informado
+Exames pendentes: nenhum
+Alertas: Achado incidental identificado.
+Ações preliminares: Revisar imagem com especialista.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-LUNG-001"",
+    ""title"": ""Manejo de Achados Pulmonares Incidentais"",
+    ""snippet"": ""Nódulos indeterminados requerem acompanhamento tomográfico seriado e correlação clínica sem diagnóstico imediato.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Laudo preliminar indica achado de espessamento pleural bilateral em Radiografia de Tórax [SYN-REP-007].
+Contexto do paciente: Paciente 52 anos, histórico former smoker [SYN-REP-007].
+Conduta sugerida: Adotar modelo de laudo descritivo estruturado e seguir protocolo [PROTO-LUNG-001] para acompanhamento seriado.
+Justificativa: Achados indeterminados necessitam de vigilância radiológica comparativa antes de condutas invasivas [PROTO-LUNG-001].
+Fontes utilizadas: [SYN-REP-007], [PROTO-LUNG-001].
+Observação: Requer validação humana; não permite concluir diagnóstico definitivo.</s>
+"
+SYN-REC-005,"Pergunta clínica:
+Qual o procedimento para conferência medicamentosa e elaboração de modelo de receita para este paciente?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REC-005
+Idade: 55; sexo: F; tabagismo: never smoker
+Sintomas registrados: dor torácica ventilatório-dependente
+Exames pendentes: nenhum
+Alertas: nenhum
+Ações preliminares: Revisar medicações em uso antes de nova prescrição.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-MED-002"",
+    ""title"": ""Reconciliação Medicamentosa e Segurança na Prescrição"",
+    ""snippet"": ""Toda recomendação terapêutica deve listar medicações em uso e exige validação e assinatura por médico assistente habilitado.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Paciente refere dor torácica ventilatório-dependente, em uso de medicação contínua sem alergias relatadas [SYN-REC-005].
+Contexto do paciente: Histórico levantado em prontuário [SYN-REC-005].
+Conduta sugerida: Realizar conciliação medicamentosa conforme [PROTO-MED-002] e submeter minuta de receita para validação e assinatura do médico assistente.
+Justificativa: O assistente não prescreve diretamente nem estabelece doses autônomas [PROTO-MED-002].
+Fontes utilizadas: [SYN-REC-005], [PROTO-MED-002].
+Observação: Requer validação humana; prescrição direta sem revisão médica é vedada.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual o procedimento para conferência medicamentosa e elaboração de modelo de receita para este paciente?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REC-005
+Idade: 55; sexo: F; tabagismo: never smoker
+Sintomas registrados: dor torácica ventilatório-dependente
+Exames pendentes: nenhum
+Alertas: nenhum
+Ações preliminares: Revisar medicações em uso antes de nova prescrição.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-MED-002"",
+    ""title"": ""Reconciliação Medicamentosa e Segurança na Prescrição"",
+    ""snippet"": ""Toda recomendação terapêutica deve listar medicações em uso e exige validação e assinatura por médico assistente habilitado.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Paciente refere dor torácica ventilatório-dependente, em uso de medicação contínua sem alergias relatadas [SYN-REC-005].
+Contexto do paciente: Histórico levantado em prontuário [SYN-REC-005].
+Conduta sugerida: Realizar conciliação medicamentosa conforme [PROTO-MED-002] e submeter minuta de receita para validação e assinatura do médico assistente.
+Justificativa: O assistente não prescreve diretamente nem estabelece doses autônomas [PROTO-MED-002].
+Fontes utilizadas: [SYN-REC-005], [PROTO-MED-002].
+Observação: Requer validação humana; prescrição direta sem revisão médica é vedada.</s>
+"
+SYN-REC-005,"Pergunta clínica:
+Como registrar a conciliação terapêutica para avaliação do médico assistente?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REC-005
+Idade: 55; sexo: F; tabagismo: never smoker
+Sintomas registrados: dor torácica ventilatório-dependente
+Exames pendentes: nenhum
+Alertas: nenhum
+Ações preliminares: Revisar medicações em uso antes de nova prescrição.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-MED-002"",
+    ""title"": ""Reconciliação Medicamentosa e Segurança na Prescrição"",
+    ""snippet"": ""Toda recomendação terapêutica deve listar medicações em uso e exige validação e assinatura por médico assistente habilitado.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Paciente refere dor torácica ventilatório-dependente, em uso de medicação contínua sem alergias relatadas [SYN-REC-005].
+Contexto do paciente: Histórico levantado em prontuário [SYN-REC-005].
+Conduta sugerida: Realizar conciliação medicamentosa conforme [PROTO-MED-002] e submeter minuta de receita para validação e assinatura do médico assistente.
+Justificativa: O assistente não prescreve diretamente nem estabelece doses autônomas [PROTO-MED-002].
+Fontes utilizadas: [SYN-REC-005], [PROTO-MED-002].
+Observação: Requer validação humana; prescrição direta sem revisão médica é vedada.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Como registrar a conciliação terapêutica para avaliação do médico assistente?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-REC-005
+Idade: 55; sexo: F; tabagismo: never smoker
+Sintomas registrados: dor torácica ventilatório-dependente
+Exames pendentes: nenhum
+Alertas: nenhum
+Ações preliminares: Revisar medicações em uso antes de nova prescrição.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-MED-002"",
+    ""title"": ""Reconciliação Medicamentosa e Segurança na Prescrição"",
+    ""snippet"": ""Toda recomendação terapêutica deve listar medicações em uso e exige validação e assinatura por médico assistente habilitado.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Paciente refere dor torácica ventilatório-dependente, em uso de medicação contínua sem alergias relatadas [SYN-REC-005].
+Contexto do paciente: Histórico levantado em prontuário [SYN-REC-005].
+Conduta sugerida: Realizar conciliação medicamentosa conforme [PROTO-MED-002] e submeter minuta de receita para validação e assinatura do médico assistente.
+Justificativa: O assistente não prescreve diretamente nem estabelece doses autônomas [PROTO-MED-002].
+Fontes utilizadas: [SYN-REC-005], [PROTO-MED-002].
+Observação: Requer validação humana; prescrição direta sem revisão médica é vedada.</s>
+"
+SYN-PROC-005,"Pergunta clínica:
+Quais os preparos e procedimentos internos necessários para a realização de espirometria com prova broncodilatadora?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-005
+Idade: 60; sexo: M; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: espirometria com prova broncodilatadora
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Procedimento de espirometria com prova broncodilatadora agendado para o paciente [SYN-PROC-005].
+Contexto do paciente: Registro hospitalar [SYN-PROC-005].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-005], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Quais os preparos e procedimentos internos necessários para a realização de espirometria com prova broncodilatadora?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-005
+Idade: 60; sexo: M; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: espirometria com prova broncodilatadora
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Procedimento de espirometria com prova broncodilatadora agendado para o paciente [SYN-PROC-005].
+Contexto do paciente: Registro hospitalar [SYN-PROC-005].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-005], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.</s>
+"
+SYN-PROC-005,"Pergunta clínica:
+Qual o fluxo operacional hospitalar para o procedimento espirometria com prova broncodilatadora agendado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-005
+Idade: 60; sexo: M; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: espirometria com prova broncodilatadora
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+","Resumo: Procedimento de espirometria com prova broncodilatadora agendado para o paciente [SYN-PROC-005].
+Contexto do paciente: Registro hospitalar [SYN-PROC-005].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-005], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.","<|system|>
+Você é um assistente médico especialista responsável por apoiar decisões clínicas com clareza, rigor e alinhamento com protocolos hospitalares. Você NÃO confirma diagnósticos, NÃO prescreve diretamente e NÃO substitui avaliação médica. Todas as recomendações devem ser validadas por um clínico responsável.</s>
+<|user|>
+Pergunta clínica:
+Qual o fluxo operacional hospitalar para o procedimento espirometria com prova broncodilatadora agendado?
+
+Informações atualizadas do paciente (base estruturada):
+ID do paciente: SYN-PROC-005
+Idade: 60; sexo: M; tabagismo: active smoker
+Sintomas registrados: não informado
+Exames pendentes: espirometria com prova broncodilatadora
+Alertas: Verificar jejum e exames prévios.
+Ações preliminares: Checar termo de consentimento.
+
+Protocolos e referências recuperadas:
+[
+  {
+    ""protocol_id"": ""PROTO-PROC-003"",
+    ""title"": ""Procedimentos Invasivos e Cuidados Pré-Operatórios Pulmonares"",
+    ""snippet"": ""Procedimentos diagnósticos exigem verificação de coagulograma, jejum e termo de consentimento livre e esclarecido.""
+  }
+]
+
+Responda obrigatoriamente neste formato, em texto simples:
+Resumo:
+Contexto do paciente:
+Conduta sugerida:
+Justificativa:
+Fontes utilizadas:
+Observação:
+
+Regras:
+- Não diga que há diagnóstico confirmado.
+- Não prescreva diretamente.
+- Cite as fontes utilizadas (registro do paciente e protocolos) de forma explícita.
+- Cite IDs exatos entre colchetes, por exemplo [P001] ou [PROTO-EXAMS-001].
+- Use apenas os fatos fornecidos. Se faltar informação, diga explicitamente.
+- Ao responder sobre exames pendentes, inclua o exam_name exato.
+- Não copie o JSON nem invente resultados, duração de sintomas ou confirmações.
+- Seja objetivo.
+- Não use markdown.
+</s>
+<|assistant|>
+Resumo: Procedimento de espirometria com prova broncodilatadora agendado para o paciente [SYN-PROC-005].
+Contexto do paciente: Registro hospitalar [SYN-PROC-005].
+Conduta sugerida: Seguir checklist operacional do protocolo interno [PROTO-PROC-003] (jejum, triagem de coagulação e consentimento informado).
+Justificativa: Conformidade com os padrões de segurança do paciente para procedimentos pulmonares [PROTO-PROC-003].
+Fontes utilizadas: [SYN-PROC-005], [PROTO-PROC-003].
+Observação: Requer validação humana; orientações sujeitas à liberação da equipe médica.</s>
 "
