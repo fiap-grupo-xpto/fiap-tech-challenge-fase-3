@@ -22,7 +22,7 @@ O sistema foi arquitetado para cumprir quatro objetivos principais:
 1. **Fine-Tuning de LLM:** Ajustar um modelo de linguagem da família LLaMA com dados médicos clínicos e protocolos hospitalares internos, aplicando técnicas de pré-processamento, anonimização de PII e curadoria instruction-style.
 2. **Orquestração com LangChain e LangGraph:** Implementar um pipeline de decisão clínica automatizada que consulta bases estruturadas (prontuários e exames em SQLite), contextualiza as respostas com dados atualizados do paciente e conduz fluxos de decisão com nós determinísticos e generativos.
 3. **Segurança, Validação e Auditoria:** Estabelecer guardrails de contenção para impedir prescrição direta autônoma e diagnósticos definitivos, garantir rastreabilidade completa via logging e auditoria persistente, e fornecer explicabilidade (*explainability*) referenciando as fontes utilizadas.
-4. **Resiliência de Engenharia:** Prover um adapter de inferência com prioridade para a LLM customizada local com fallback automático para a API do Google Gemini, garantindo continuidade do serviço.
+4. **Resiliência de Engenharia:** Prover uma cadeia de inferência que prioriza a LLM customizada local, tenta Gemini quando a geração local falha e, se ambos os provedores falharem, retorna uma síntese determinística segura e auditável.
 
 ---
 
@@ -33,13 +33,10 @@ O sistema foi arquitetado para cumprir quatro objetivos principais:
 Para o treinamento e alinhamento do modelo, utilizou-se uma composição híbrida contemplando dados públicos de referência e dados clínicos internos sintéticos:
 
 1. **TREC-2017 LiveQA Medical (Proxy de FAQs Clínicas):** Base pública em XML contendo 166 pares curados de perguntas de pacientes e respostas de especialistas médicos sobre sintomas, patologias e farmacologia.
-2. **Protocolos Hospitalares Internos:** 10 pares sintéticos baseados diretamente nos 5 protocolos hospitalares reais cadastrados no sistema (`PROTO-LUNG-001` a `PROTO-LUNG-005` e `PROTO-HITL-001`), exercitando condutas de triagem, estadiamento e vigilância de nódulos.
-3. **Dados de Produção e Contexto Operacional:** 60 amostras sintéticas formuladas com a mesma função geradora de prompts da API (`build_user_prompt`), simulando 30 pacientes distintos em português e inglês com exames pendentes.
-4. **Modelos de Laudos Estruturados:** 30 amostras com achados radiológicos preliminares de tomografia de tórax e TC de alta resolução, ensinando a estruturação de relatórios descritivos sem conclusão precipitada.
-5. **Modelos de Receitas e Reconciliação Medicamentosa:** 20 amostras de conferência de polifarmácia e minuta de prescrição condicionada à validação médica assistente.
-6. **Procedimentos Internos Hospitalares:** 20 amostras de protocolos pré-operatórios e de intervenção (broncoscopia diagnóstica, biópsia guiada por TC), cobrindo jejum, coagulograma e termo de consentimento.
+2. **Protocolos Hospitalares Internos:** 10 pares sintéticos derivados dos cinco protocolos usados em runtime (`PROTO-TRIAGE-001`, `PROTO-EXAMS-001`, `PROTO-ESC-001`, `PROTO-HITL-001` e `PROTO-NO-RX-001`), cobrindo triagem, exames, escalonamento e revisão humana.
+3. **Contexto Operacional:** 60 exemplos sintéticos gerados por `context_examples.py` com a mesma composição de prompt usada pelo assistente, simulando 30 pacientes fictícios e duas perguntas por paciente.
 
-O dataset consolidado gerou **130 exemplos sintéticos de produção** em `llm_finetuning/data/context_examples.jsonl`, que unidos ao TREC-2017 somam mais de 290 amostras curadas.
+A execução reproduzível de `run_finetuning.py` combina 166 exemplos TREC, 10 exemplos de protocolos e 60 exemplos de contexto: **236 exemplos antes do filtro de comprimento**. Três exemplos acima de 1024 tokens são excluídos sem truncamento, resultando em **233 exemplos** distribuídos em 181 de treino, 28 de validação e 24 de teste. O arquivo `data/context_examples.jsonl` é um corpus sintético suplementar; a fonte de verdade da execução é o gerador chamado pelo script e os metadados versionados em `artifacts/llama_medical_lora_model/training_metadata.json`.
 
 ### 2.2 Pré-Processamento, Anonimização e Curadoria
 
@@ -54,11 +51,11 @@ O pipeline de preparação em `llm_finetuning/run_finetuning.py` e `llm_finetuni
 
 - **Modelo Base:** `TinyLlama/TinyLlama-1.1B-Chat-v1.0` (arquitetura LLaMA, 1,1 bilhão de parâmetros, vocabulário de 32k tokens).
 - **Técnica de Adaptação Eficiente:** LoRA (*Low-Rank Adaptation*) via biblioteca `PEFT` do Hugging Face.
-  - Módulos alvo: `q_proj`, `v_proj` nas camadas de atenção.
-  - Rank ($r$): 8
-  - Alpha de escalonamento ($\alpha$): 16
+  - Módulos alvo: `q_proj`, `v_proj`, `k_proj` e `o_proj` nas camadas de atenção.
+  - Rank ($r$): 16
+  - Alpha de escalonamento ($\alpha$): 32
   - Dropout de LoRA: 0.05
-  - Parâmetros treináveis: **4.505.600 parâmetros** (apenas **0,41%** do total do modelo), minimizando a pegada de memória.
+  - A configuração entregue é verificável em `artifacts/llama_medical_lora_model/adapter_config.json`.
 - **Hiperparâmetros de Treinamento:**
   - Otimizador: AdamW (`lr = 2e-4`) com scheduler linear e warmup de 10 passos.
   - Tamanho de contexto: `MAX_SEQ_LENGTH = 1024` tokens.
@@ -70,7 +67,7 @@ O pipeline de preparação em `llm_finetuning/run_finetuning.py` e `llm_finetuni
 
 ## 3. Arquitetura do Assistente Médico com LangChain e LangGraph (Item 2)
 
-O assistente foi desenhado como um sistema de suporte à decisão clínica baseado em grafos de estados (`langgraph.graph.StateGraph`), conectando o mundo determinístico (banco de dados hospitalar) ao mundo generativo (LLM).
+O assistente foi desenhado como um sistema de suporte à decisão clínica baseado em grafos de estados (`langgraph.graph.StateGraph`), conectando o mundo determinístico (banco de dados hospitalar) ao mundo generativo (LLM). O grafo implementado possui **14 nós**; o diagrama vetorial e a lista de nós desta seção são a referência para a demonstração.
 
 ```
                       ┌──────────────────────┐
@@ -102,7 +99,7 @@ O assistente foi desenhado como um sistema de suporte à decisão clínica basea
                │                                 │
                │                                 ▼
                │                    ┌─────────────────────────┐
-               │                    │ evaluate_alerts & cond. │
+               │                    │evaluate_alerts / suggest │
                │                    └────────────┬────────────┘
                │                                 │
                │                                 ▼
@@ -112,7 +109,7 @@ O assistente foi desenhado como um sistema de suporte à decisão clínica basea
                │                                 │
                │                                 ▼
                │                    ┌─────────────────────────┐
-               │                    │     generate_answer     │◄── TinyLlama / Gemini
+               │                    │ build_prompt / generate │◄── Item 1 → Gemini
                │                    └────────────┬────────────┘
                │                                 │
                │                                 ▼
@@ -125,7 +122,7 @@ O assistente foi desenhado como um sistema de suporte à decisão clínica basea
                │                │                                 │
                ▼                ▼                                 ▼
         ┌──────────────┐ ┌──────────────┐                 ┌───────────────┐
-        │format_blocked│ │format_blocked│                 │format_response│
+        │format_blocked│ │format_safe_fallback│            │format_response│
         └──────┬───────┘ └──────┬───────┘                 └───────┬───────┘
                │                │                                 │
                └────────────────┼─────────────────────────────────┘
@@ -141,21 +138,26 @@ O assistente foi desenhado como um sistema de suporte à decisão clínica basea
 
 ### 3.1 Detalhamento dos Nós do Grafo (`backend/assistant/workflow.py`)
 
-1. **`validate_input`:** Primeiro ponto de controle. Avalia a pergunta do clínico contra a lista de termos proibidos (ex.: comandos de prescrição ou exigência de diagnóstico definitivo fechado). Desvia imediatamente para `format_blocked` em caso de infração.
-2. **`load_patient_context`:** Conecta ao SQLite (`backend/data/hospital.db`) e carrega o prontuário completo: idade, sexo, carga tabágica, sintomas ativos, notas clínicas e histórico recente.
-3. **`retrieve_protocols`:** Busca no banco relacional os protocolos hospitalares oficiais pertinentes à queixa apresentada e aos achados clínicos.
-4. **`review_pending_exams`:** Varre a tabela de exames para identificar procedimentos agendados ou pendentes de realização (ex.: TC de tórax contrastada, espirometria).
-5. **`evaluate_alerts` & `suggest_actions`:** Regras clínicas determinísticas geram alertas automáticos de risco (ex.: "Paciente tabagista de alto risco com tosse há mais de 3 semanas") e sugerem condutas preliminares.
-6. **`build_prompt`:** Concatena os dados do paciente, protocolos recuperados e instruções de formatação estrita.
-7. **`generate_answer`:** Aciona o `AssistantProviderSelector`:
-   - Tenta invocar a LLM customizada local com adapter LoRA (`TinyLlama`).
-   - Se os pesos não estiverem presentes ou ocorrer erro de execução, ativa com transparência o fallback para o Google Gemini.
-8. **`validate_output`:** Validação de saída inspecionando o texto da LLM:
+1. **`validate_input`:** Primeiro ponto de controle. Avalia a pergunta contra limites de prescrição direta e diagnóstico definitivo. Em caso de infração, desvia para `format_blocked` sem chamar a LLM.
+2. **`load_patient_context`:** Consulta o SQLite (`backend/data/hospital.db`) para recuperar prontuário, sintomas e notas clínicas.
+3. **`retrieve_protocols`:** Recupera protocolos institucionais aplicáveis no banco estruturado.
+4. **`review_pending_exams`:** Identifica exames agendados ou pendentes.
+5. **`evaluate_alerts`:** Aplica regras determinísticas para produzir alertas de risco.
+6. **`suggest_actions`:** Deriva ações preliminares sujeitas à revisão humana.
+7. **`build_prompt`:** Consolida contexto, protocolos, alertas e instruções no prompt instruction-style.
+8. **`generate_answer`:** Executa a cadeia de geração:
+   - Tenta primeiro a LLM customizada local com adapter LoRA (`TinyLlama`), inclusive quando o modo solicitado é `item1_only`.
+   - Se o Item 1 não estiver disponível, falhar ao carregar ou não gerar texto, tenta Gemini.
+   - Se Gemini também falhar ou estiver indisponível, preserva os erros das tentativas na auditoria e encaminha diretamente para `format_safe_fallback`.
+9. **`validate_output`:** Valida segurança, fontes e qualidade do texto gerado:
    - Bloqueia dosagens, nomes de medicamentos em tom prescritivo ou afirmações de diagnóstico definitivo.
    - Executa `check_citation_consistency`: se o modelo citar protocolos não fornecidos no contexto ou links inexistentes, a resposta é barrada.
    - Executa `validate_answer_quality`: detecta respostas vazias ou eco do cabeçalho.
-9. **`format_response` / `format_blocked` / `format_error`:** Padroniza o schema Pydantic de resposta (`AssistantQueryResponse`), preenchendo as fontes utilizadas (`sources_used`), fontes citadas (`sources_cited`), status e a flag `requires_human_review = True`.
-10. **`log_interaction`:** Nó terminal obrigatório. Registra na tabela `audit_log` do SQLite o rastreio integral da sessão. Se o banco falhar, grava no arquivo de contingência `audit_fallback.jsonl`.
+10. **`format_response`:** Padroniza uma resposta aprovada no schema Pydantic, com fontes e indicação de revisão humana quando aplicável.
+11. **`format_safe_fallback`:** Quando uma entrada válida gera texto incompatível com os guardrails **ou quando Item 1 e Gemini falham**, retém a saída original quando houver uma e devolve uma síntese determinística, segura e auditável; ela não é uma resposta do Gemini.
+12. **`format_blocked`:** Padroniza a recusa para entrada proibida ou outras situações bloqueadas.
+13. **`format_error`:** Padroniza falhas de validação, contexto ou infraestrutura anteriores à cadeia de geração. Falhas dos provedores seguem para `format_safe_fallback`.
+14. **`log_interaction`:** Nó terminal obrigatório. Registra a interação no SQLite; se necessário, usa `audit_fallback.jsonl`.
 
 ---
 
@@ -188,7 +190,8 @@ Cada requisição gera um `request_id` único no padrão UUIDv4. O nó `log_inte
 - ID do paciente e pergunta original;
 - Prompt de sistema e prompt de usuário enviados à LLM;
 - Resposta bruta da LLM (`raw_answer`) e resposta final higienizada;
-- Backend utilizado (`item1_lora` ou `gemini_fallback`) e histórico de erros de tentativa;
+- Backend utilizado (`item1_custom_llm` ou `gemini_fallback`) e histórico de erros de tentativa;
+- Falha final do provider em `error_message` quando a cadeia Item 1 → Gemini é esgotada;
 - Status da validação de segurança (regras disparadas, motivo do bloqueio);
 - Mecanismo de persistência dupla: se houver indisponibilidade no banco de dados relacional, a gravação ocorre de forma atômica no arquivo local `backend/data/audit_fallback.jsonl`.
 
@@ -214,7 +217,7 @@ A avaliação comparativa foi executada de forma estrita comparando o **Modelo B
 1. **Aderência ao Formato Clínico:** O modelo ajustado aprendeu a estrutura exigida de saída (`Resumo`, `Contexto do paciente`, `Conduta sugerida`, `Justificativa`, `Fontes utilizadas`, `Observação`), enquanto o modelo base respondia em estilo conversacional genérico e prolixo.
 2. **Eliminação de Alucinações de Sintomas:** No modelo base, observou-se a invenção de sintomas não presentes no prompt (ex.: histórico de viagens, dores articulares). O fine-tuning reduziu drasticamente esse comportamento.
 3. **Limitação de Capacidade e Épocas:** Como o treinamento foi viabilizado em CPU com 1 época e ~180 amostras de treino para um modelo compacto de 1,1B, o modelo às vezes ecoa trechos das regras do prompt quando submetido a perguntas muito extensas.
-4. **O Papel dos Guardrails e Fallback:** É exatamente nessa limitação que a engenharia do projeto brilha: quando a LLM local falha na qualidade ou tenta gerar texto inadequado, o nó `validate_output` e o módulo `quality.py` interceptam a resposta, impedindo que conteúdo de baixa qualidade chegue ao médico e acionando o fallback quando necessário.
+4. **O Papel dos Guardrails e Fallback Seguro:** Quando uma saída da LLM viola a política ou falha na qualidade, `validate_output` retém o texto original para auditoria e encaminha a resposta para `format_safe_fallback`. Além disso, quando Item 1 e Gemini falham, `generate_answer` encaminha a mesma rota. Esse nó monta uma síntese determinística, com revisão humana obrigatória; não substitui a saída por Gemini.
 
 ---
 

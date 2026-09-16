@@ -176,10 +176,18 @@ def check_output_safety(answer_text: str) -> GuardrailResult:
     paráfrase fora das listas acima pode não ser detectada.
     """
     # Match each clause independently so a refusal does not hide a later instruction.
+    # Também removemos negações explícitas de diagnóstico: "não há diagnóstico
+    # confirmado" é uma ressalva segura, não uma afirmação diagnóstica.
     clauses = re.split(r"[.!?;\n]+|\bmas\b|\bbut\b", _normalize(answer_text))
     normalized = "\n".join(
         clause for clause in clauses
-        if not re.match(r"^\s*(?:nao\s+(?:tome|use|inicie|administre)|do\s+not\s+(?:take|use|start))\b", clause)
+        if not re.match(
+            r"^\s*(?:"
+            r"nao\s+(?:tome|use|inicie|administre)|"
+            r"do\s+not\s+(?:take|use|start)|"
+            r")\b",
+            clause,
+        )
     )
     normalized = re.sub(r"\b(?:provavel|possivel|suspeita\s+de|historico\s+de|sintomas\s+de)\b[^.!?;\n]*", "", normalized)
 

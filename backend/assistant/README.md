@@ -2,7 +2,7 @@
 
 Este módulo implementa o Item 2 e o Item 3 do Tech Challenge Fase 3:
 - integração com uma LLM customizada (Item 1) quando disponível;
-- fallback para Gemini quando os artefatos locais não estão disponíveis;
+- cadeia de recuperação Item 1 → Gemini → síntese determinística segura quando os dois provedores falham;
 - consulta a base estruturada (SQLite) para prontuários e protocolos;
 - orquestração com LangChain e fluxo de decisão com LangGraph;
 - guardrails de entrada/saída que bloqueiam prescrição direta e diagnóstico fechado;
@@ -77,7 +77,7 @@ Implementados em [backend/assistant/guardrails.py](file:///C:/Coding/fiap-tech-c
 
 Esses dois nós (`validate_input` e `validate_output`) estão integrados ao grafo LangGraph em
 [backend/assistant/workflow.py](file:///C:/Coding/fiap-tech-challenge-fase-3/backend/assistant/workflow.py).
-Quando um guardrail bloqueia, o fluxo desvia (edge condicional) para `format_blocked`, que retorna
+Quando um guardrail de **entrada** bloqueia, o fluxo desvia (edge condicional) para `format_blocked`, que retorna
 `status: "blocked"`, `requires_human_review: true` e o motivo do bloqueio, sem nunca prescrever
 diretamente ao usuário.
 
@@ -112,13 +112,16 @@ também pede explicitamente uma seção "Fontes utilizadas" na resposta em texto
 ## Modos de LLM
 
 Controlado por request (`force_llm_mode`) ou pela variável de ambiente `ASSISTANT_LLM_MODE`:
-- `auto` (padrão): `AutoFallbackProvider` (em `llm_adapter.py`) tenta o Item 1 e só cai para o
-  Gemini quando a geração **de fato falha** — não apenas porque a pasta de artefatos existe. A
-  causa da falha do Item 1 fica em `attempted_backend_error`, mesmo quando o Gemini responde com
-  sucesso.
-- `item1_only`: falha (`status: "error"`) se Item 1 não estiver disponível **ou** se a geração falhar
-  — não cai silenciosamente para "sucesso" com uma mensagem genérica.
-- `gemini_only`: usa Gemini diretamente
+- `auto` (padrão) e `item1_only`: ambos iniciam pelo Item 1. Se ele não estiver disponível, não
+  carregar ou não gerar resposta, tentam Gemini. A diferença é apenas de intenção na interface;
+  ambos preservam a recuperação segura para não interromper uma consulta clínica válida.
+- `gemini_only`: chama Gemini diretamente. Se ele falhar, também usa a síntese determinística segura.
+
+Quando qualquer cadeia de provider esgota as tentativas, `generate_answer` não expõe uma mensagem
+técnica como resposta clínica: o LangGraph direciona para `format_safe_fallback`. A resposta contém
+somente contexto estruturado, exige revisão humana e registra a falha final em `error_message`. A
+falha do Item 1 permanece em `attempted_backend_error`; portanto, uma resposta final de sucesso não
+apaga a evidência da indisponibilidade dos provedores.
 
 Artefatos esperados do Item 1 (frozen contract):
 - [llama_medical_lora_model](file:///C:/Coding/fiap-tech-challenge-fase-3/llm_finetuning/artifacts/llama_medical_lora_model)

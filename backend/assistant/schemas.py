@@ -93,4 +93,4 @@ class AssistantWorkflowState(TypedDict, total=False):
     block_reason: str
     response: AssistantQueryResponse
     error_message: str
-
+    provider_failure_message: str

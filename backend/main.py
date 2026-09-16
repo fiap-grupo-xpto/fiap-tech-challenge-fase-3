@@ -11,7 +11,11 @@ import aiofiles
 from backend.llm.interpreter import generate_tabular_interpretation, generate_image_interpretation
 from backend.assistant.schemas import AssistantQueryRequest
 from backend.assistant.service import run_assistant_query
+from backend.assistant.llm_adapter import AssistantProviderSelector
+import logging
 import os
+
+logger = logging.getLogger(__name__)
 
 # Create uploads directory if it doesn't exist
 UPLOAD_DIR = Path(__file__).parent / "uploads"
@@ -132,6 +136,17 @@ async def lifespan(app: FastAPI):
 
     app.state.tabular_artifact_error = None
     app.state.tabular_artifact = load_tabular_artifact(app)
+
+    # O modelo do assistente é grande e antes era carregado pela primeira consulta,
+    # deixando o cliente aguardar minutos. Carregá-lo aqui mantém o backend indisponível
+    # até estar pronto e preserva um único cache de pesos para todas as consultas.
+    preload_item1 = os.getenv("ITEM1_PRELOAD", "true").lower() in ("true", "1", "yes")
+    if preload_item1:
+        try:
+            AssistantProviderSelector().preload_item1_model()
+        except Exception as exc:
+            # O modo auto ainda pode usar Gemini; a causa fica explícita no log.
+            logger.warning("Item1 model preload failed; fallback remains available: %s", exc)
     yield
     # Clean up the ML model and release resources
     app.state.model = None

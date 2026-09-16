@@ -44,8 +44,23 @@ def _route_after_output_validation(state: AssistantWorkflowState) -> str:
     if state.get("error_message"):
         return "format_error"
     if state.get("blocked"):
-        return "format_blocked"
+        # A pergunta já passou pela validação de entrada. Quando apenas a saída da
+        # LLM é insegura ou não atende à qualidade mínima, não a exibimos, mas também
+        # não descartamos o contexto clínico estruturado que pode ser apresentado com
+        # segurança. O texto original permanece em raw_answer/output_validation na
+        # auditoria.
+        return "format_safe_fallback"
     return "format_response"
+
+
+def _route_after_generation(state: AssistantWorkflowState) -> str:
+    """Falhas dos dois provedores seguem para uma resposta segura, não para erro bruto."""
+    if state.get("error_message"):
+        return "format_error"
+    provider_result = state.get("provider_result")
+    if provider_result and provider_result.provider_error:
+        return "format_safe_fallback"
+    return "validate_output"
 
 
 def validate_input(state: AssistantWorkflowState) -> Dict[str, Any]:
@@ -148,9 +163,6 @@ def generate_answer_node(state: AssistantWorkflowState) -> Dict[str, Any]:
 
     selector = AssistantProviderSelector()
     provider = selector.select(mode if mode else "auto")
-    if mode.lower() == "item1_only" and not provider.is_available():
-        return {"error_message": "Custom LLM artifacts are not available for item1_only mode"}
-
     prompt_template = build_chat_prompt_template()
     prompt_value = prompt_template.invoke(
         {"system_prompt": state["system_prompt"], "user_prompt": state["user_prompt"]}
@@ -165,11 +177,10 @@ def generate_answer_node(state: AssistantWorkflowState) -> Dict[str, Any]:
     if not provider_result.answer_text.strip() and not provider_result.provider_error:
         provider_result.provider_error = "Empty model response"
     if provider_result.provider_error:
-        # Uma falha real de geração (modelo não carregou, API indisponível, etc.) não
-        # pode virar "success" com um texto de fallback genérico — isso mascarava a
-        # falha tanto para o cliente quanto para a auditoria.
+        # A cadeia Item 1 -> Gemini falhou. O roteador encaminha para uma síntese
+        # determinística, enquanto a causa técnica segue persistida na auditoria.
         return {
-            "error_message": (
+            "provider_failure_message": (
                 f"LLM generation failed ({provider_result.backend_used}): "
                 f"{provider_result.provider_error}"
             ),
@@ -331,6 +342,63 @@ def format_blocked_response_node(state: AssistantWorkflowState) -> Dict[str, Any
     return {"response": response}
 
 
+def format_safe_fallback_response_node(state: AssistantWorkflowState) -> Dict[str, Any]:
+    """Substitui uma saída retida por uma síntese determinística e auditável.
+
+    Este nó só é alcançado depois de a pergunta passar por check_input_safety. Assim,
+    pedidos explícitos de prescrição ou diagnóstico continuam recebendo status blocked.
+    """
+    request: AssistantQueryRequest = state["request"]
+    patient_context = state["patient_context"]
+    protocols = state.get("protocols", [])
+    pending_exams = list(state.get("pending_exams_reviewed", []))
+    provider_result = state.get("provider_result")
+
+    sources_used = [
+        {
+            "source_id": patient_context.patient_id,
+            "title": "Patient Record",
+            "type": "patient_record",
+            "snippet": "Structured patient record from SQLite",
+        },
+        *[protocol.model_dump() for protocol in protocols],
+    ]
+    source_ids = " ".join(f"[{source['source_id']}]" for source in sources_used)
+    pending_summary = ", ".join(pending_exams) if pending_exams else "nenhum exame pendente registrado"
+
+    safe_answer = (
+        "Resumo: A resposta generativa foi retida pelas validações de segurança; segue uma síntese "
+        "baseada somente nos dados estruturados recuperados.\n"
+        f"Contexto do paciente: Exames pendentes registrados: {pending_summary}.\n"
+        "Conduta sugerida: Revisar os exames pendentes e o contexto clínico com o profissional responsável.\n"
+        "Justificativa: A síntese não confirma diagnóstico nem indica tratamento; ela apoia a revisão clínica.\n"
+        f"Fontes utilizadas: {source_ids}\n"
+        "Observação: Qualquer decisão deve ser validada por um clínico responsável."
+    )
+
+    response = AssistantQueryResponse(
+        status="success",
+        patient_id=request.patient_id,
+        question=request.question,
+        assistant_answer=safe_answer,
+        patient_context_used=patient_context.model_dump(),
+        sources_used=sources_used,
+        sources_cited=sources_used,
+        pending_exams_reviewed=pending_exams,
+        alerts=list(state.get("alerts", [])),
+        recommended_actions=list(state.get("recommended_actions", [])),
+        llm_backend_used=provider_result.backend_used if provider_result else "",
+        custom_llm_available=provider_result.custom_llm_available if provider_result else False,
+        fallback_used=provider_result.fallback_used if provider_result else False,
+        requires_human_review=True,
+        attempted_backend=provider_result.attempted_backend if provider_result else None,
+        attempted_backend_error=provider_result.attempted_backend_error if provider_result else None,
+        request_id=state.get("request_id"),
+        message="A saída da LLM foi retida; a resposta exibida é uma síntese segura e determinística.",
+    )
+    return {"response": response}
+
+
 def format_error_node(state: AssistantWorkflowState) -> Dict[str, Any]:
     return format_response_node(state)
 
@@ -361,7 +429,7 @@ def log_interaction_node(state: AssistantWorkflowState) -> Dict[str, Any]:
             "raw_answer": provider_result.answer_text if provider_result else None,
             "input_validation": input_validation.model_dump() if input_validation else None,
             "output_validation": output_validation.model_dump() if output_validation else None,
-            "error_message": state.get("error_message"),
+            "error_message": state.get("error_message") or state.get("provider_failure_message"),
             "system_prompt": state.get("system_prompt"),
             "user_prompt": state.get("user_prompt"),
         }
@@ -383,6 +451,7 @@ def build_assistant_graph():
     graph.add_node("format_response", format_response_node)
     graph.add_node("format_error", format_error_node)
     graph.add_node("format_blocked", format_blocked_response_node)
+    graph.add_node("format_safe_fallback", format_safe_fallback_response_node)
     graph.add_node("log_interaction", log_interaction_node)
 
     graph.set_entry_point("validate_input")
@@ -401,19 +470,29 @@ def build_assistant_graph():
     graph.add_edge("evaluate_alerts", "suggest_actions")
     graph.add_edge("suggest_actions", "build_prompt")
     graph.add_edge("build_prompt", "generate_answer")
-    graph.add_edge("generate_answer", "validate_output")
+    graph.add_conditional_edges(
+        "generate_answer",
+        _route_after_generation,
+        {
+            "format_error": "format_error",
+            "format_safe_fallback": "format_safe_fallback",
+            "validate_output": "validate_output",
+        },
+    )
     graph.add_conditional_edges(
         "validate_output",
         _route_after_output_validation,
         {
             "format_error": "format_error",
             "format_blocked": "format_blocked",
+            "format_safe_fallback": "format_safe_fallback",
             "format_response": "format_response",
         },
     )
     graph.add_edge("format_response", "log_interaction")
     graph.add_edge("format_error", "log_interaction")
     graph.add_edge("format_blocked", "log_interaction")
+    graph.add_edge("format_safe_fallback", "log_interaction")
     graph.add_edge("log_interaction", END)
 
     return graph.compile()

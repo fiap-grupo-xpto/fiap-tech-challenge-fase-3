@@ -1,5 +1,6 @@
 import os
 import random
+import threading
 import time
 from typing import Optional, Tuple
 
@@ -33,6 +34,7 @@ class Item1LocalProvider(BaseAssistantProvider):
         self._model = None
         self._tokenizer = None
         self._load_error: Optional[str] = None
+        self._load_lock = threading.Lock()
 
     def is_available(self) -> bool:
         if not self.model_dir or not os.path.isdir(self.model_dir):
@@ -47,69 +49,105 @@ class Item1LocalProvider(BaseAssistantProvider):
         if self._model is not None and self._tokenizer is not None:
             return self._model, self._tokenizer
 
-        try:
-            import torch
-            from transformers import AutoModelForCausalLM, AutoTokenizer
-            from transformers import AutoConfig
+        # Uma requisição concorrente não deve iniciar uma segunda carga dos pesos.
+        # Além de desperdiçar tempo, isso pode duplicar vários GB de memória no CPU.
+        with self._load_lock:
+            if self._model is not None and self._tokenizer is not None:
+                return self._model, self._tokenizer
+            if self._load_error is not None:
+                raise RuntimeError(self._load_error)
 
-            base_model_id = os.getenv("ITEM1_BASE_MODEL_ID", "TinyLlama/TinyLlama-1.1B-Chat-v1.0")
+            try:
+                import torch
+                from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer
 
-            tokenizer = None
-            tokenizer_errors = []
-            for tokenizer_source in (self.tokenizer_dir, self.model_dir, base_model_id):
-                if not tokenizer_source:
-                    continue
-                try:
-                    tokenizer = AutoTokenizer.from_pretrained(tokenizer_source, trust_remote_code=True)
-                    break
-                except Exception as exc:
-                    tokenizer_errors.append(str(exc))
+                base_model_id = os.getenv("ITEM1_BASE_MODEL_ID", "TinyLlama/TinyLlama-1.1B-Chat-v1.0")
+                hf_token = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACE_HUB_TOKEN")
+                hub_kwargs = {"token": hf_token} if hf_token else {}
 
-            if tokenizer is None:
-                raise RuntimeError("Failed to load tokenizer: " + " | ".join(tokenizer_errors))
+                tokenizer = None
+                tokenizer_errors = []
+                for tokenizer_source in (self.tokenizer_dir, self.model_dir, base_model_id):
+                    if not tokenizer_source:
+                        continue
+                    try:
+                        tokenizer = AutoTokenizer.from_pretrained(
+                            tokenizer_source, trust_remote_code=True, **hub_kwargs
+                        )
+                        break
+                    except Exception as exc:
+                        tokenizer_errors.append(str(exc))
 
-            if tokenizer.pad_token is None:
-                tokenizer.pad_token = tokenizer.eos_token
-            tokenizer.padding_side = "right"
+                if tokenizer is None:
+                    raise RuntimeError("Failed to load tokenizer: " + " | ".join(tokenizer_errors))
 
-            device_map = "auto" if torch.cuda.is_available() else None
-            dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+                if tokenizer.pad_token is None:
+                    tokenizer.pad_token = tokenizer.eos_token
+                tokenizer.padding_side = "right"
 
-            model = None
-            model_errors = []
-            for model_source in (self.model_dir,):
-                try:
-                    _ = AutoConfig.from_pretrained(model_source, trust_remote_code=True)
-                    model = AutoModelForCausalLM.from_pretrained(
-                        model_source,
-                        torch_dtype=dtype,
-                        device_map=device_map,
+                device_map = "auto" if torch.cuda.is_available() else None
+                dtype_name = os.getenv("ITEM1_TORCH_DTYPE", "float16").lower()
+                dtype_by_name = {
+                    "float16": torch.float16,
+                    "bfloat16": torch.bfloat16,
+                    "float32": torch.float32,
+                }
+                if dtype_name not in dtype_by_name:
+                    raise RuntimeError(
+                        "ITEM1_TORCH_DTYPE must be float16, bfloat16, or float32"
                     )
-                    break
-                except Exception as exc:
-                    model_errors.append(str(exc))
+                dtype = dtype_by_name[dtype_name]
 
-            if model is None:
-                try:
-                    from peft import PeftModel
+                model = None
+                model_errors = []
+                for model_source in (self.model_dir,):
+                    try:
+                        _ = AutoConfig.from_pretrained(
+                            model_source, trust_remote_code=True, **hub_kwargs
+                        )
+                        model = AutoModelForCausalLM.from_pretrained(
+                            model_source,
+                            dtype=dtype,
+                            device_map=device_map,
+                            low_cpu_mem_usage=True,
+                            **hub_kwargs,
+                        )
+                        break
+                    except Exception as exc:
+                        model_errors.append(str(exc))
 
-                    base_model = AutoModelForCausalLM.from_pretrained(
-                        base_model_id,
-                        torch_dtype=dtype,
-                        device_map=device_map,
-                        trust_remote_code=True,
-                    )
-                    model = PeftModel.from_pretrained(base_model, self.model_dir)
-                except Exception as exc:
-                    model_errors.append(str(exc))
-                    raise RuntimeError("Failed to load model: " + " | ".join(model_errors))
+                if model is None:
+                    try:
+                        from peft import PeftModel
 
-            self._model = model
-            self._tokenizer = tokenizer
-            return model, tokenizer
-        except Exception as exc:
-            self._load_error = str(exc)
-            raise
+                        base_model = AutoModelForCausalLM.from_pretrained(
+                            base_model_id,
+                            dtype=dtype,
+                            device_map=device_map,
+                            low_cpu_mem_usage=True,
+                            trust_remote_code=True,
+                            **hub_kwargs,
+                        )
+                        model = PeftModel.from_pretrained(
+                            base_model, self.model_dir, **hub_kwargs
+                        )
+                    except Exception as exc:
+                        model_errors.append(str(exc))
+                        raise RuntimeError("Failed to load model: " + " | ".join(model_errors))
+
+                model.eval()
+                self._model = model
+                self._tokenizer = tokenizer
+                return model, tokenizer
+            except Exception as exc:
+                self._load_error = str(exc)
+                raise
+
+    def preload(self) -> None:
+        """Carrega os pesos antes de o servidor aceitar consultas."""
+        if not self.is_available():
+            raise RuntimeError("item1 artifacts not available")
+        self._get_model_and_tokenizer()
 
     def generate_prompt(
         self,
@@ -154,10 +192,8 @@ class Item1LocalProvider(BaseAssistantProvider):
             input_length = inputs["input_ids"].shape[1]
             outputs = model.generate(
                 **inputs,
-                max_new_tokens=250,
-                temperature=0.2,
-                top_p=0.9,
-                do_sample=True,
+                max_new_tokens=int(os.getenv("ITEM1_MAX_NEW_TOKENS", "96")),
+                do_sample=False,
                 pad_token_id=tokenizer.pad_token_id,
                 eos_token_id=tokenizer.eos_token_id,
             )
@@ -304,37 +340,44 @@ class AutoFallbackProvider(BaseAssistantProvider):
         system_prompt: Optional[str] = None,
         user_prompt: Optional[str] = None,
     ) -> AssistantProviderResult:
-        if self._primary.is_available():
-            try:
-                primary_result = self._primary.generate_prompt(
-                    prompt, system_prompt=system_prompt, user_prompt=user_prompt
-                )
-            except Exception as exc:
-                primary_result = AssistantProviderResult(
-                    answer_text="", backend_used="item1_custom_llm", custom_llm_available=False,
-                    fallback_used=False, provider_error=str(exc))
-            if primary_result.provider_error is None and primary_result.answer_text.strip():
-                return primary_result
-            if primary_result.provider_error is None:
-                primary_result.provider_error = "Empty model response"
+        # Mesmo quando os artefatos locais não estão disponíveis, registramos a
+        # tentativa do Item 1 antes de chamar o Gemini. Isso mantém a cadeia de
+        # fallback auditável e permite que `item1_only` se recupere de falhas locais.
+        try:
+            primary_result = self._primary.generate_prompt(
+                prompt, system_prompt=system_prompt, user_prompt=user_prompt
+            )
+        except Exception as exc:
+            primary_result = AssistantProviderResult(
+                answer_text="", backend_used="item1_custom_llm", custom_llm_available=False,
+                fallback_used=False, provider_error=str(exc))
 
-            # A tentativa primária falhou mas o fallback pode dar certo — isso não pode
-            # apagar o rastro do que deu errado. Sem isto, um "success" via Gemini
-            # escondia completamente que o modelo local falhou e por quê, inclusive da
-            # auditoria (nada no log indicava que houve uma tentativa anterior).
-            try:
-                fallback_result = self._fallback.generate_prompt(
-                    prompt, system_prompt=system_prompt, user_prompt=user_prompt
-                )
-            except Exception as exc:
-                fallback_result = AssistantProviderResult(
-                    answer_text="", backend_used="gemini_fallback", custom_llm_available=False,
-                    fallback_used=True, provider_error=str(exc))
-            fallback_result.attempted_backend = primary_result.backend_used
-            fallback_result.attempted_backend_error = primary_result.provider_error
-            return fallback_result
+        if primary_result.provider_error is None and primary_result.answer_text.strip():
+            return primary_result
+        if primary_result.provider_error is None:
+            primary_result.provider_error = "Empty model response"
 
-        return self._fallback.generate_prompt(prompt, system_prompt=system_prompt, user_prompt=user_prompt)
+        # O Gemini é a segunda tentativa. Se também falhar, o resultado conserva os
+        # dois erros; o LangGraph então encaminha para format_safe_fallback.
+        try:
+            fallback_result = self._fallback.generate_prompt(
+                prompt, system_prompt=system_prompt, user_prompt=user_prompt
+            )
+        except Exception as exc:
+            fallback_result = AssistantProviderResult(
+                answer_text="", backend_used="gemini_fallback", custom_llm_available=False,
+                fallback_used=True, provider_error=str(exc))
+        fallback_result.attempted_backend = primary_result.backend_used
+        fallback_result.attempted_backend_error = primary_result.provider_error
+        return fallback_result
+
+
+# ---------------------------------------------------------------------------
+# Module-level singleton cache: prevents reloading the heavy LoRA model
+# weights (~2-3 min on CPU/ARM64) on every incoming request.
+# ---------------------------------------------------------------------------
+_cached_item1_provider: Optional[Item1LocalProvider] = None
+_cached_gemini_provider: Optional[GeminiFallbackProvider] = None
 
 
 class AssistantProviderSelector:
@@ -345,17 +388,39 @@ class AssistantProviderSelector:
         self.model_dir = os.getenv("ITEM1_MODEL_DIR", default_model_dir)
         self.tokenizer_dir = os.getenv("ITEM1_TOKENIZER_DIR", default_tokenizer_dir)
 
+    def _get_item1_provider(self) -> Item1LocalProvider:
+        global _cached_item1_provider
+        if _cached_item1_provider is None:
+            tokenizer_dir = self.tokenizer_dir if os.path.isdir(self.tokenizer_dir) else None
+            _cached_item1_provider = Item1LocalProvider(self.model_dir, tokenizer_dir)
+        return _cached_item1_provider
+
+    def _get_gemini_provider(self) -> GeminiFallbackProvider:
+        global _cached_gemini_provider
+        if _cached_gemini_provider is None:
+            _cached_gemini_provider = GeminiFallbackProvider()
+        return _cached_gemini_provider
+
+    def preload_item1_model(self) -> None:
+        self._get_item1_provider().preload()
+
     def select(self, mode: str) -> BaseAssistantProvider:
         mode_normalized = (mode or "auto").lower()
 
         if mode_normalized == "gemini_only":
-            return GeminiFallbackProvider()
+            return self._get_gemini_provider()
 
         if mode_normalized == "item1_only":
-            tokenizer_dir = self.tokenizer_dir if os.path.isdir(self.tokenizer_dir) else None
-            return Item1LocalProvider(self.model_dir, tokenizer_dir)
+            # O nome preserva o contrato de prioridade da interface: o Item 1 é
+            # sempre tentado primeiro. Uma falha local, porém, não interrompe uma
+            # consulta clínica segura; ela tenta Gemini e, se necessário, a síntese
+            # determinística do LangGraph.
+            return AutoFallbackProvider(
+                self._get_item1_provider(),
+                self._get_gemini_provider(),
+            )
 
         return AutoFallbackProvider(
-            Item1LocalProvider(self.model_dir, self.tokenizer_dir),
-            GeminiFallbackProvider(),
+            self._get_item1_provider(),
+            self._get_gemini_provider(),
         )

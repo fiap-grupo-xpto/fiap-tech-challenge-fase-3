@@ -5,12 +5,19 @@ services:
       context: ./
     ports:
       - "8888:8888"
+    mem_limit: ${BACKEND_MEMORY_LIMIT:-6g}
     volumes:
-      - ./backend:/app
+      - ./backend:/app/backend
+      - ./llm_finetuning:/app/llm_finetuning
+      # ADC de desenvolvimento local, criado por `gcloud auth application-default login`.
+      # Montagem somente leitura: o container nunca altera a credencial do host.
+      - ${HOME}/.config/gcloud/application_default_credentials.json:/root/.config/gcloud/application_default_credentials.json:ro
     environment:
       - PYTHONPATH=/app
+      - GOOGLE_APPLICATION_CREDENTIALS=/root/.config/gcloud/application_default_credentials.json
     env_file:
-      - .env
+      - path: .env
+        required: false
 
   tech-challenge-frontend:
     build:
@@ -22,5 +29,6 @@ services:
       - ./frontend:/app
     environment:
       - API_URL=http://tech-challenge-backend:8888
+      - ASSISTANT_API_TIMEOUT_SECONDS=${ASSISTANT_API_TIMEOUT_SECONDS:-240}
     depends_on:
       - tech-challenge-backend

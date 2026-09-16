@@ -38,6 +38,14 @@ def test_check_output_safety_blocks_definitive_diagnosis():
     assert result.blocked is True
 
 
+def test_check_output_safety_allows_negated_confirmed_diagnosis():
+    result = check_output_safety(
+        "Não há diagnóstico confirmado. O caso requer revisão clínica."
+    )
+    assert result.blocked is False
+    assert result.matched_rules == []
+
+
 def test_check_output_safety_allows_supportive_language():
     result = check_output_safety(
         "Resumo: revisar exames pendentes\n"

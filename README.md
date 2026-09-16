@@ -22,7 +22,7 @@ A solução atende integralmente aos quatro eixos avaliativos do Tech Challenge 
    - Pipeline com limpeza, anonimização de PII (regex), curadoria `GroupShuffleSplit` e avaliação comparativa de unigramas (F1 subiu de `0,1191` para `0,2096`).
 2. **Assistente Médico com LangChain / LangGraph (Item 2):**
    - Grafo de estados (`backend/assistant/workflow.py`) orquestrando consultas ao prontuário do paciente (SQLite), exames pendentes, alertas de risco clínico e sugestão de conduta.
-   - Camada de inferência com adapter inteligente (`llm_adapter.py`) que prioriza os pesos LoRA locais e aciona fallback automático resiliente para o Google Gemini.
+   - Camada de inferência com cadeia resiliente: prioriza os pesos LoRA locais, tenta Gemini em falha local e, se ambos falharem, devolve síntese determinística segura com revisão humana.
 3. **Segurança, Validação e Auditoria (Item 3):**
    - Guardrails de entrada e saída (`guardrails.py`): barram solicitações ou respostas com linguagem de prescrição direta ou diagnóstico definitivo fechado.
    - Combate a alucinações de fontes (`check_citation_consistency`).
@@ -88,7 +88,7 @@ fiap-tech-challenge-fase-3/
 ### Pré-requisitos
 - Docker e Docker Compose instalados; **ou**
 - Python 3.10+ com ambiente virtual configurado.
-- Chave de API do Google Gemini (para fallback generativo resiliente).
+- Chave de API ou credenciais Vertex para Gemini (segunda tentativa opcional; sem ela, falhas da LLM local usam a síntese segura determinística).
 
 ### Configuração de Variáveis de Ambiente
 Crie um arquivo `.env` na raiz baseado no `.env.example`:
@@ -195,4 +195,3 @@ pytest tests/assistant -v
 
 - 📄 **[Relatório Técnico Consolidado](entregas/fase03/RELATORIO_TECNICO_CONSOLIDADO.md)**: Relatório completo com processo de fine-tuning, arquitetura do assistente, métricas comparativas e guardrails.
 - 🖼️ **[Diagrama da Arquitetura LangGraph](entregas/fase03/langgraph_workflow.png)**: Diagrama em alta resolução do fluxo de decisão clínica.
-

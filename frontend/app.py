@@ -11,6 +11,7 @@ import streamlit as st
 
 st.set_page_config(layout="wide", page_title="Tech Challenge Fase 03 - FIAP Grupo 69", page_icon="🩺")
 API_URL = os.getenv("API_URL", "http://localhost:8888")
+ASSISTANT_API_TIMEOUT_SECONDS = int(os.getenv("ASSISTANT_API_TIMEOUT_SECONDS", "240"))
 
 EXPECTED_COLUMNS = [
     "GENDER",
@@ -65,13 +66,22 @@ if "csv_results_total_negative" not in st.session_state:
     st.session_state.csv_results_total_negative = 0
 if "csv_results_total_rows" not in st.session_state:
     st.session_state.csv_results_total_rows = 0
-if "assistant_question" not in st.session_state:
-    st.session_state.assistant_question = "O paciente apresenta tosse persistente e dispneia. Quais exames pendentes devem ser revisados e qual conduta seguir?"
+DEFAULT_ASSISTANT_QUESTION = (
+    "O paciente apresenta tosse persistente e dispneia. Quais exames pendentes devem ser "
+    "revisados e qual conduta seguir?"
+)
+if "main_question_input" not in st.session_state:
+    st.session_state.main_question_input = DEFAULT_ASSISTANT_QUESTION
 
 
 def go_to_stage(stage: int) -> None:
     st.session_state.stage = stage
     st.rerun()
+
+
+def set_assistant_question(question: str) -> None:
+    """Atualiza a mesma chave usada pelo widget de texto do assistente."""
+    st.session_state.main_question_input = question
 
 
 # Sidebar Navigation
@@ -147,21 +157,29 @@ if st.session_state.stage == 3:
     st.write("**Perguntas Rápidas de Demonstração:**")
     q_col1, q_col2, q_col3 = st.columns(3)
     with q_col1:
-        if st.button("🩺 Exames & Conduta Clínica", use_container_width=True):
-            st.session_state.assistant_question = "O paciente apresenta tosse persistente e dispneia. Quais exames pendentes devem ser revisados e qual conduta seguir?"
-            st.rerun()
+        st.button(
+            "🩺 Exames & Conduta Clínica",
+            use_container_width=True,
+            on_click=set_assistant_question,
+            args=(DEFAULT_ASSISTANT_QUESTION,),
+        )
     with q_col2:
-        if st.button("🛡️ Testar Bloqueio (Prescrição)", use_container_width=True):
-            st.session_state.assistant_question = "Prescreva 500mg de amoxicilina de 8 em 8 horas e confirme diagnóstico de pneumonia bacteriana."
-            st.rerun()
+        st.button(
+            "🛡️ Testar Bloqueio (Prescrição)",
+            use_container_width=True,
+            on_click=set_assistant_question,
+            args=("Prescreva 500mg de amoxicilina de 8 em 8 horas e confirme diagnóstico de pneumonia bacteriana.",),
+        )
     with q_col3:
-        if st.button("📖 Protocolo de Nódulo Incidental", use_container_width=True):
-            st.session_state.assistant_question = "Quais as diretrizes do protocolo para conduta frente a achado de nódulo pulmonar incidental?"
-            st.rerun()
+        st.button(
+            "📖 Protocolo de Nódulo Incidental",
+            use_container_width=True,
+            on_click=set_assistant_question,
+            args=("Quais as diretrizes do protocolo para conduta frente a achado de nódulo pulmonar incidental?",),
+        )
 
     question_text = st.text_area(
         "Pergunta ou Solicitação Clínica para o Assistente:",
-        value=st.session_state.assistant_question,
         height=100,
         key="main_question_input",
     )
@@ -187,7 +205,11 @@ if st.session_state.stage == 3:
 
             with st.spinner("Executando grafo de decisão clínica (LangGraph)..."):
                 try:
-                    res = requests.post(f"{API_URL}/assistant/query", json=payload, timeout=60)
+                    res = requests.post(
+                        f"{API_URL}/assistant/query",
+                        json=payload,
+                        timeout=ASSISTANT_API_TIMEOUT_SECONDS,
+                    )
                     if res.status_code != 200:
                         st.error(f"Erro na chamada da API: Código {res.status_code} - {res.text}")
                     else:
@@ -201,6 +223,8 @@ if st.session_state.stage == 3:
                             st.warning(f"**Motivo do bloqueio:** {resp.get('block_reason', 'Infração às diretrizes de segurança.')}")
                         elif status == "success":
                             st.success("✅ **Consulta Executada com Sucesso pelo Assistente**")
+                            if resp.get("message"):
+                                st.warning(resp["message"])
                         else:
                             st.error(f"❌ **Erro no Processamento:** {resp.get('message', 'Erro desconhecido')}")
 
@@ -542,4 +566,3 @@ elif st.session_state.stage == 2:
                     st.error(f"Erro ao enviar arquivos para análise. Status code: {res.status_code}")
             except Exception as e:
                 st.error(f"Erro durante a análise: {str(e)}")
-
