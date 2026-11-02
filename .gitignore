@@ -211,10 +211,13 @@ pdf/**
 
 train_model/datasets/extracted/*
 !train_model/datasets/extracted/.gitkeep
+entregas/fase04/data/raw/rehab24-6/*
+!entregas/fase04/data/raw/rehab24-6/.gitkeep
 backend/model/*
 !backend/model/.gitkeep
 backend/uploads/*
 !backend/uploads/.gitkeep
+yolov8n-pose.pt
 .DS_Store
 **/.DS_Store
 

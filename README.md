@@ -195,3 +195,22 @@ pytest tests/assistant -v
 
 - 📄 **[Relatório Técnico Consolidado](entregas/fase03/RELATORIO_TECNICO_CONSOLIDADO.md)**: Relatório completo com processo de fine-tuning, arquitetura do assistente, métricas comparativas e guardrails.
 - 🖼️ **[Diagrama da Arquitetura LangGraph](entregas/fase03/langgraph_workflow.png)**: Diagrama em alta resolução do fluxo de decisão clínica.
+
+---
+
+## 7. Fase 4 - Análise de vídeos de reabilitação
+
+A aplicação inclui um fluxo experimental para estimar pose em vídeos e
+classificar repetições de exercícios do dataset REHAB24-6. A classificação é
+experimental, não substitui avaliação profissional e não foi validada para
+pacientes.
+
+- **[Guia da Fase 4](entregas/fase04/README.md)**: treinamento, execução e
+  localização dos dados.
+- **[Relatório Técnico da Fase 4](entregas/fase04/RELATORIO_TECNICO_CONSOLIDADO.md)**:
+  escopo, metodologia, resultados e limitações.
+- **[Instruções do dataset](entregas/fase04/data/README.md)**: fonte, licença,
+  arquivos e procedimento de download.
+- Treinar e avaliar: `py -3.11 entregas\fase04\src\train_classifier.py`.
+- Executar a aplicação: selecione **Análise de movimento (Fase 4)** na interface;
+  o backend deve estar iniciado e o modelo treinado disponível.

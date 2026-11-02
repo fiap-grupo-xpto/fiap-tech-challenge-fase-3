@@ -1,5 +1,6 @@
 import base64
 import io
+import json
 import os
 from pathlib import Path
 
@@ -89,6 +90,7 @@ st.sidebar.title("Navegação do Projeto")
 st.sidebar.caption("FIAP Tech Challenge - Grupo 69")
 
 stage_map = {
+    "🎥 Análise de movimento (Fase 4)": 4,
     "🩺 Assistente Médico (Fase 3)": 3,
     "📊 Pré-triagem por CSV (Fase 2)": 1,
     "🖼️ Análise de Ressonância (Fase 2)": 2,
@@ -581,3 +583,120 @@ elif st.session_state.stage == 2:
                     st.error(f"Erro ao enviar arquivos para análise. Status code: {res.status_code}")
             except Exception as e:
                 st.error(f"Erro durante a análise: {str(e)}")
+
+
+# =========================================================================
+# ETAPA 4: ANÁLISE DE MOVIMENTO EM VÍDEO (FASE 4)
+# =========================================================================
+elif st.session_state.stage == 4:
+    st.title("Tech Challenge Fase 04 - Análise de Movimento")
+    st.subheader("Pose YOLOv8 e classificação de repetições de reabilitação")
+    st.warning(
+        "Resultado experimental baseado no dataset REHAB24-6. Não é uma avaliação clínica "
+        "e deve ser revisado por um fisioterapeuta."
+    )
+    st.write(
+        "Envie um vídeo `.mp4` contendo uma repetição ou informe os frames inicial e final "
+        "da repetição. O modelo classifica a execução como correta ou incorreta; ele não "
+        "identifica o tipo específico de erro."
+    )
+
+    exercise_names = {
+        1: "Abdução de braço",
+        2: "Transição dos braços em V/W",
+        3: "Flexão apoiada em mesa",
+        4: "Abdução de perna",
+        5: "Afundo",
+        6: "Agachamento",
+    }
+    exercise_id = st.selectbox(
+        "Exercício",
+        list(exercise_names),
+        format_func=lambda value: f"{value} — {exercise_names[value]}",
+    )
+    uploaded_video = st.file_uploader(
+        "Vídeo da repetição (MP4, até 200 MB)",
+        type=["mp4"],
+        key="rehab_video_uploader",
+    )
+    start_col, end_col = st.columns(2)
+    with start_col:
+        start_frame = st.number_input(
+            "Frame inicial",
+            min_value=0,
+            value=0,
+            step=1,
+            help="Use 0 para começar no primeiro frame do vídeo.",
+        )
+    with end_col:
+        end_frame = st.number_input(
+            "Frame final (0 = último frame)",
+            min_value=0,
+            value=0,
+            step=1,
+        )
+
+    if st.button(
+        "Analisar repetição",
+        type="primary",
+        disabled=uploaded_video is None,
+        use_container_width=True,
+    ):
+        if uploaded_video is None:
+            st.warning("Selecione um vídeo MP4.")
+        elif uploaded_video.size > 200 * 1024 * 1024:
+            st.error("O arquivo excede o limite de upload de 200 MB do Streamlit.")
+        elif end_frame > 0 and end_frame < start_frame:
+            st.error("O frame final deve ser maior ou igual ao frame inicial.")
+        else:
+            form_data = {
+                "exercise_id": exercise_id,
+                "start_frame": int(start_frame),
+            }
+            if end_frame > 0:
+                form_data["end_frame"] = int(end_frame)
+            with st.spinner("Extraindo pose e analisando a repetição..."):
+                try:
+                    response = requests.post(
+                        f"{API_URL}/analyze-rehabilitation-video",
+                        files={
+                            "video": (
+                                uploaded_video.name,
+                                uploaded_video.getvalue(),
+                                "video/mp4",
+                            )
+                        },
+                        data=form_data,
+                        timeout=600,
+                    )
+                    if response.status_code != 200:
+                        try:
+                            detail = response.json().get("detail", response.text)
+                        except ValueError:
+                            detail = response.text
+                        st.error(f"Falha na análise (HTTP {response.status_code}): {detail}")
+                    else:
+                        result = response.json()
+                        if result["classification"] == "correct":
+                            st.success("Classificação: execução possivelmente correta")
+                        else:
+                            st.warning("Classificação: execução possivelmente incorreta")
+                        st.metric(
+                            "Probabilidade estimada de execução correta",
+                            f"{result['probability_correct']:.1%}",
+                        )
+                        st.caption(
+                            f"Confiança do modelo: {result['confidence']:.1%} · "
+                            f"Frames amostrados: {result['sampled_frames']}"
+                        )
+                        st.info(result["warning"])
+                        st.download_button(
+                            "Baixar relatório da análise (JSON)",
+                            data=json.dumps(
+                                result, ensure_ascii=False, indent=2
+                            ).encode("utf-8"),
+                            file_name="relatorio_analise_reabilitacao.json",
+                            mime="application/json",
+                        )
+                except requests.RequestException as exc:
+                    st.error(f"Falha ao conectar com a API: {exc}")
