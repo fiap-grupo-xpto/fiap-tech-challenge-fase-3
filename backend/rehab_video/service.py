@@ -14,6 +14,7 @@ from backend.rehab_video.annotate import (
 )
 from backend.rehab_video.features import FEATURE_VERSION, temporal_features
 from backend.rehab_video.pose import YoloPoseEstimator, extract_pose_sequence
+from backend.rehab_video.report import build_deviation_report
 
 
 EXERCISE_LABELS = {
@@ -53,6 +54,23 @@ def annotate_repetition_video(
     if exercise_id not in range(1, 7):
         raise ValueError("exercise_id must be between 1 and 6.")
     estimator = _get_pose_estimator()
+    report = None
+    try:
+        report = build_deviation_report(
+            extract_pose_sequence(
+                video_path,
+                start_frame=start_frame,
+                end_frame=end_frame,
+                estimator=estimator,
+                sample_count=12,
+            ),
+            exercise_id,
+        )
+    except ValueError:
+        pass
+    label = EXERCISE_LABELS[exercise_id]
+    if report is not None:
+        label = f"{label} | desvios: {report['deviation_count']}"
     summary = annotate_video(
         video_path,
         output_path,
@@ -61,8 +79,9 @@ def annotate_repetition_video(
         end_frame=end_frame,
         max_frames=int(os.getenv("REHAB_ANNOTATE_MAX_FRAMES", str(DEFAULT_MAX_FRAMES))),
         confidence_threshold=estimator.confidence_threshold,
-        label=EXERCISE_LABELS[exercise_id],
+        label=label,
     )
+    summary["deviation_report"] = report
     summary["browser_compatible"] = transcode_to_h264(output_path)
     return summary
 
@@ -98,6 +117,7 @@ def analyze_repetition(
         sample_count=sample_count,
     )
     features = temporal_features(poses, exercise_id).reshape(1, -1)
+    deviation_report = build_deviation_report(poses, exercise_id)
     model = artifact.get("model")
     if model is None:
         raise RuntimeError("The rehabilitation model artifact is missing its model.")
@@ -116,6 +136,7 @@ def analyze_repetition(
         "start_frame": start_frame,
         "end_frame": end_frame,
         "sampled_frames": sample_count,
+        "deviation_report": deviation_report,
         "requires_physiotherapist_review": True,
         "warning": (
             "Experimental result based on a small, controlled rehabilitation "

@@ -696,6 +696,16 @@ elif st.session_state.stage == 4:
                             f"Frames amostrados: {result['sampled_frames']}"
                         )
                         st.info(result["warning"])
+                        report = result.get("deviation_report")
+                        if report:
+                            st.subheader("Relatório de desvios")
+                            if report["deviation_count"]:
+                                for item in report["findings"]:
+                                    st.warning(item["message"])
+                            else:
+                                st.success(report["summary"])
+                            st.json(report["metrics"], expanded=False)
+                            st.caption(report["method"])
                         st.download_button(
                             "Baixar relatório da análise (JSON)",
                             data=json.dumps(

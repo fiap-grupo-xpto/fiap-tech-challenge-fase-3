@@ -48,7 +48,10 @@ artefato treinado. O resultado medido e o baseline estao documentados no
 [relatorio tecnico](RELATORIO_TECNICO_CONSOLIDADO.md). Na API, `POST /analyze-rehabilitation-video` classifica a repeticao e
 `POST /annotate-rehabilitation-video` devolve um MP4 com o esqueleto (pose
 estimada) desenhado sobre o video; a tela da Fase 4 exibe e permite baixar esse
-video. Para executar os testes:
+video. A resposta de analise inclui `deviation_report`, um relatorio automatico
+de desvios (amplitude articular reduzida, assimetria entre lados e inclinacao do
+tronco) calculado por regras heuristicas sobre os angulos da pose; os limiares
+nao foram validados clinicamente. Para executar os testes:
 
 ```powershell
 py -3.11 -m pytest tests\fase04 -q
