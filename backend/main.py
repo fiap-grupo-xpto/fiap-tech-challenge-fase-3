@@ -1,5 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
+from fastapi.responses import FileResponse
+from starlette.background import BackgroundTask
 from starlette.concurrency import run_in_threadpool
 from typing import List
 from pathlib import Path
@@ -15,7 +17,7 @@ from backend.assistant.schemas import AssistantQueryRequest
 from backend.assistant.service import run_assistant_query
 from backend.assistant.llm_adapter import AssistantProviderSelector
 import logging
-from backend.rehab_video.service import analyze_repetition
+from backend.rehab_video.service import analyze_repetition, annotate_repetition_video
 import os
 
 logger = logging.getLogger(__name__)
@@ -356,15 +358,10 @@ async def analyze_images(files: List[UploadFile] = File(...), probability_thresh
     return {"results": results}
 
 
-@app.post("/analyze-rehabilitation-video")
-async def analyze_rehabilitation_video(
-    video: UploadFile = File(...),
-    exercise_id: int = Form(...),
-    start_frame: int = Form(0),
-    end_frame: int | None = Form(None),
-):
-    filename = video.filename or ""
-    if Path(filename).suffix.lower() != ".mp4":
+def _validate_rehab_request(
+    video: UploadFile, exercise_id: int, start_frame: int, end_frame: int | None
+) -> None:
+    if Path(video.filename or "").suffix.lower() != ".mp4":
         raise HTTPException(status_code=415, detail="Only .mp4 videos are supported.")
     if exercise_id not in range(1, 7):
         raise HTTPException(status_code=422, detail="exercise_id must be between 1 and 6.")
@@ -374,30 +371,45 @@ async def analyze_rehabilitation_video(
             detail="Frame range must satisfy 0 <= start_frame <= end_frame.",
         )
 
+
+async def _save_rehab_upload(video: UploadFile, destination: Path) -> None:
+    total_bytes = 0
+    with destination.open("wb") as output:
+        while chunk := await video.read(1024 * 1024):
+            total_bytes += len(chunk)
+            if total_bytes > MAX_REHAB_VIDEO_BYTES:
+                raise HTTPException(
+                    status_code=413,
+                    detail=(
+                        "Video exceeds the upload limit of "
+                        f"{MAX_REHAB_VIDEO_BYTES // (1024 * 1024)} MB."
+                    ),
+                )
+            output.write(chunk)
+    if total_bytes == 0:
+        raise HTTPException(status_code=400, detail="Uploaded video is empty.")
+
+
+def _new_rehab_temp_path(prefix: str = "rehab_") -> Path:
+    with tempfile.NamedTemporaryFile(
+        suffix=".mp4", prefix=prefix, dir=UPLOAD_DIR, delete=False
+    ) as handle:
+        return Path(handle.name)
+
+
+@app.post("/analyze-rehabilitation-video")
+async def analyze_rehabilitation_video(
+    video: UploadFile = File(...),
+    exercise_id: int = Form(...),
+    start_frame: int = Form(0),
+    end_frame: int | None = Form(None),
+):
+    _validate_rehab_request(video, exercise_id, start_frame, end_frame)
+
     temporary_path: Path | None = None
     try:
-        with tempfile.NamedTemporaryFile(
-            mode="wb",
-            suffix=".mp4",
-            prefix="rehab_",
-            dir=UPLOAD_DIR,
-            delete=False,
-        ) as destination:
-            temporary_path = Path(destination.name)
-            total_bytes = 0
-            while chunk := await video.read(1024 * 1024):
-                total_bytes += len(chunk)
-                if total_bytes > MAX_REHAB_VIDEO_BYTES:
-                    raise HTTPException(
-                        status_code=413,
-                        detail=(
-                            "Video exceeds the upload limit of "
-                            f"{MAX_REHAB_VIDEO_BYTES // (1024 * 1024)} MB."
-                        ),
-                    )
-                destination.write(chunk)
-        if total_bytes == 0:
-            raise HTTPException(status_code=400, detail="Uploaded video is empty.")
+        temporary_path = _new_rehab_temp_path()
+        await _save_rehab_upload(video, temporary_path)
 
         return await run_in_threadpool(
             analyze_repetition,
@@ -418,6 +430,58 @@ async def analyze_rehabilitation_video(
         await video.close()
         if temporary_path is not None:
             temporary_path.unlink(missing_ok=True)
+
+
+@app.post("/annotate-rehabilitation-video")
+async def annotate_rehabilitation_video(
+    video: UploadFile = File(...),
+    exercise_id: int = Form(...),
+    start_frame: int = Form(0),
+    end_frame: int | None = Form(None),
+):
+    """Return the selected segment as an MP4 with the estimated skeleton drawn."""
+    _validate_rehab_request(video, exercise_id, start_frame, end_frame)
+
+    input_path: Path | None = None
+    output_path: Path | None = None
+    try:
+        input_path = _new_rehab_temp_path()
+        output_path = _new_rehab_temp_path("rehab_annotated_")
+        await _save_rehab_upload(video, input_path)
+        await run_in_threadpool(
+            annotate_repetition_video,
+            input_path,
+            output_path,
+            exercise_id,
+            start_frame,
+            end_frame,
+        )
+    except HTTPException:
+        _remove_files(input_path, output_path)
+        raise
+    except (ValueError, RuntimeError, FileNotFoundError) as exc:
+        _remove_files(input_path, output_path)
+        status = 422 if isinstance(exc, ValueError) else 503
+        raise HTTPException(status_code=status, detail=str(exc)) from exc
+    except Exception:
+        _remove_files(input_path, output_path)
+        raise
+    finally:
+        await video.close()
+
+    _remove_files(input_path)
+    return FileResponse(
+        output_path,
+        media_type="video/mp4",
+        filename="analise_reabilitacao_anotado.mp4",
+        background=BackgroundTask(_remove_files, output_path),
+    )
+
+
+def _remove_files(*paths: Path | None) -> None:
+    for path in paths:
+        if path is not None:
+            path.unlink(missing_ok=True)
 
 
 @app.post("/assistant/query")

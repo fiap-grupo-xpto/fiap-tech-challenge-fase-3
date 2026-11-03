@@ -41,8 +41,8 @@ Participaram dez voluntarios saudaveis, com 65 gravacoes no total.
   informa caixas delimitadoras de objetos/areas criticas; nao e suficiente, por
   si so, para treinar e avaliar detector supervisionado de objetos.
 - **Generalizacao clinica:** participantes saudaveis e ambiente controlado nao
-  representam pacientes em tratamento. O dataset nao valida resultados para
-  cancer pulmonar nem broncoscopia.
+  representam pacientes em tratamento; os resultados nao devem ser extrapolados
+  para pacientes em recuperacao.
 - **Identidade e licenca:** uso restrito a pesquisa academica ou nao comercial,
   conforme o registro Zenodo; nao redistribuir os arquivos e seguir a citacao
   indicada.

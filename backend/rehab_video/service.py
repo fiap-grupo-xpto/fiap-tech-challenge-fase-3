@@ -7,8 +7,23 @@ from pathlib import Path
 import joblib
 import numpy as np
 
+from backend.rehab_video.annotate import (
+    DEFAULT_MAX_FRAMES,
+    annotate_video,
+    transcode_to_h264,
+)
 from backend.rehab_video.features import FEATURE_VERSION, temporal_features
 from backend.rehab_video.pose import YoloPoseEstimator, extract_pose_sequence
+
+
+EXERCISE_LABELS = {
+    1: "Abducao de braco",
+    2: "Bracos V/W",
+    3: "Flexao apoiada",
+    4: "Abducao de perna",
+    5: "Afundo",
+    6: "Agachamento",
+}
 
 
 MODEL_PATH = (
@@ -26,6 +41,30 @@ def _get_pose_estimator() -> YoloPoseEstimator:
         confidence_threshold=float(os.getenv("REHAB_POSE_CONFIDENCE", "0.25")),
         device=os.getenv("REHAB_POSE_DEVICE", "cpu"),
     )
+
+
+def annotate_repetition_video(
+    video_path: Path | str,
+    output_path: Path | str,
+    exercise_id: int,
+    start_frame: int = 0,
+    end_frame: int | None = None,
+) -> dict:
+    if exercise_id not in range(1, 7):
+        raise ValueError("exercise_id must be between 1 and 6.")
+    estimator = _get_pose_estimator()
+    summary = annotate_video(
+        video_path,
+        output_path,
+        estimator,
+        start_frame=start_frame,
+        end_frame=end_frame,
+        max_frames=int(os.getenv("REHAB_ANNOTATE_MAX_FRAMES", str(DEFAULT_MAX_FRAMES))),
+        confidence_threshold=estimator.confidence_threshold,
+        label=EXERCISE_LABELS[exercise_id],
+    )
+    summary["browser_compatible"] = transcode_to_h264(output_path)
+    return summary
 
 
 def analyze_repetition(

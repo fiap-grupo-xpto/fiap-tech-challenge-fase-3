@@ -42,6 +42,23 @@ class YoloPoseEstimator:
     ) -> np.ndarray:
         if len(frames) == 0:
             return np.empty((0, KEYPOINT_COUNT, 3), dtype=np.float32)
+        poses = [
+            normalize_pose(
+                pixels,
+                width=frame.shape[1],
+                height=frame.shape[0],
+                confidence_threshold=self.confidence_threshold,
+            )
+            for frame, pixels in zip(frames, self.detect_pixel_keypoints(frames, batch_size))
+        ]
+        return np.stack(poses).astype(np.float32, copy=False)
+
+    def detect_pixel_keypoints(
+        self, frames: Sequence[np.ndarray], batch_size: int = 16
+    ) -> list[np.ndarray]:
+        """Return the main person's COCO-17 keypoints (x, y, conf) in pixels."""
+        if len(frames) == 0:
+            return []
         results = self.model.predict(
             source=list(frames),
             imgsz=self.image_size,
@@ -57,7 +74,7 @@ class YoloPoseEstimator:
             )
 
         poses: list[np.ndarray] = []
-        for frame, result in zip(frames, results):
+        for result in results:
             keypoints = getattr(result, "keypoints", None)
             if keypoints is None or keypoints.data is None or len(keypoints.data) == 0:
                 poses.append(np.zeros((KEYPOINT_COUNT, 3), dtype=np.float32))
@@ -79,16 +96,8 @@ class YoloPoseEstimator:
             else:
                 selected = 0
 
-            height, width = frame.shape[:2]
-            poses.append(
-                normalize_pose(
-                    candidates[selected],
-                    width=width,
-                    height=height,
-                    confidence_threshold=self.confidence_threshold,
-                )
-            )
-        return np.stack(poses).astype(np.float32, copy=False)
+            poses.append(candidates[selected].astype(np.float32, copy=False))
+        return poses
 
 
 def sample_video_frames(

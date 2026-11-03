@@ -636,6 +636,12 @@ elif st.session_state.stage == 4:
             step=1,
         )
 
+    show_annotated = st.checkbox(
+        "Gerar também o vídeo com o esqueleto desenhado",
+        value=True,
+        help="Processa o trecho quadro a quadro; em CPU pode levar alguns minutos.",
+    )
+
     if st.button(
         "Analisar repetição",
         type="primary",
@@ -698,5 +704,37 @@ elif st.session_state.stage == 4:
                             file_name="relatorio_analise_reabilitacao.json",
                             mime="application/json",
                         )
+                        if show_annotated:
+                            with st.spinner("Gerando vídeo com o esqueleto..."):
+                                annotated = requests.post(
+                                    f"{API_URL}/annotate-rehabilitation-video",
+                                    files={
+                                        "video": (
+                                            uploaded_video.name,
+                                            uploaded_video.getvalue(),
+                                            "video/mp4",
+                                        )
+                                    },
+                                    data=form_data,
+                                    timeout=1800,
+                                )
+                            if annotated.status_code == 200:
+                                st.subheader("Vídeo com pose estimada")
+                                st.video(annotated.content, format="video/mp4")
+                                st.download_button(
+                                    "Baixar vídeo anotado (MP4)",
+                                    data=annotated.content,
+                                    file_name="analise_reabilitacao_anotado.mp4",
+                                    mime="video/mp4",
+                                )
+                            else:
+                                try:
+                                    detail = annotated.json().get("detail", annotated.text)
+                                except ValueError:
+                                    detail = annotated.text
+                                st.warning(
+                                    f"Não foi possível gerar o vídeo anotado "
+                                    f"(HTTP {annotated.status_code}): {detail}"
+                                )
                 except requests.RequestException as exc:
                     st.error(f"Falha ao conectar com a API: {exc}")
